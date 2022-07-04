@@ -9,12 +9,22 @@ export const Navbar = (props: any) => {
     open: { opacity: 1, x: "100%" },
     closed: { opacity: 1, x: 30 },
   };
+
+  const backgroundVariants = {
+    open: { opacity: 1 },
+    closed: { opacity: 0 },
+  };
   return (
     <>
       <Head>
         <title>Nazarii Kubik</title>
       </Head>
       <div>
+        <motion.div
+          animate={props.open ? "closed" : "open"}
+          variants={backgroundVariants}
+          className={styles.background}
+        />
         <div className={styles.navbar}>
           <div
             className={styles.btnClose}
