@@ -1,0 +1,99 @@
+@import "./colors";
+@import "./mixins";
+
+.section {
+  position: relative;
+  @include sectionDefault;
+  height: 100%;
+  align-items: center;
+
+  background: linear-gradient(
+    180deg,
+    #87365b 0%,
+    #6e506c 12.5%,
+    #20a39e 63.54%
+  );
+
+  &__title {
+    @include sectionTitle;
+  }
+}
+
+.skill {
+  margin-top: 180px;
+  flex: 1;
+  text-align: center;
+  min-width: 150px;
+  max-width: 370px;
+  padding: 20px 0px 0px 0px;
+  border-radius: 23px;
+  background-color: white;
+
+  &__title {
+    font-family: "Archivo Black";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    color: #ffba49;
+    padding: 0px 10px;
+    margin-bottom: 15px;
+  }
+
+  &__about {
+    font-family: "Archivo";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 16px;
+    text-align: center;
+    background: #2796a5;
+    padding: 18px 20px;
+    width: 100%;
+    color: #134b53;
+    margin: 0;
+  }
+
+  &__section {
+    font-family: "Archivo Black";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #000000;
+    background: #39bfd0;
+    margin: 0;
+    padding: 13px 20px;
+  }
+
+  &__listItemWrapper {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    background-color: #73d2de;
+    padding: 9px 0;
+
+    li {
+      display: inline-block;
+      font-family: "Archivo";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 20px;
+      text-transform: capitalize;
+      color: #000000;
+      margin: 0;
+      padding: 13px 10px;
+      border-radius: 10px;
+      margin: 5px;
+      background-color: white;
+    }
+  }
+
+  &__listItemWrapper:last-child {
+    border-radius: 0 0 25px 25px;
+  }
+}
