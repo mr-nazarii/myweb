@@ -4,7 +4,7 @@
 .section {
   @include sectionDefault;
   align-items: center;
-
+  height: 100vh;
   background: linear-gradient(180deg, #ffba49 83.33%, #cc794f 100%);
 }
 .title {
