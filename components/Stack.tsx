@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../styles/Stack.module.scss";
-
+import Image from "next/image";
 export const Stack = () => {
   const languages = [
     "JavaScript",
@@ -43,6 +43,16 @@ export const Stack = () => {
       <h3 className={styles.section__title}>My Stack</h3>
 
       <div className={styles.skill}>
+        <div className={styles.skill__image}>
+          <Image
+            alt="me"
+            src={"/laptop.svg"}
+            width={37}
+            height={37}
+            objectFit="cover"
+            style={{ borderRadius: "20px" }}
+          />
+        </div>
         <h4 className={styles.skill__title}>FULLSTACK DEVELOPER</h4>
         <p className={styles.skill__about}>
           Coding is my passion. Love to create and manage

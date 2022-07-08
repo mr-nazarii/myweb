@@ -7,19 +7,17 @@
   height: 100vh;
   align-items: center;
   flex-direction: column;
-  background: linear-gradient(
-    180deg,
-    #cc794f 0%,
-    #8f2d56 19.79%,
-    #87365b 78.65%
-  );
+  background: $black;
+  border-width: 5px 0px;
+  border-style: dashed;
+  border-color: #ffffff;
 
   &__title {
     @include sectionTitle;
   }
 
   &__imageWrapper {
-    margin-top: 190px;
+    margin-top: 120px;
   }
 
   &__about {
@@ -30,7 +28,7 @@
     font-size: 15px;
     line-height: 16px;
     align-items: center;
-    text-align: justify;
+    text-align: center;
     color: #e5e5e5;
     padding: 0px 10px;
     min-width: 150px;

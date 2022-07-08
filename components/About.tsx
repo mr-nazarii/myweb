@@ -17,9 +17,9 @@ export const About = () => {
         />
       </div>
       <p className={styles.section__about}>
-        I enjoy learning new cutting-edge technologies, fixing bugs, and
-        creating leading business projects which I like to manage and optimize
-        to the clients needs. Love socializing and meeting new people.
+        Enthusiastic Full-Stack Developer graduate keen on learning new
+        cutting-edge technologies, fixing bugs, and creating great business
+        projects which after easily managed and optimized to the clients needs.
       </p>
     </div>
   );
