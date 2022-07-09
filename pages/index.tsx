@@ -1,19 +1,28 @@
-import { Navbar } from "../components/Navbar";
 import { TitleSection } from "../components/TitleSection";
 import type { NextPage } from "next";
-import { useState } from "react";
+import React from "react";
 import { About } from "../components/About";
-import { Stack } from "../components/Stack";
+import { Stack } from "../components/Stack/Stack";
+import { Projects } from "components/Projects/Projects";
+import { serverResponse } from "data";
 
-const Home: NextPage = () => {
-  const [open, setOpen] = useState(true);
+export const getStaticProps = async () => {
+  const response = await serverResponse();
 
+  return {
+    props: {
+      planets: response,
+    },
+  };
+};
+
+const Home: NextPage = ({ planets }: any) => {
   return (
     <>
-      <Navbar open={open} setOpen={setOpen} />
       <TitleSection />
       <About />
       <Stack />
+      <Projects planets={planets} />
     </>
   );
 };
