@@ -11,8 +11,8 @@ export const Navbar = (props: any) => {
   };
 
   const backgroundVariants = {
-    open: { opacity: 1 },
-    closed: { opacity: 0 },
+    open: { opacity: 1, display: "block" },
+    closed: { opacity: 0, display: "none" },
   };
   return (
     <>
