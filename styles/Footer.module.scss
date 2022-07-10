@@ -1,0 +1,33 @@
+@import "./colors";
+@import "./mixins";
+
+.section {
+  flex-wrap: wrap;
+  position: relative;
+  @include sectionDefault;
+  height: 100%;
+  align-items: center;
+  padding-top: 160px;
+  gap: 20px;
+  &__title {
+    @include sectionTitle;
+  }
+}
+
+.linkWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 5px;
+    width: 60px;
+    height: 60px;
+    background-color: $black;
+    border-radius: 8px;
+    border: 10px $black solid;
+  }
+}

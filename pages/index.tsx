@@ -5,6 +5,7 @@ import { About } from "../components/About";
 import { Stack } from "../components/Stack/Stack";
 import { Projects } from "components/Projects/Projects";
 import { serverResponse } from "data";
+import { Footer } from "components/Footer";
 
 export const getStaticProps = async () => {
   const response = await serverResponse();
@@ -23,6 +24,7 @@ const Home: NextPage = ({ planets }: any) => {
       <About />
       <Stack />
       <Projects planets={planets} />
+      <Footer />
     </>
   );
 };
