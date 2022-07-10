@@ -53,7 +53,7 @@ export const Stack = () => {
   ];
 
   return (
-    <div className={styles.section}>
+    <div className={styles.section} id="stack">
       <h3 className={styles.section__title}>My Stack</h3>
       <OneTable data={data1} />
       <OneTable data={data2} />

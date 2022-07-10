@@ -3,6 +3,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import styles from "../styles/Navbar.module.scss";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 
 export const Navbar = (props: any) => {
   const variants = {
@@ -53,10 +54,58 @@ export const Navbar = (props: any) => {
             variants={variants}
             className={styles.navbar__wrapper}
           >
-            <li>About Me</li>
-            <li>My Stack</li>
-            <li>Projects</li>
-            <li>Contacts</li>
+            <li>
+              <Link
+                activeClass="active"
+                onClick={() => props.setOpen(!props.open)}
+                to="aboutMe"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={800}
+              >
+                About Me
+              </Link>
+            </li>
+            <li>
+              <Link
+                activeClass="active"
+                onClick={() => props.setOpen(!props.open)}
+                to="stack"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={800}
+              >
+                My Stack
+              </Link>
+            </li>
+            <li>
+              <Link
+                activeClass="active"
+                onClick={() => props.setOpen(!props.open)}
+                to="projects"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={800}
+              >
+                Projects
+              </Link>
+            </li>
+            <li>
+              <Link
+                activeClass="active"
+                onClick={() => props.setOpen(!props.open)}
+                to="contacts"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={800}
+              >
+                Contacts
+              </Link>
+            </li>
           </motion.ul>
         </div>
       </div>

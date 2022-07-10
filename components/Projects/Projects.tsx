@@ -4,7 +4,7 @@ import { OneProject } from "./OneProject";
 
 export const Projects = (props: any) => {
   return (
-    <div className={styles.section}>
+    <div className={styles.section} id="projects">
       <h4 className={styles.section__title}>Projects</h4>
       {props.planets
         ? props.planets.map((project: any) => (

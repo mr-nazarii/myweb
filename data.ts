@@ -2,7 +2,7 @@ export const serverResponse = () => {
   return [
     {
       id: 1,
-      name: "Dr Finance",
+      name: "Dr.Finance",
       quote:
         "A must for every person who wants to get a hang of their finances and finally buy that beautiful house of the dream",
       features: [
@@ -32,7 +32,7 @@ export const serverResponse = () => {
     },
     {
       id: 2,
-      name: "Forkio Website",
+      name: "Forkio",
       quote:
         "Forkio website is a beautifully simple and compact fast responsive website which is written using the best practices of JavaScript HTML/SCSS technologies and Responsive Web Design.",
       features: [

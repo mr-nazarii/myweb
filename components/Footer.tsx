@@ -4,7 +4,7 @@ import styles from "../styles/Footer.module.scss";
 
 export const Footer = () => {
   return (
-    <div className={styles.section}>
+    <div className={styles.section} id="contacts">
       <h2 className={styles.section__title}>CONTACTS</h2>
       <div className={styles.linkWrapper}>
         <a
