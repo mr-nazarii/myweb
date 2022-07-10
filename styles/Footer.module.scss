@@ -8,6 +8,7 @@
   height: 100%;
   align-items: center;
   padding-top: 160px;
+  padding-bottom: 70px;
   gap: 20px;
   &__title {
     @include sectionTitle;

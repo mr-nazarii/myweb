@@ -9,6 +9,7 @@
   align-items: center;
   background: $black;
   padding-top: 160px;
+  padding-bottom: 70px;
   gap: 20px;
   &__title {
     @include sectionTitle;
