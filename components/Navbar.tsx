@@ -24,6 +24,7 @@ export const Navbar = (props: any) => {
           animate={props.open ? "closed" : "open"}
           variants={backgroundVariants}
           className={styles.background}
+          onClick={() => props.setOpen(!props.open)}
         />
         <div className={styles.navbar}>
           <div

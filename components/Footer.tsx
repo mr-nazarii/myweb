@@ -7,54 +7,69 @@ export const Footer = () => {
     <div className={styles.section}>
       <h2 className={styles.section__title}>CONTACTS</h2>
       <div className={styles.linkWrapper}>
-        <div className={styles.linkWrapper__link}>
+        <a
+          href="https://github.com/mr-nazarii"
+          className={styles.linkWrapper__link}
+        >
           <Image
             alt="github"
             layout="fill"
             objectFit="cover"
             src="/icons/github.svg"
           />
-        </div>
-        <div className={styles.linkWrapper__link}>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/nazarii-kubik"
+          className={styles.linkWrapper__link}
+        >
           <Image
             alt="linkedin"
             layout="fill"
             objectFit="cover"
             src="/icons/linkedin.svg"
           />
-        </div>
-        <div className={styles.linkWrapper__link}>
+        </a>
+        <a
+          href="https://www.facebook.com/profile.php?id=100005049318856"
+          className={styles.linkWrapper__link}
+        >
           <Image
             alt="facebook"
             layout="fill"
             objectFit="cover"
             src="/icons/facebook.svg"
           />
-        </div>
-        <div className={styles.linkWrapper__link}>
+        </a>
+        <a
+          href="https://www.instagram.com/_mr.nazarii_/"
+          className={styles.linkWrapper__link}
+        >
           <Image
             alt="instagram"
             layout="fill"
             objectFit="cover"
             src="/icons/instagram.svg"
           />
-        </div>
-        <div className={styles.linkWrapper__link}>
+        </a>
+        <a
+          href="mailto: nazariikubik@gmail.com"
+          className={styles.linkWrapper__link}
+        >
           <Image
             alt="email"
             layout="fill"
             objectFit="cover"
             src="/icons/email.svg"
           />
-        </div>
-        <div className={styles.linkWrapper__link}>
+        </a>
+        <a href="tel:+380639669833" className={styles.linkWrapper__link}>
           <Image
             alt="phone"
             layout="fill"
             objectFit="cover"
             src="/icons/phone.svg"
           />
-        </div>
+        </a>
       </div>
     </div>
   );
