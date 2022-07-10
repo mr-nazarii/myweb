@@ -2,14 +2,13 @@ import "../styles/globals.scss";
 import type { AppProps } from "next/app";
 import { Navbar } from "components/Navbar";
 import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 function MyApp({ Component, pageProps }: AppProps) {
-  const [open, setOpen] = useState(true);
   return (
-    <>
-      <Navbar open={open} setOpen={setOpen} />
+    <AnimatePresence exitBeforeEnter initial={false}>
       <Component {...pageProps} />
-    </>
+    </AnimatePresence>
   );
 }
 
