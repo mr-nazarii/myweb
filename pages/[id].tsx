@@ -5,6 +5,7 @@ import { features } from "process";
 import React from "react";
 import styles from "../styles/ProjectPage.module.scss";
 import { motion } from "framer-motion";
+import Head from "next/head";
 
 export const getStaticPaths = async () => {
   const res = await serverResponse();
@@ -43,59 +44,64 @@ const Product: any = ({ data }: any) => {
   };
 
   return (
-    <motion.main
-      variants={variants}
-      initial="hidden"
-      animate="enter"
-      exit="exit"
-      transition={{ type: "linear" }}
-    >
-      <div className={styles.section}>
-        <Link href={"/"}>
-          <div className={styles.backLinkWrapper}>
-            <Image
-              src={"/icons/back.svg"}
-              alt={"back"}
-              width={35}
-              height={35}
-            />{" "}
-            <p className={styles.backLinkWrapper__backLink}>HOME</p>
+    <>
+      <Head>
+        <title>Nazarii Kubik | {data[0].name}</title>
+      </Head>
+      <motion.main
+        variants={variants}
+        initial="hidden"
+        animate="enter"
+        exit="exit"
+        transition={{ type: "linear" }}
+      >
+        <div className={styles.section}>
+          <Link href={"/"}>
+            <div className={styles.backLinkWrapper}>
+              <Image
+                src={"/icons/back.svg"}
+                alt={"back"}
+                width={35}
+                height={35}
+              />{" "}
+              <p className={styles.backLinkWrapper__backLink}>HOME</p>
+            </div>
+          </Link>
+          <div className={styles.projectPage}>
+            <h1 className={styles.projectPage__title}>
+              {data ? data[0].name : null}
+            </h1>
+            <div className={styles.projectPage__imgWrap}>
+              <Image
+                src={"/projects/" + data[0].id + ".png"}
+                alt={data[0].name}
+                layout="fill"
+                objectFit="cover"
+              />
+            </div>
+            <p className={styles.projectPage__quote}>
+              &ldquo;{data[0].quote}&rdquo;
+            </p>
+            <p className={styles.projectPage__sectionTitle}>FEATURES:</p>
+            <ul className={styles.projectPage__featureList}>
+              {data[0].features
+                ? data[0].features.map((feature: any) => (
+                    <li key={Date.now() + feature}>{feature}</li>
+                  ))
+                : null}
+            </ul>
+            <p className={styles.projectPage__sectionTitle}>TECH USED:</p>
+            <ul className={styles.projectPage__techList}>
+              {data[0].techList
+                ? data[0].techList.map((feature: any) => (
+                    <li key={Date.now() + feature}>{feature}</li>
+                  ))
+                : null}
+            </ul>
           </div>
-        </Link>
-        <div className={styles.projectPage}>
-          <h1 className={styles.projectPage__title}>
-            {data ? data[0].name : null}
-          </h1>
-          <div className={styles.projectPage__imgWrap}>
-            <Image
-              src={"/projects/" + data[0].id + ".png"}
-              alt={data[0].name}
-              layout="fill"
-              objectFit="cover"
-            />
-          </div>
-          <p className={styles.projectPage__quote}>
-            &ldquo;{data[0].quote}&rdquo;
-          </p>
-          <p className={styles.projectPage__sectionTitle}>FEATURES:</p>
-          <ul className={styles.projectPage__featureList}>
-            {data[0].features
-              ? data[0].features.map((feature: any) => (
-                  <li key={Date.now() + feature}>{feature}</li>
-                ))
-              : null}
-          </ul>
-          <p className={styles.projectPage__sectionTitle}>TECH USED:</p>
-          <ul className={styles.projectPage__techList}>
-            {data[0].techList
-              ? data[0].techList.map((feature: any) => (
-                  <li key={Date.now() + feature}>{feature}</li>
-                ))
-              : null}
-          </ul>
         </div>
-      </div>
-    </motion.main>
+      </motion.main>
+    </>
   );
 };
 
