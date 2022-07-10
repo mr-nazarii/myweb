@@ -85,21 +85,12 @@
     list-style-type: none;
     background-color: #f0d286;
     padding: 9px 0;
+    display: flex;
+    flex-wrap: wrap;
 
     li {
-      display: inline-block;
-      font-family: "Archivo";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 20px;
-      text-transform: capitalize;
-      color: #170f04;
-      margin: 0;
-      padding: 13px 10px;
-      border-radius: 10px;
-      margin: 5px;
-      background-color: white;
+      @include techDefault;
+      flex-grow: 1;
     }
   }
 

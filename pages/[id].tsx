@@ -1,5 +1,6 @@
 import { serverResponse, serverSpesificResponse } from "data";
 import Image from "next/image";
+import { features } from "process";
 import React from "react";
 import styles from "../styles/ProjectPage.module.scss";
 
@@ -47,6 +48,25 @@ const Product: any = ({ data }: any) => {
             objectFit="cover"
           />
         </div>
+        <p className={styles.projectPage__quote}>
+          &ldquo;{data[0].quote}&rdquo;
+        </p>
+        <p className={styles.projectPage__sectionTitle}>FEATURES:</p>
+        <ul className={styles.projectPage__featureList}>
+          {data[0].features
+            ? data[0].features.map((feature: any) => (
+                <li key={feature}>{feature}</li>
+              ))
+            : null}
+        </ul>
+        <p className={styles.projectPage__sectionTitle}>TECH USED:</p>
+        <ul className={styles.projectPage__techList}>
+          {data[0].techList
+            ? data[0].techList.map((feature: any) => (
+                <li key={feature}>{feature}</li>
+              ))
+            : null}
+        </ul>
       </div>
     </div>
   );
