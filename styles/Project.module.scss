@@ -2,15 +2,11 @@
 @import "./mixins";
 
 .section {
-  flex-wrap: wrap;
-  position: relative;
-  @include sectionDefault;
+  @include sectionBlack;
   height: 100%;
   align-items: center;
-  background: $black;
-  padding-top: 160px;
-  padding-bottom: 70px;
   gap: 20px;
+
   &__title {
     @include sectionTitle;
   }
@@ -18,13 +14,6 @@
 
 .project {
   position: relative;
-  //   filter: grayscale(100%) brightness(75%);
-  //   transition: filter 0.8s ease;
-
-  //   &:hover {
-  //     filter: grayscale(0%);
-  //     transition: filter 0.8s ease;
-  //   }
 }
 
 .details {

@@ -2,37 +2,29 @@
 @import "./mixins";
 
 .section {
-  position: relative;
-  @include sectionDefault;
+  @include sectionBlack;
+  @include sectionColumn;
   height: 100%;
-  align-items: center;
-  flex-direction: column;
-  background: $black;
-  border-width: 5px 0px;
-  border-style: dashed;
-  border-color: #ffffff;
-  padding-bottom: 70px;
 
   &__title {
     @include sectionTitle;
   }
+}
 
-  &__imageWrapper {
-    margin-top: 120px;
-  }
+// .imageWrapper {
+// }
 
-  &__about {
-    margin-top: 50px;
-    font-family: "Archivo";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 16px;
-    align-items: center;
-    text-align: center;
-    color: #e5e5e5;
-    padding: 0px 10px;
-    min-width: 150px;
-    max-width: 370px;
-  }
+.about {
+  margin-top: 50px;
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  align-items: center;
+  text-align: center;
+  color: #e5e5e5;
+  padding: 0px 10px;
+  min-width: 150px;
+  max-width: 370px;
 }

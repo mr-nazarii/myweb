@@ -2,10 +2,10 @@
 @import "./mixins";
 
 .section {
-  @include sectionDefault;
-  align-items: center;
+  @include sectionYellow;
+  @include sectionColumn;
+  padding-top: 0px;
   height: 100vh;
-  background: $backgroundColor;
 }
 .title {
   font-family: "Archivo Black";
