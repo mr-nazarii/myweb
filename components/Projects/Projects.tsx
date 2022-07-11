@@ -1,3 +1,4 @@
+import { Btn } from "components/Btn";
 import React from "react";
 import styles from "../../styles/Project.module.scss";
 import { OneProject } from "./OneProject";
@@ -5,7 +6,9 @@ import { OneProject } from "./OneProject";
 export const Projects = (props: any) => {
   return (
     <div className={styles.section} id="projects">
-      <h4 className={styles.section__title}>Projects</h4>
+      <Btn color={true} styles={styles}>
+        Projects
+      </Btn>
       {props.planets
         ? props.planets.map((project: any) => (
             <OneProject

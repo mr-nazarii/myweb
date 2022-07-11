@@ -1,11 +1,14 @@
 import Image from "next/image";
 import React from "react";
 import styles from "../styles/About.module.scss";
+import { Btn } from "./Btn";
 
 export const About = () => {
   return (
     <div className={styles.section} id="aboutMe">
-      <h3 className={styles.section__title}>About Me</h3>
+      <Btn color={true} styles={styles}>
+        About Me
+      </Btn>
       <div className={styles.imageWrapper}>
         <Image
           alt="me"

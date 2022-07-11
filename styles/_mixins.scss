@@ -31,7 +31,6 @@
 @mixin sectionTitle {
   top: 20px;
   position: absolute;
-  color: white;
   font-family: "Archivo Black";
   font-style: normal;
   font-weight: 400;
@@ -39,20 +38,24 @@
   line-height: 25px;
   text-transform: uppercase;
   padding-bottom: 7px;
-  border-bottom: 5px white solid;
   padding: 10px;
   border-radius: 5px;
+  border-bottom: 6px #b1b1b1 solid;
+  border-left: 4px #ffffff solid;
+
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 @mixin titleBlack {
+  @include sectionTitle;
   background-color: $black;
+  color: white;
 }
 
 @mixin titleWhite {
-  padding: 20px;
-  display: flex;
-  justify-content: center;
+  @include sectionTitle;
+  background-color: #f0d286;
+  color: white;
 }
 
 @mixin techDefault {

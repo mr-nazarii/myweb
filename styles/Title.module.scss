@@ -4,7 +4,6 @@
 .section {
   @include sectionYellow;
   @include sectionColumn;
-  padding-top: 0px;
   height: 100vh;
 }
 .title {

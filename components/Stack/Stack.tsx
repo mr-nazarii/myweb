@@ -1,3 +1,4 @@
+import { Btn } from "components/Btn";
 import React from "react";
 import styles from "../../styles/Stack.module.scss";
 import { OneTable } from "./OneTable";
@@ -54,7 +55,9 @@ export const Stack = () => {
 
   return (
     <div className={styles.section} id="stack">
-      <h3 className={styles.section__title}>My Stack</h3>
+      <Btn color={false} styles={styles}>
+        My Stack
+      </Btn>
       <OneTable data={data1} />
       <OneTable data={data2} />
     </div>
