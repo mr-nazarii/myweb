@@ -14,8 +14,8 @@ export const Footer = () => {
           <a href="https://github.com/mr-nazarii">
             <Image
               alt="github"
-              layout="fill"
-              objectFit="cover"
+              width={40}
+              height={40}
               src="/icons/github.svg"
             />
           </a>
@@ -24,8 +24,8 @@ export const Footer = () => {
           <a href="https://www.linkedin.com/in/nazarii-kubik">
             <Image
               alt="linkedin"
-              layout="fill"
-              objectFit="cover"
+              width={40}
+              height={40}
               src="/icons/linkedin.svg"
             />
           </a>
@@ -34,8 +34,8 @@ export const Footer = () => {
           <a href="https://www.facebook.com/profile.php?id=100005049318856">
             <Image
               alt="facebook"
-              layout="fill"
-              objectFit="cover"
+              width={40}
+              height={40}
               src="/icons/facebook.svg"
             />
           </a>
@@ -44,31 +44,21 @@ export const Footer = () => {
           <a href="https://www.instagram.com/_mr.nazarii_/">
             <Image
               alt="instagram"
-              layout="fill"
-              objectFit="cover"
+              width={40}
+              height={40}
               src="/icons/instagram.svg"
             />
           </a>
         </Btn>
         <Btn color="link" styles={styles}>
           <a href="mailto: nazariikubik@gmail.com">
-            <Image
-              alt="email"
-              layout="fill"
-              objectFit="cover"
-              src="/icons/email.svg"
-            />
+            <Image alt="email" width={40} height={40} src="/icons/email.svg" />
           </a>
         </Btn>
 
         <Btn color="link" styles={styles}>
           <a href="tel:+380639669833">
-            <Image
-              alt="phone"
-              layout="fill"
-              objectFit="cover"
-              src="/icons/phone.svg"
-            />
+            <Image alt="phone" width={40} height={40} src="/icons/phone.svg" />
           </a>
         </Btn>
       </div>

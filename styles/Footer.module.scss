@@ -19,16 +19,19 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
   &__link {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+
     margin: 5px;
     width: 60px;
     height: 60px;
     background-color: $black;
     border-radius: 8px;
-    border: 10px $black solid;
+    border-bottom: 6px #b1b1b1 solid;
+    border-left: 4px #ffffff solid;
   }
 }

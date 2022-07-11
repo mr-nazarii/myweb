@@ -47,14 +47,14 @@ export const Btn = (props: any) => {
   return (
     <>
       {props.color === "link" ? (
-        <motion.h3
+        <motion.div
           variants={buttonVariantsBlack}
           whileHover={"hover"}
           whileTap={"click"}
           className={props.styles.linkWrapper__link}
         >
           {props.children}
-        </motion.h3>
+        </motion.div>
       ) : props.color ? (
         <motion.h3
           variants={buttonVariantsWhite}
