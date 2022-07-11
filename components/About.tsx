@@ -12,9 +12,9 @@ export const About = () => {
       <div className={styles.imageWrapper}>
         <Image
           alt="me"
-          src={"/Me.JPG"}
+          src={"/Me.png"}
           width={230}
-          height={230}
+          height={330}
           objectFit="cover"
           style={{ borderRadius: "20px" }}
         />
