@@ -28,6 +28,7 @@ export const serverResponse = () => {
         "JWT",
         "MongoDB",
         "bcrypt",
+        "Styled-components",
       ],
     },
     {
@@ -62,7 +63,50 @@ export const serverResponse = () => {
         "Redux",
         "Redux-thunk",
         "SCSS",
+        "Styled-components",
       ],
+    },
+    {
+      id: 4,
+      name: "Phototopia",
+      quote:
+        "Phototopia is a phone app written in React Native that works simullar to Pinterest. It shows the user Top of the daily pictures taken by great professionals around the world.",
+      features: [
+        "Form created with formik",
+        "Authentication (of email and password fields through Yup)",
+        "State managment using (Redux toolkit)",
+        "Written fully on TypeScript",
+        "Profile page with fetched data from server",
+      ],
+      techList: ["TypeScript", "React Native", "Formik", "HTML/CSS", "Yup"],
+    },
+    {
+      id: 5,
+      name: "Hospital web",
+      quote:
+        "The Hospital task management website is a simple, quick, and responsive website built with the best principles of JavaScript Bootstrap technologies and Responsive Web Design.",
+      features: [
+        "A login mechanism that connects to the server and verifies the user's identity.",
+        "Creating hospital visits by selecting a doctor and filling out the form's needed areas for that doctor.",
+        "Render of any visits from the server that have been made and turning them into cards to display on the board.",
+        "Unique filter which handles the card data and filters as selected by the user",
+        "Cards offering the ability to modify, show more info or cancel a visit",
+        "Fully responsive",
+      ],
+      techList: ["JavaScript", "Bootstrap", "HTML/CSS"],
+    },
+    {
+      id: 6,
+      name: "The Ham ",
+      quote:
+        "The Ham is a stunningly simple and compact fast responsive website built using the finest principles of HTML/CSS JavaScript technology and Responsive Web Design.",
+      features: [
+        "Designed entirely with Mobile First Technologies in mind",
+        "Simple and attractive for business purposes",
+        "The website is responsive in every aspect",
+        "It is well designed",
+      ],
+      techList: ["JavaScript", "Node.js", "HTML/CSS", "Gulp"],
     },
   ];
 };

@@ -36,6 +36,7 @@ export const Stack = () => {
         "JSON",
         "MUI",
         "Next.js",
+        "Styled-components",
       ],
       tools: ["GIT", "GitHub", "Postman", "Visual Studio", "Docker", "Slack"],
     },
