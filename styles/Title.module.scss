@@ -5,6 +5,11 @@
   @include sectionYellow;
   @include sectionColumn;
   height: 100vh;
+  @media (orientation: landscape) {
+    height: 100%;
+  }
+  padding-bottom: 100px;
+  padding-top: 80px;
 }
 
 .title {
