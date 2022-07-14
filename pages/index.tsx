@@ -1,6 +1,6 @@
 import { TitleSection } from "../components/TitleSection";
 import type { NextPage } from "next";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { About } from "../components/About";
 import { Stack } from "../components/Stack/Stack";
 import { Projects } from "components/Projects/Projects";
@@ -8,6 +8,8 @@ import { serverResponse } from "data";
 import { Footer } from "components/Footer";
 import { motion } from "framer-motion";
 import { Navbar } from "components/Navbar";
+import styles from "../styles/Home.module.scss";
+
 export const getStaticProps = async () => {
   const response = await serverResponse();
 
@@ -28,21 +30,23 @@ const Home: NextPage = ({ planets }: any) => {
   const [open, setOpen] = useState(true);
 
   return (
-    <motion.main
-      variants={variants}
-      initial="hidden"
-      animate="enter"
-      exit="exit"
-      transition={{ type: "linear" }}
-    >
-      <Navbar open={open} setOpen={setOpen} />
+    <>
+      <motion.main
+        variants={variants}
+        initial="hidden"
+        animate="enter"
+        exit="exit"
+        transition={{ type: "linear" }}
+      >
+        <Navbar open={open} setOpen={setOpen} />
 
-      <TitleSection />
-      <About />
-      <Stack />
-      <Projects planets={planets} />
-      <Footer />
-    </motion.main>
+        <TitleSection />
+        <About />
+        <Stack />
+        <Projects planets={planets} />
+        <Footer />
+      </motion.main>{" "}
+    </>
   );
 };
 

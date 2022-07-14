@@ -6,8 +6,12 @@ body {
   margin: 0;
   font-family: "Archivo", Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
     Droid Sans, Helvetica Neue, sans-serif;
-
   background-color: $backgroundColor;
+  scrollbar-width: 40px;
+}
+
+::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
 }
 
 a {

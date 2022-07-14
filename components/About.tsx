@@ -2,28 +2,41 @@ import Image from "next/image";
 import React from "react";
 import styles from "../styles/About.module.scss";
 import { Btn } from "./Btn";
+import { AnimatePresence, motion } from "framer-motion";
 
 export const About = () => {
   return (
-    <div className={styles.section} id="aboutMe">
-      <Btn color={true} styles={styles}>
-        About Me
-      </Btn>
-      <div className={styles.imageWrapper}>
-        <Image
-          alt="me"
-          src={"/Me.png"}
-          width={230}
-          height={330}
-          objectFit="cover"
-          style={{ borderRadius: "20px" }}
-        />
+    <AnimatePresence exitBeforeEnter>
+      <div className={styles.section} id="aboutMe">
+        <Btn color={true} styles={styles}>
+          About Me
+        </Btn>
+        <div className={styles.imageWrapper}>
+          <Image
+            alt="me"
+            src={"/Me.JPG"}
+            objectFit="cover"
+            layout="fill"
+            style={{ borderRadius: "20px" }}
+          />
+        </div>
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{
+            opacity: 1,
+            transition: {
+              duration: 1,
+            },
+          }}
+          viewport={{ once: true }}
+          className={styles.about}
+        >
+          Enthusiastic Full-Stack Developer graduate keen on learning new
+          cutting-edge technologies, fixing bugs, and creating great business
+          projects which after easily managed and optimized to the clients
+          needs.
+        </motion.p>
       </div>
-      <p className={styles.about}>
-        Enthusiastic Full-Stack Developer graduate keen on learning new
-        cutting-edge technologies, fixing bugs, and creating great business
-        projects which after easily managed and optimized to the clients needs.
-      </p>
-    </div>
+    </AnimatePresence>
   );
 };
