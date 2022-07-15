@@ -9,12 +9,23 @@
   &__title {
     @include titleWhite;
   }
+
+  &__bulb {
+    @include bulb;
+  }
+
+  &__titleWrapper {
+    @include titleWrapper;
+  }
+}
+
+.shield {
+  @include shield;
 }
 
 .imageWrapper {
   position: relative;
   width: 100%;
-
   height: 330px;
 
   @media screen and (min-width: 400px) {

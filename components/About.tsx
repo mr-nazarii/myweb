@@ -1,14 +1,16 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import styles from "../styles/About.module.scss";
-import { Btn } from "./Btn";
+import { Btn } from "./Btn/Btn";
 import { AnimatePresence, motion } from "framer-motion";
 
 export const About = () => {
+  const [active, setActive] = useState(false);
+
   return (
     <AnimatePresence exitBeforeEnter>
       <div className={styles.section} id="aboutMe">
-        <Btn color={true} styles={styles}>
+        <Btn active={active} setActive={setActive} color={true} styles={styles}>
           About Me
         </Btn>
         <div className={styles.imageWrapper}>

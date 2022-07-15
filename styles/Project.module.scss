@@ -10,6 +10,18 @@
   &__title {
     @include titleWhite;
   }
+
+  &__bulb {
+    @include bulb;
+  }
+
+  &__titleWrapper {
+    @include titleWrapper;
+  }
+}
+
+.shield {
+  @include shield;
 }
 
 .project {

@@ -1,12 +1,14 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import styles from "../styles/Footer.module.scss";
-import { Btn } from "./Btn";
+import { Btn } from "./Btn/Btn";
 
 export const Footer = () => {
+  const [active, setActive] = useState(false);
+
   return (
     <div className={styles.section} id="contacts">
-      <Btn colore={true} styles={styles}>
+      <Btn active={active} setActive={setActive} colore={true} styles={styles}>
         CONTACTS
       </Btn>
       <div className={styles.linkWrapper}>

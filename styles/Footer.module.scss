@@ -13,6 +13,18 @@
   &__title {
     @include titleBlack;
   }
+
+  &__bulb {
+    @include bulb;
+  }
+
+  &__titleWrapper {
+    @include titleWrapper;
+  }
+}
+
+.shield {
+  @include shield;
 }
 
 .linkWrapper {
