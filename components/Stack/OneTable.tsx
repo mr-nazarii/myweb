@@ -31,7 +31,7 @@ export const OneTable = (props: any) => {
             <li key={el}>{el}</li>
           ))}
         </ul>
-        <h5 className={styles.skill__section}>{props.data[0].sectionName1}</h5>
+        <h5 className={styles.skill__section}>{props.data[0].sectionName2}</h5>
         <ul className={styles.skill__listItemWrapper}>
           {props.data[0].tools.map((el: string) => (
             <li key={el}>{el}</li>
