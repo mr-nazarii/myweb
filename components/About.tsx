@@ -14,13 +14,23 @@ export const About = () => {
           About Me
         </Btn>
         <div className={styles.imageWrapper}>
-          <Image
-            alt="me"
-            src={"/Me.JPG"}
-            objectFit="cover"
-            layout="fill"
-            style={{ borderRadius: "20px" }}
-          />
+          {active ? (
+            <Image
+              alt="me"
+              src={"/MeAlternative.jpg"}
+              objectFit="cover"
+              layout="fill"
+              style={{ borderRadius: "20px" }}
+            />
+          ) : (
+            <Image
+              alt="me"
+              src={"/Me.JPG"}
+              objectFit="cover"
+              layout="fill"
+              style={{ borderRadius: "20px" }}
+            />
+          )}
         </div>
         <motion.p
           initial={{ opacity: 0 }}

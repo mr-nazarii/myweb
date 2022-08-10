@@ -2,6 +2,19 @@ export const serverResponse = () => {
   return [
     {
       id: 1,
+      name: "Pet Store",
+      quote:
+        "Clothes for your pet for every taste and style. Next.js React.js SCSS Redux toolkit built websitem",
+      features: [
+        "Ability to add Item to cart",
+        "Great Intro static website",
+        "Discount sale system",
+        "Responsive interface",
+      ],
+      techList: ["React.js", "TypeScript", "Redux-toolkit", "SCSS"],
+    },
+    {
+      id: 2,
       name: "Dr.Finance",
       quote:
         "A must for every person who wants to get a hang of their finances and finally buy that beautiful house of the dream",
@@ -28,21 +41,7 @@ export const serverResponse = () => {
         "JWT",
         "MongoDB",
         "bcrypt",
-        "Styled-components",
       ],
-    },
-    {
-      id: 2,
-      name: "Forkio",
-      quote:
-        "Forkio website is a beautifully simple and compact fast responsive website which is written using the best practices of JavaScript HTML/SCSS technologies and Responsive Web Design.",
-      features: [
-        "Fully written using Mobile First Technologies",
-        "Simple and beautiful for Business purposes",
-        "Responsiveness in every section of the website",
-        "Greatly designed",
-      ],
-      techList: ["JavaScript", "SCSS", "Node.js", "HTML/CSS", "Gulp"],
     },
     {
       id: 3,
@@ -107,6 +106,19 @@ export const serverResponse = () => {
         "It is well designed",
       ],
       techList: ["JavaScript", "Node.js", "HTML/CSS", "Gulp"],
+    },
+    {
+      id: 7,
+      name: "Forkio",
+      quote:
+        "Forkio website is a beautifully simple and compact fast responsive website which is written using the best practices of JavaScript HTML/SCSS technologies and Responsive Web Design.",
+      features: [
+        "Fully written using Mobile First Technologies",
+        "Simple and beautiful for Business purposes",
+        "Responsiveness in every section of the website",
+        "Greatly designed",
+      ],
+      techList: ["JavaScript", "SCSS", "Node.js", "HTML/CSS", "Gulp"],
     },
   ];
 };
