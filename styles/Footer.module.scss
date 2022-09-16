@@ -4,11 +4,11 @@
 .section {
   flex-wrap: wrap;
   position: relative;
-  @include sectionDefault;
+  @include sectionYellow;
   height: 100%;
   align-items: center;
-  padding-top: 160px;
-  padding-bottom: 70px;
+  padding-top: 180px;
+  padding-bottom: 30px;
   gap: 20px;
   &__title {
     @include titleBlack;

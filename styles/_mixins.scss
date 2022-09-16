@@ -22,13 +22,15 @@
 
 @mixin sectionBlack {
   @include sectionDefault;
-  border-width: 5px 0px;
-  border-style: dashed;
-  border-color: #ffffff;
-  background: $black;
+  border-width: 0px 0px 18px 0px;
+  border-style: solid;
+  border-color: $secondaryColor;
+  background: $white;
 }
 
 @mixin sectionTitle {
+  background-color: $black;
+  color: $white;
   position: absolute;
   white-space: nowrap;
   font-family: "Archivo Black";
@@ -154,14 +156,10 @@
 
 @mixin titleBlack {
   @include sectionTitle;
-  background-color: $black;
-  color: white;
 }
 
 @mixin titleWhite {
   @include sectionTitle;
-  background-color: #f0d286;
-  color: white;
 }
 
 @mixin techDefault {
@@ -172,7 +170,7 @@
   font-size: 18px;
   line-height: 20px;
   text-transform: capitalize;
-  color: #170f04;
+  color: $black;
   margin: 0;
   padding: 13px 10px;
   border-radius: 10px;

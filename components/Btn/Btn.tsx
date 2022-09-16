@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
-import { buttonVariantsBlack, buttonVariantsWhite } from "./BtnVariants";
+import { buttonVariantsBlack } from "./BtnVariants";
 import { Shield } from "components/Shield/Shield";
 
 export const Btn = (props: any) => {
@@ -28,31 +28,6 @@ export const Btn = (props: any) => {
         >
           {props.children}
         </motion.div>
-      ) : props.color ? (
-        <>
-          <div className={props.styles.section__titleWrapper}>
-            <motion.h3
-              variants={buttonVariantsWhite}
-              whileHover={"hover"}
-              whileTap={"click"}
-              className={props.styles.section__title}
-              onClick={() => props.setActive(!props.active)}
-            >
-              {props.children}
-            </motion.h3>
-            <motion.span
-              className={props.styles.section__bulb}
-              variants={bulbVariant}
-              animate={props.active ? "open" : "closed"}
-            />
-          </div>
-
-          <Shield
-            styles={props.styles}
-            active={props.active}
-            setActive={props.setActive}
-          />
-        </>
       ) : (
         <>
           <div className={props.styles.section__titleWrapper}>

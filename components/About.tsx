@@ -10,27 +10,17 @@ export const About = () => {
   return (
     <AnimatePresence exitBeforeEnter>
       <div className={styles.section} id="aboutMe">
-        <Btn active={active} setActive={setActive} color={true} styles={styles}>
+        <Btn active={active} setActive={setActive} styles={styles}>
           About Me
         </Btn>
         <div className={styles.imageWrapper}>
-          {active ? (
-            <Image
-              alt="me"
-              src={"/MeAlternative.jpg"}
-              objectFit="cover"
-              layout="fill"
-              style={{ borderRadius: "20px" }}
-            />
-          ) : (
-            <Image
-              alt="me"
-              src={"/Me.JPG"}
-              objectFit="cover"
-              layout="fill"
-              style={{ borderRadius: "20px" }}
-            />
-          )}
+          <Image
+            alt="me"
+            src={"/Me.JPG"}
+            objectFit="cover"
+            layout="fill"
+            style={{ borderRadius: "20px" }}
+          />
         </div>
         <motion.p
           initial={{ opacity: 0 }}
