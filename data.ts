@@ -120,6 +120,26 @@ export const serverResponse = () => {
       ],
       techList: ["JavaScript", "SCSS", "Node.js", "HTML/CSS", "Gulp"],
     },
+    {
+      id: 8,
+      name: "Galaxio",
+      quote: "Galaxio website is a Galaxy tourism UX Project.",
+      features: [
+        "Simple and beautiful for Business purposes",
+        "Greatly designed",
+      ],
+      techList: ["JavaScript", "SCSS", "Node.js", "HTML/CSS", "React.js"],
+    },
+    {
+      id: 9,
+      name: "Localoop",
+      quote: "Localoop website is a Local Restaurant food order UX Project.",
+      features: [
+        "Simple and beautiful for Business purposes",
+        "Greatly designed",
+      ],
+      techList: ["JavaScript", "SCSS", "Node.js", "HTML/CSS", "React.js"],
+    },
   ];
 };
 
