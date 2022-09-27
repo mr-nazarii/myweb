@@ -16,14 +16,14 @@ export const OneProject = (props: any) => {
   return (
     <>
       <div className={styles.project}>
-        <Image
-          alt={props.name}
-          src={"/projects/" + props.id + ".png"}
-          width={269}
-          height={190}
-          objectFit="cover"
-          style={{ borderRadius: "20px" }}
-        />
+        <div className={styles.project__img}>
+          <Image
+            layout="fill"
+            alt={props.name}
+            src={"/projects/" + props.id + ".png"}
+            objectFit="cover"
+          />
+        </div>
         <div className={styles.details}>
           <h5 className={styles.details__name}>{props.name}</h5>
           <Link key={props.id} href={"/" + props.id}>

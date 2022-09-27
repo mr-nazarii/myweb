@@ -8,6 +8,7 @@ body {
     Droid Sans, Helvetica Neue, sans-serif;
   background-color: $backgroundColor;
   scrollbar-width: 40px;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {

@@ -1,14 +1,6 @@
-$backgroundColor: linear-gradient(
-  225deg,
-  hsla(238, 100%, 21%, 1) 0%,
-  hsla(273, 96%, 21%, 1) 7%,
-  hsla(286, 98%, 21%, 1) 24%,
-  hsla(298, 100%, 20%, 1) 50%,
-  hsla(285, 100%, 23%, 1) 79%,
-  hsla(276, 100%, 25%, 1) 100%
-);
+$black: #000000;
+$white: #ffffff;
+$backgroundColor: $black;
 $backgroundSecondaryColor: #8f2d56;
 $secondaryColor: #898989;
-$black: #170f04;
-$white: #ffffff;
 $darkOpacity: #000000a8;

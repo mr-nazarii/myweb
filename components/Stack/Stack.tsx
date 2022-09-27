@@ -46,7 +46,7 @@ export const Stack = () => {
   const data2 = [
     {
       imgSource: "/art.svg",
-      title: "DESIGNER",
+      title: "UX/UI DESIGNER",
       about:
         "I favor clear design principles, straightforward information organization",
       sectionName1: "WHAT I DESIGN",
@@ -62,6 +62,7 @@ export const Stack = () => {
       <Btn active={active} setActive={setActive} color={false} styles={styles}>
         My Stack
       </Btn>
+      <div className={styles.sphere} />
       <OneTable data={data1} />
       <OneTable data={data2} />
     </div>

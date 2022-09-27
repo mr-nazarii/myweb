@@ -4,8 +4,30 @@
 .section {
   @include sectionYellow;
   height: 100%;
-  align-items: flex-start;
-  gap: 80px;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  .sphere {
+    z-index: 0;
+    position: absolute;
+    width: 123em;
+    height: 103em;
+    top: 0px;
+
+    border-radius: 100%;
+    background: linear-gradient(
+      172.55deg,
+      #bd6bf3 9.02%,
+      #9b33e0 25.14%,
+      #6e34c8 39.47%,
+      #5b34ae 53.79%,
+      #2f0d76 70.36%,
+      #330140 84.24%,
+      #260038 93.64%
+    );
+  }
 
   &__title {
     @include titleBlack;
@@ -30,9 +52,8 @@
   flex: 1;
   text-align: center;
   min-width: 250px;
-  max-width: 370px;
+  max-width: 430px;
   padding: 35px 0px 0px 0px;
-  border-radius: 23px;
   background-color: white;
 
   &__image {
@@ -40,7 +61,7 @@
     top: 0;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #fbf0d6;
+    background-color: #52006f;
     display: inline-flex;
     padding: 15px;
     border-radius: 100%;
@@ -55,7 +76,7 @@
     text-align: center;
     text-transform: uppercase;
     margin: 0;
-    color: #ffba49;
+    color: #52006f;
     padding: 0px 10px;
     margin-bottom: 5px;
   }
@@ -67,10 +88,10 @@
     font-size: 15px;
     line-height: 16px;
     text-align: center;
-    background: #dbdbdb;
+    background: #c67ef5;
     padding: 18px 20px;
     width: 100%;
-    color: #606060;
+    color: #470060;
     margin: 0;
   }
 
@@ -90,7 +111,7 @@
     padding: 0;
     margin: 0;
     list-style-type: none;
-    background-color: #f0d286;
+    background-color: #472b84;
     padding: 9px;
     display: flex;
     flex-wrap: wrap;
@@ -99,9 +120,5 @@
       @include techDefault;
       flex-grow: 1;
     }
-  }
-
-  &__listItemWrapper:last-child {
-    border-radius: 0 0 19px 19px;
   }
 }

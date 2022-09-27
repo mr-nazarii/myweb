@@ -2,14 +2,28 @@
 @import "./mixins";
 
 .section {
-  @include sectionYellow;
+  @include sectionDefault;
   @include sectionColumn;
   height: 100vh;
   @media (orientation: landscape) {
-    height: 100%;
+    height: 100vh;
   }
   padding-bottom: 100px;
   padding-top: 80px;
+}
+
+.sphere {
+  position: absolute;
+  width: 150em;
+  height: 190em;
+  top: 430px;
+  background: linear-gradient(
+    121.57deg,
+    #a203db 16.23%,
+    #3e34ae 45.27%,
+    rgba(50, 0, 68, 0.71) 69.85%
+  );
+  border-radius: 100%;
 }
 
 .title {

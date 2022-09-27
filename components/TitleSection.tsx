@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "../styles/Title.module.scss";
 import { AnimatePresence, motion } from "framer-motion";
+import Image from "next/image";
 
 export const TitleSection = () => {
   const titles = [
@@ -37,15 +38,16 @@ export const TitleSection = () => {
   return (
     <AnimatePresence exitBeforeEnter>
       <div className={styles.section}>
-        <motion.div
-          variants={animationVariant}
-          initial={"initial"}
-          animate={"animate"}
-        >
-          <h1 className={styles.title}>Nazarii</h1>
-          <h1 className={styles.title}>Kubik</h1>
-          <h3 className={styles.subtitle}>{title}</h3>
-        </motion.div>
+        <Image
+          alt="me"
+          src={"/logo.svg"}
+          objectFit="cover"
+          width="421"
+          height="435"
+          style={{ zIndex: 1 }}
+        />
+
+        <div className={styles.sphere} />
       </div>
     </AnimatePresence>
   );
