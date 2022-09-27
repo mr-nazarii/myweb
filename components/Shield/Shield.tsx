@@ -9,10 +9,12 @@ import {
 export const Shield = (props: any) => {
   const shieldVariant = {
     closed: {
-      x: -5000,
+      x: -2000,
+      opacity: [1, 1, 1, 1, 0],
     },
     open: {
       x: 0,
+      opacity: [0, 1, 1, 1, 1],
     },
   };
 
@@ -20,6 +22,7 @@ export const Shield = (props: any) => {
     closed: {
       color: "#200029",
       background: "linear-gradient(90deg, #330140 0%, #1a0052 100%)",
+
       transition: {
         delay: 0.5,
       },
@@ -28,7 +31,6 @@ export const Shield = (props: any) => {
       color: "#330140",
       background: "linear-gradient(90deg, #9b33e0 0%, #6e34c8 100%)",
       boxShadow: "#daa2ff 0px 0px 25px",
-
       transition: {
         delay: 1.8,
       },
