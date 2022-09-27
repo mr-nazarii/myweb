@@ -6,14 +6,12 @@ import { Shield } from "components/Shield/Shield";
 export const Btn = (props: any) => {
   const bulbVariant = {
     closed: {
-      background: "linear-gradient(90deg, #d92638 0%, #c76666 100%)",
-
-      boxShadow: "rgba(255, 0, 0, 0.518) 0px 0px 25px",
+      background: "linear-gradient(90deg, #330140 0%, #260038 100%)",
     },
     open: {
-      background: "linear-gradient(90deg, #3bd926 0%, #68c766 100%)",
+      background: "linear-gradient(90deg, #daa2ff 0%, #7f0dcb 100%)",
 
-      boxShadow: "rgba(0, 255, 26, 0.518) 0px 0px 25px",
+      boxShadow: "#daa2ff 0px 0px 25px",
     },
   };
 

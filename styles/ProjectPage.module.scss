@@ -10,6 +10,26 @@
   padding-top: 70px;
   gap: 20px;
 }
+
+.sphere {
+  z-index: 0;
+  position: absolute;
+  width: 175%;
+  height: 100%;
+  top: 0px;
+  border-radius: 0px 0px 100% 100%;
+  background: linear-gradient(
+    172.55deg,
+    #bd6bf3 9.02%,
+    #9b33e0 25.14%,
+    #6e34c8 39.47%,
+    #5b34ae 53.79%,
+    #2f0d76 70.36%,
+    #330140 84.24%,
+    #260038 93.64%
+  );
+}
+
 .backLinkWrapper {
   display: flex;
   justify-content: space-around;
@@ -35,13 +55,14 @@
 
 .projectPage {
   flex: 1;
+  z-index: 1;
   min-width: 190px;
   max-width: 430px;
   display: flex;
   flex-direction: column;
   border-radius: 5px;
-
   background-color: #e5e5e5;
+
   &__title {
     text-align: center;
     width: 100%;

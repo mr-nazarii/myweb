@@ -12,9 +12,17 @@
   .sphere {
     z-index: 0;
     position: absolute;
-    width: 123em;
-    height: 103em;
+    width: 150%;
+    height: 100%;
     top: 0px;
+
+    @media screen and (max-width: 935px) {
+      width: 250%;
+    }
+
+    @media screen and (max-width: 454px) {
+      width: 350%;
+    }
 
     border-radius: 100%;
     background: linear-gradient(

@@ -1,7 +1,7 @@
 export const buttonVariantsBlack = {
   hover: {
-    backgroundColor: "#000000",
-    color: "#FCC44B",
+    backgroundColor: "#161616",
+    color: "#bd6bf3",
     borderBottom: "6px #6e6e6e solid",
     borderLeft: "4px #c9c9c9 solid",
     boxShadow: "inset 5px -5px 20px -6px #ffffff0",
@@ -11,8 +11,8 @@ export const buttonVariantsBlack = {
     boxShadow: "inset 5px -5px 20px -6px #00000087",
     borderBottom: "0px #6e6e6e solid",
     borderLeft: "0px #c9c9c9 solid",
-    backgroundColor: "#000000",
-    color: "#BD9339",
+    backgroundColor: "#161616",
+    color: "#6e34c8",
     borderTop: "4px #6e6e6e solid",
     borderRight: "8px #c9c9c9 solid",
     paddingLeft: "5px",
