@@ -5,9 +5,7 @@
   @include sectionDefault;
   @include sectionColumn;
   height: 100vh;
-  @media (orientation: landscape) {
-    height: 100vh;
-  }
+
   padding-bottom: 100px;
   padding-top: 80px;
 }
@@ -23,19 +21,23 @@
 }
 
 .spherewrapper {
-  @include sphereTitle;
-  outline: 105em solid $black;
+  @media (min-width: 1025px) {
+    @include sphereTitle;
+    outline: 20em solid $black;
+  }
 }
 
 .sphere1 {
   @include sphereTitle;
-  filter: blur(55px);
+
+  @media (min-width: 1025px) {
+    filter: blur(85px);
+  }
 
   background: linear-gradient(
     135deg,
     hsla(279, 95%, 49%, 1) 0%,
     hsla(295, 96%, 50%, 1) 25%,
-    hsla(328, 100%, 28%, 1) 49%,
     hsla(263, 100%, 40%, 1) 80%,
     hsla(281, 95%, 49%, 1) 100%
   );
@@ -43,7 +45,10 @@
   background-size: 150%;
   background-position: left;
   transition: all 1s linear;
-  animation: bgAnimation 15s linear infinite alternate;
+
+  @media (min-width: 1025px) {
+    animation: bgAnimation 15s linear infinite alternate;
+  }
 }
 
 .title {

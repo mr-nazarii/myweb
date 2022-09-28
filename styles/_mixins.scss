@@ -48,23 +48,6 @@
   }
 }
 
-@mixin sphereStack {
-  z-index: 0;
-  position: absolute;
-  width: 150%;
-  height: 100%;
-  top: 0px;
-
-  @media screen and (max-width: 935px) {
-    width: 250%;
-  }
-
-  @media screen and (max-width: 454px) {
-    width: 350%;
-  }
-  border-radius: 100%;
-}
-
 @mixin sectionColumn {
   justify-content: center;
   align-items: center;

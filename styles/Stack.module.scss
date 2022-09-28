@@ -9,37 +9,32 @@
   align-items: center;
   gap: 20px;
 
-  @keyframes bgAnimation {
-    0% {
-      background-position: 0 300%;
-    }
-
-    100% {
-      background-position: -400% 0;
-    }
-  }
-
   .sphere {
-    @include sphereStack;
-    filter: blur(155px);
+    z-index: 0;
+    position: absolute;
+    width: 150%;
+    height: 100%;
+    top: 0px;
 
+    @media screen and (max-width: 935px) {
+      width: 250%;
+    }
+
+    @media screen and (max-width: 454px) {
+      width: 350%;
+    }
+
+    border-radius: 100%;
     background: linear-gradient(
-      135deg,
-      hsla(262, 48%, 39%, 1) 0%,
-      hsla(282, 64%, 45%, 1) 7%,
-      hsla(294, 100%, 55%, 1) 27%,
-      hsla(311, 54%, 47%, 1) 56%,
-      hsla(248, 48%, 38%, 1) 78%,
-      hsla(285, 68%, 47%, 1) 100%
+      172.55deg,
+      #bd6bf3 9.02%,
+      #9b33e0 25.14%,
+      #6e34c8 39.47%,
+      #5b34ae 53.79%,
+      #2f0d76 70.36%,
+      #330140 84.24%,
+      #260038 93.64%
     );
-
-    background-size: 150%;
-    background-position: left;
-    animation: bgAnimation 15s linear infinite alternate;
-  }
-  .spherewrapper {
-    @include sphereStack;
-    outline: 15em solid $black;
   }
 
   &__title {
