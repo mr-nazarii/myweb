@@ -4,37 +4,21 @@ import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 
 export const TitleSection = () => {
-  const titles = [
-    "Full-Stack Developer",
-    "Front-End Developer",
-    "UX/UI Designer",
-    "Entrepreneur",
-  ];
+  // const titles = [
+  //   "Full-Stack Developer",
+  //   "Front-End Developer",
+  //   "UX/UI Designer",
+  //   "Entrepreneur",
+  // ];
 
-  const [title, setTitle] = useState(titles[0]);
+  const [gradient, setGradient] = useState(true);
 
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setTitle(titles);
-  //   }, 2000);
-  // }, []);
+  useEffect(() => {
+    setTimeout(() => {
+      setGradient(false);
+    }, 2000);
+  }, [gradient]);
 
-  const animationVariant = {
-    initial: {
-      x: -1000,
-      opacity: 0,
-      transition: {
-        duration: 1,
-      },
-    },
-    animate: {
-      x: 0,
-      opacity: 1,
-      transition: {
-        duration: 1,
-      },
-    },
-  };
   return (
     <AnimatePresence exitBeforeEnter>
       <div className={styles.section}>
@@ -46,8 +30,8 @@ export const TitleSection = () => {
           height="435"
           style={{ zIndex: 1 }}
         />
-
-        <div className={styles.sphere} />
+        <div className={styles.sphere1} />
+        <div className={styles.spherewrapper} />
       </div>
     </AnimatePresence>
   );

@@ -12,48 +12,38 @@
   padding-top: 80px;
 }
 
-.sphere {
-  position: absolute;
-  width: 35em;
-  height: 20em;
-  bottom: 0px;
-
-  @media (min-width: 539px) {
-    width: 40em;
-    height: 20em;
+@keyframes bgAnimation {
+  0% {
+    background-position: 0 300%;
   }
 
-  @media (min-width: 880px) {
-    width: 56em;
-    height: 28em;
-    bottom: -138px;
+  100% {
+    background-position: -400% 0;
   }
+}
 
-  @media (min-width: 1100px) {
-    width: 72em;
-    height: 37em;
-    bottom: -286px;
-  }
+.spherewrapper {
+  @include sphereTitle;
+  outline: 105em solid $black;
+}
 
-  @media (min-width: 1245px) {
-    width: 87em;
-    height: 44em;
-    bottom: -386px;
-  }
-
-  @media (min-width: 1350px) {
-    width: 99em;
-    height: 50em;
-    bottom: -485px;
-  }
+.sphere1 {
+  @include sphereTitle;
+  filter: blur(55px);
 
   background: linear-gradient(
-    121.57deg,
-    #a203db 16.23%,
-    #3e34ae 45.27%,
-    rgba(50, 0, 68, 0.71) 69.85%
+    135deg,
+    hsla(279, 95%, 49%, 1) 0%,
+    hsla(295, 96%, 50%, 1) 25%,
+    hsla(328, 100%, 28%, 1) 49%,
+    hsla(263, 100%, 40%, 1) 80%,
+    hsla(281, 95%, 49%, 1) 100%
   );
-  border-radius: 50em 50em 0em 0em;
+
+  background-size: 150%;
+  background-position: left;
+  transition: all 1s linear;
+  animation: bgAnimation 15s linear infinite alternate;
 }
 
 .title {

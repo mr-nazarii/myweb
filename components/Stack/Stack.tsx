@@ -63,6 +63,7 @@ export const Stack = () => {
         My Stack
       </Btn>
       <div className={styles.sphere} />
+      <div className={styles.spherewrapper} />
       <OneTable data={data1} />
       <OneTable data={data2} />
     </div>

@@ -2,6 +2,7 @@
 @import "./mixins";
 
 .section {
+  z-index: 1;
   @include sectionBlack;
   @include sectionColumn;
   height: 100%;
