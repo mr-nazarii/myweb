@@ -43,6 +43,8 @@ const Product: any = ({ data }: any) => {
     exit: { opacity: 0, x: 0, y: -100 },
   };
 
+  console.log(data[0]);
+
   return (
     <>
       <Head>
@@ -100,6 +102,55 @@ const Product: any = ({ data }: any) => {
                   ))
                 : null}
             </ul>
+            <div
+              style={{
+                width: "100%",
+                height: "60px",
+                background: "black",
+                display: "flex",
+                color: "black",
+                alignItems: "center",
+                justifyContent: "space-between",
+                padding: "10px",
+              }}
+            >
+              {data[0].sources.map((source: any) => {
+                if (source.address) {
+                  return (
+                    <a
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      style={{
+                        display: "inline-block",
+                        textTransform: "uppercase",
+                        fontWeight: "bold",
+                        backgroundColor: "white",
+                        padding: "10px",
+                      }}
+                      key={source.address}
+                      href={source.address}
+                    >
+                      {source.category}
+                    </a>
+                  );
+                }
+                return (
+                  <p
+                    style={{
+                      display: "inline-block",
+                      textTransform: "uppercase",
+                      fontWeight: "bold",
+                      backgroundColor: "#C6C6C6",
+                      padding: "10px",
+                      color: "#8F8F8F",
+                    }}
+                    key={source.address}
+                  >
+                    {source.category}
+                  </p>
+                );
+              })}
+            </div>
           </div>
         </div>
       </motion.main>

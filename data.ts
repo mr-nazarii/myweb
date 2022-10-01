@@ -12,6 +12,14 @@ export const serverResponse = () => {
         "Responsive interface",
       ],
       techList: ["React.js", "TypeScript", "Redux-toolkit", "SCSS"],
+      sources: [
+        { category: "website", address: false },
+        {
+          category: "design",
+          address:
+            "https://www.figma.com/file/UoDiDSXBal9vPa00y30nNx/PetShop?node-id=0%3A1",
+        },
+      ],
     },
     {
       id: 2,
@@ -42,6 +50,14 @@ export const serverResponse = () => {
         "MongoDB",
         "bcrypt",
       ],
+      sources: [
+        { category: "website", address: false },
+        {
+          category: "design",
+          address:
+            "https://www.figma.com/file/vHlbSYVVIbfr7lDG73iA1L/DR-Finance?node-id=0%3A1",
+        },
+      ],
     },
     {
       id: 3,
@@ -64,6 +80,14 @@ export const serverResponse = () => {
         "SCSS",
         "Styled-components",
       ],
+      sources: [
+        { category: "website", address: "https://cookie-shop.vercel.app/" },
+        {
+          category: "design",
+          address:
+            "https://www.figma.com/file/SWsIM9sW4UsvV07ZcsuDBg/Cookie-Shop",
+        },
+      ],
     },
     {
       id: 4,
@@ -78,6 +102,16 @@ export const serverResponse = () => {
         "Profile page with fetched data from server",
       ],
       techList: ["TypeScript", "React Native", "Formik", "HTML/CSS", "Yup"],
+      sources: [
+        {
+          category: "website",
+          address: "https://github.com/mr-nazarii/phototopia",
+        },
+        {
+          category: "design",
+          address: false,
+        },
+      ],
     },
     {
       id: 5,
@@ -93,10 +127,20 @@ export const serverResponse = () => {
         "Fully responsive",
       ],
       techList: ["JavaScript", "Bootstrap", "HTML/CSS"],
+      sources: [
+        {
+          category: "website",
+          address: "https://github.com/mr-nazarii/hospital-task-manager",
+        },
+        {
+          category: "design",
+          address: false,
+        },
+      ],
     },
     {
       id: 6,
-      name: "The Ham ",
+      name: "The Ham",
       quote:
         "The Ham is a stunningly simple and compact fast responsive website built using the finest principles of HTML/CSS JavaScript technology and Responsive Web Design.",
       features: [
@@ -106,6 +150,16 @@ export const serverResponse = () => {
         "It is well designed",
       ],
       techList: ["JavaScript", "Node.js", "HTML/CSS", "Gulp"],
+      sources: [
+        {
+          category: "website",
+          address: "https://mr-nazarii.github.io/digital-product/",
+        },
+        {
+          category: "design",
+          address: false,
+        },
+      ],
     },
     {
       id: 7,
@@ -119,6 +173,16 @@ export const serverResponse = () => {
         "Greatly designed",
       ],
       techList: ["JavaScript", "SCSS", "Node.js", "HTML/CSS", "Gulp"],
+      sources: [
+        {
+          category: "website",
+          address: "https://mr-nazarii.github.io/forkio-project/",
+        },
+        {
+          category: "design",
+          address: false,
+        },
+      ],
     },
     {
       id: 8,
@@ -128,7 +192,21 @@ export const serverResponse = () => {
         "Simple and beautiful for Business purposes",
         "Greatly designed",
       ],
-      techList: ["JavaScript", "SCSS", "Node.js", "HTML/CSS", "React.js"],
+      techList: [
+        "JavaScript",
+        "SCSS",
+        "TypeScript",
+        "HTML/CSS",
+        "React.js",
+        "React-Bootstrap",
+      ],
+      sources: [
+        { category: "website", address: "https://galaxio.vercel.app/" },
+        {
+          category: "design",
+          address: "https://www.figma.com/file/8F3AyzJzeDSE3NODR6RXSa/Galaxio",
+        },
+      ],
     },
     {
       id: 9,
@@ -139,6 +217,14 @@ export const serverResponse = () => {
         "Greatly designed",
       ],
       techList: ["JavaScript", "SCSS", "Node.js", "HTML/CSS", "React.js"],
+      sources: [
+        { category: "website", address: false },
+        {
+          category: "design",
+          address:
+            "https://www.figma.com/file/g4AnpXJGE9cMMht0JesSV5/Local-Restaurant-application",
+        },
+      ],
     },
   ];
 };
