@@ -14,7 +14,7 @@ export const About = () => {
           About Me
         </Btn>
         <div className={styles.imageWrapper}>
-          <Image alt="me" src={"/Me.JPG"} objectFit="cover" layout="fill" />
+          <Image alt="me" src={"/Me.png"} objectFit="cover" layout="fill" />
         </div>
         <motion.p
           initial={{ opacity: 0 }}

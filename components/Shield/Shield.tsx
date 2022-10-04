@@ -1,10 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
-import {
-  buttonVariantsBlack,
-  buttonVariantsExit,
-} from "components/Btn/BtnVariants";
+import { buttonVariantsExit } from "components/Btn/BtnVariants";
 
 export const Shield = (props: any) => {
   const shieldVariant = {
