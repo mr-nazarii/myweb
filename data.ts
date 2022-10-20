@@ -60,6 +60,28 @@ export const serverResponse = () => {
     },
     {
       id: 3,
+      ux: true,
+      name: "Localoop",
+      quote: "Localoop website is a Local Restaurant food order UX Project.",
+      features: ["Has an awesome Deisgn", "Checkout options"],
+      uxMethods: [
+        "UX Research",
+        "Wireframes",
+        "Mockups",
+        "UX Usability Study",
+        "High-Fidelity prototypes",
+        "Low-Fidelity prototypes",
+      ],
+      sources: [
+        { category: "website", address: false },
+        {
+          category: "UX Study Case",
+          address: "https://www.behance.net/gallery/155303917/Localoop",
+        },
+      ],
+    },
+    {
+      id: 4,
       ux: false,
       name: "Dr.Finance",
       quote:
@@ -97,50 +119,32 @@ export const serverResponse = () => {
         },
       ],
     },
-    {
-      id: 4,
-      ux: false,
-      name: "Phototopia",
-      quote:
-        "Phototopia is a phone app written in React Native that works simullar to Pinterest. It shows the user Top of the daily pictures taken by great professionals around the world.",
-      features: [
-        "Form created with formik",
-        "Authentication (of email and password fields through Yup)",
-        "State managment using (Redux toolkit)",
-        "Written fully on TypeScript",
-        "Profile page with fetched data from server",
-      ],
-      techList: ["TypeScript", "React Native", "Formik", "HTML/CSS", "Yup"],
-      sources: [
-        {
-          category: "website",
-          address: "https://github.com/mr-nazarii/phototopia",
-        },
-        {
-          category: "UX Study Case",
-          address: false,
-        },
-      ],
-    },
+
     {
       id: 5,
       ux: false,
-      name: "Hospital web",
+      name: "Cookie Shop",
       quote:
-        "The Hospital task management website is a simple, quick, and responsive website built with the best principles of JavaScript Bootstrap technologies and Responsive Web UX Study Case.",
+        "The Cookie-shop website is a React build website using best practices of component development, and Redux technology.",
       features: [
-        "A login mechanism that connects to the server and verifies the user's identity.",
-        "Creating hospital visits by selecting a doctor and filling out the form's needed areas for that doctor.",
-        "Render of any visits from the server that have been made and turning them into cards to display on the board.",
-        "Unique filter which handles the card data and filters as selected by the user",
-        "Cards offering the ability to modify, show more info or cancel a visit",
-        "Fully responsive",
+        "The main page which fetches data from the server and sets it in the Redux Store for further usage.",
+        "Creating unique Items from stored data",
+        "Ability to add the item to the favorite list or to the cart",
+        "The app tracks/stores your chosen items",
+        "Modal which shows when clicked on the 'Add to Cart' or 'Remove from Cart'",
       ],
-      techList: ["JavaScript", "Bootstrap", "HTML/CSS"],
+      techList: [
+        "React",
+        "React-router",
+        "SCSS",
+        "JavaScript",
+        "Redux",
+        "HTML/CSS",
+      ],
       sources: [
         {
           category: "website",
-          address: "https://github.com/mr-nazarii/hospital-task-manager",
+          address: "https://cookie-shop.vercel.app/",
         },
         {
           category: "UX Study Case",
@@ -224,19 +228,51 @@ export const serverResponse = () => {
     {
       id: 9,
       ux: false,
-      name: "Localoop",
-      quote: "Localoop website is a Local Restaurant food order UX Project.",
+      name: "Phototopia",
+      quote:
+        "Phototopia is a phone app written in React Native that works simullar to Pinterest. It shows the user Top of the daily pictures taken by great professionals around the world.",
       features: [
-        "Simple and beautiful for Business purposes",
-        "Greatly UX Study Caseed",
+        "Form created with formik",
+        "Authentication (of email and password fields through Yup)",
+        "State managment using (Redux toolkit)",
+        "Written fully on TypeScript",
+        "Profile page with fetched data from server",
       ],
-      techList: ["JavaScript", "SCSS", "Node.js", "HTML/CSS", "React.js"],
+      techList: ["TypeScript", "React Native", "Formik", "HTML/CSS", "Yup"],
       sources: [
-        { category: "website", address: false },
+        {
+          category: "website",
+          address: "https://github.com/mr-nazarii/phototopia",
+        },
         {
           category: "UX Study Case",
-          address:
-            "https://www.figma.com/file/g4AnpXJGE9cMMht0JesSV5/Local-Restaurant-application",
+          address: false,
+        },
+      ],
+    },
+    {
+      id: 10,
+      ux: false,
+      name: "Hospital web",
+      quote:
+        "The Hospital task management website is a simple, quick, and responsive website built with the best principles of JavaScript Bootstrap technologies and Responsive Web UX Study Case.",
+      features: [
+        "A login mechanism that connects to the server and verifies the user's identity.",
+        "Creating hospital visits by selecting a doctor and filling out the form's needed areas for that doctor.",
+        "Render of any visits from the server that have been made and turning them into cards to display on the board.",
+        "Unique filter which handles the card data and filters as selected by the user",
+        "Cards offering the ability to modify, show more info or cancel a visit",
+        "Fully responsive",
+      ],
+      techList: ["JavaScript", "Bootstrap", "HTML/CSS"],
+      sources: [
+        {
+          category: "website",
+          address: "https://github.com/mr-nazarii/hospital-task-manager",
+        },
+        {
+          category: "UX Study Case",
+          address: false,
         },
       ],
     },
