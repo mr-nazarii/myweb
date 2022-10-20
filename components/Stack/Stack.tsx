@@ -51,8 +51,18 @@ export const Stack = () => {
         "I favor clear design principles, straightforward information organization",
       sectionName1: "WHAT I DESIGN",
       sectionName2: "DESIGN TOOLS",
-      languages: ["Apps", "Logos", "Web", "Prototypes", "Wireframes"],
-      tools: ["Figma", "Adobe Illustrator", "AdobeXD"],
+      languages: [
+        "Apps",
+        "Logos",
+        "Web",
+        "Prototypes",
+        "Wireframes",
+        "Inclusive Design",
+        "Low-Fidelity prototypes",
+        "High-Fidelity prototypes",
+        "UX research",
+      ],
+      tools: ["Figma", "Adobe Illustrator", "Adobe XD"],
     },
   ];
   const [active, setActive] = useState(false);

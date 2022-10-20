@@ -3,6 +3,7 @@
 
 .section {
   @include sectionBlack;
+  padding-top: 250px;
   height: 100%;
   align-items: center;
   gap: 20px;
@@ -17,6 +18,25 @@
 
   &__titleWrapper {
     @include titleWrapper;
+  }
+}
+
+.filter {
+  color: #252525;
+  display: flex;
+  background-color: white;
+  position: absolute;
+  top: 160px;
+  p {
+    margin: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 20px;
+
+    &:hover {
+      background-color: #252525;
+      color: white;
+    }
   }
 }
 

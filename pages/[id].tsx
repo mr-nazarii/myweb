@@ -94,14 +94,32 @@ const Product: any = ({ data }: any) => {
                   ))
                 : null}
             </ul>
-            <p className={styles.projectPage__sectionTitle}>TECH USED:</p>
-            <ul className={styles.projectPage__techList}>
-              {data[0].techList
-                ? data[0].techList.map((feature: any) => (
-                    <li key={Date.now() + feature}>{feature}</li>
-                  ))
-                : null}
-            </ul>
+            {data[0].tetechList ? (
+              <>
+                <p className={styles.projectPage__sectionTitle}>TECH USED:</p>
+                <ul className={styles.projectPage__techList}>
+                  {data[0].techList
+                    ? data[0].techList.map((feature: any) => (
+                        <li key={Date.now() + feature}>{feature}</li>
+                      ))
+                    : null}
+                </ul>
+              </>
+            ) : (
+              <>
+                <p className={styles.projectPage__sectionTitle}>
+                  UI/UX Methods used:
+                </p>
+                <ul className={styles.projectPage__techList}>
+                  {data[0].uxMethods
+                    ? data[0].uxMethods.map((feature: any) => (
+                        <li key={Date.now() + feature}>{feature}</li>
+                      ))
+                    : null}
+                </ul>
+              </>
+            )}
+
             <div
               style={{
                 width: "100%",

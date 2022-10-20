@@ -27,10 +27,10 @@ export const About = () => {
           viewport={{ once: true }}
           className={styles.about}
         >
-          Enthusiastic Full-Stack Developer graduate keen on learning new
-          cutting-edge technologies, fixing bugs, and creating great business
-          projects which after easily managed and optimized to the clients
-          needs.
+          Enthusiastic Front-End Developer & UX/UI designer ready to make your
+          business initiative come to life. Adore learning and developing with
+          new cutting-edge technologies, fixing all kinds of bugs, and most
+          importantly creating great web projects.
         </motion.p>
       </div>
     </AnimatePresence>
