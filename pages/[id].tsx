@@ -1,7 +1,6 @@
 import { serverResponse, serverSpesificResponse } from "data";
 import Image from "next/image";
 import Link from "next/link";
-import { features } from "process";
 import React from "react";
 import styles from "../styles/ProjectPage.module.scss";
 import { motion } from "framer-motion";
@@ -94,7 +93,7 @@ const Product: any = ({ data }: any) => {
                   ))
                 : null}
             </ul>
-            {data[0].tetechList ? (
+            {data[0].techList ? (
               <>
                 <p className={styles.projectPage__sectionTitle}>TECH USED:</p>
                 <ul className={styles.projectPage__techList}>
@@ -105,7 +104,9 @@ const Product: any = ({ data }: any) => {
                     : null}
                 </ul>
               </>
-            ) : (
+            ) : null}
+
+            {data[0].uxMethods ? (
               <>
                 <p className={styles.projectPage__sectionTitle}>
                   UI/UX Methods used:
@@ -118,7 +119,7 @@ const Product: any = ({ data }: any) => {
                     : null}
                 </ul>
               </>
-            )}
+            ) : null}
 
             <div
               style={{

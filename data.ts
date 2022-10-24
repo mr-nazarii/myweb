@@ -2,7 +2,10 @@ export const serverResponse = () => {
   return [
     {
       id: 1,
-      ux: true,
+      type: {
+        ux: true,
+        it: false,
+      },
       name: "ThereJob",
       quote:
         "ThereJob is an application for people finding job opportunities with maximum simplicity and result.",
@@ -32,7 +35,10 @@ export const serverResponse = () => {
 
     {
       id: 2,
-      ux: true,
+      type: {
+        ux: true,
+        it: false,
+      },
       name: "ZooLoo",
       quote:
         "ZooLoo is an application for ordering treats and clothes for pets.",
@@ -60,7 +66,10 @@ export const serverResponse = () => {
     },
     {
       id: 3,
-      ux: true,
+      type: {
+        ux: true,
+        it: false,
+      },
       name: "Localoop",
       quote: "Localoop website is a Local Restaurant food order UX Project.",
       features: ["Has an awesome Deisgn", "Checkout options"],
@@ -82,7 +91,10 @@ export const serverResponse = () => {
     },
     {
       id: 4,
-      ux: false,
+      type: {
+        ux: true,
+        it: true,
+      },
       name: "Dr.Finance",
       quote:
         "A must for every person who wants to get a hang of their finances and finally buy that beautiful house of the dream",
@@ -94,6 +106,14 @@ export const serverResponse = () => {
         "User Page with information",
         "Strong and safe authorization process using tokens",
         "All is saved and encrypted in a database",
+      ],
+      uxMethods: [
+        "UX Research",
+        "Wireframes",
+        "Mockups",
+        "UX Usability Study",
+        "High-Fidelity prototypes",
+        "Low-Fidelity prototypes",
       ],
       techList: [
         "React.js",
@@ -114,15 +134,17 @@ export const serverResponse = () => {
         { category: "website", address: false },
         {
           category: "UX Study Case",
-          address:
-            "https://www.figma.com/file/vHlbSYVVIbfr7lDG73iA1L/DR-Finance?node-id=0%3A1",
+          address: "https://www.behance.net/gallery/155484441/DrFinance",
         },
       ],
     },
 
     {
       id: 5,
-      ux: false,
+      type: {
+        ux: true,
+        it: true,
+      },
       name: "Cookie Shop",
       quote:
         "The Cookie-shop website is a React build website using best practices of component development, and Redux technology.",
@@ -154,7 +176,10 @@ export const serverResponse = () => {
     },
     {
       id: 6,
-      ux: false,
+      type: {
+        ux: false,
+        it: true,
+      },
       name: "The Ham",
       quote:
         "The Ham is a stunningly simple and compact fast responsive website built using the finest principles of HTML/CSS JavaScript technology and Responsive Web UX Study Case.",
@@ -178,7 +203,10 @@ export const serverResponse = () => {
     },
     {
       id: 7,
-      ux: false,
+      type: {
+        ux: false,
+        it: true,
+      },
       name: "Forkio",
       quote:
         "Forkio website is a beautifully simple and compact fast responsive website which is written using the best practices of JavaScript HTML/SCSS technologies and Responsive Web UX Study Case.",
@@ -202,7 +230,10 @@ export const serverResponse = () => {
     },
     {
       id: 8,
-      ux: false,
+      type: {
+        ux: true,
+        it: true,
+      },
       name: "Galaxio",
       quote: "Galaxio website is a Galaxy tourism UX Project.",
       features: [
@@ -227,7 +258,10 @@ export const serverResponse = () => {
     },
     {
       id: 9,
-      ux: false,
+      type: {
+        ux: false,
+        it: true,
+      },
       name: "Phototopia",
       quote:
         "Phototopia is a phone app written in React Native that works simullar to Pinterest. It shows the user Top of the daily pictures taken by great professionals around the world.",
@@ -252,7 +286,10 @@ export const serverResponse = () => {
     },
     {
       id: 10,
-      ux: false,
+      type: {
+        ux: false,
+        it: true,
+      },
       name: "Hospital web",
       quote:
         "The Hospital task management website is a simple, quick, and responsive website built with the best principles of JavaScript Bootstrap technologies and Responsive Web UX Study Case.",

@@ -18,7 +18,7 @@ export const Projects = (props: any) => {
         <p onClick={() => setUX("false")}>Development</p>
       </div>
       {props.planets.map((project: any) => {
-        if (ux === "true" && project.ux) {
+        if (ux === "true" && project.type.ux) {
           return (
             <OneProject
               key={project.name}
@@ -26,7 +26,7 @@ export const Projects = (props: any) => {
               id={project.id}
             />
           );
-        } else if (ux === "false" && !project.ux) {
+        } else if (ux === "false" && project.type.it) {
           return (
             <OneProject
               key={project.name}
