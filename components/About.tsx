@@ -27,10 +27,15 @@ export const About = () => {
           viewport={{ once: true }}
           className={styles.about}
         >
-          Enthusiastic Front-End Developer & UX/UI designer ready to make your
-          business initiative come to life. Adore learning and developing with
-          new cutting-edge technologies, fixing all kinds of bugs, and most
-          importantly creating great web projects.
+          Enthusiastic{" "}
+          <span className={styles.position}>Front-End Developer</span> &
+          <span className={styles.position}>
+            {" "}
+            Google Certified UX/UI designer
+          </span>{" "}
+          ready to make your business initiative come to life. Adore learning
+          and developing with new cutting-edge technologies, fixing all kinds of
+          bugs, and most importantly creating great web projects.
         </motion.p>
       </div>
     </AnimatePresence>

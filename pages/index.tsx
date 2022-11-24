@@ -45,7 +45,7 @@ const Home: NextPage = ({ planets }: any) => {
         <Stack />
         <Projects planets={planets} />
         <Footer />
-      </motion.main>{" "}
+      </motion.main>
     </>
   );
 };

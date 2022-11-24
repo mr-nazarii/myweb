@@ -23,7 +23,7 @@ export const TitleSection = () => {
     <AnimatePresence exitBeforeEnter>
       <div className={styles.section}>
         <Image
-          alt="me"
+          alt="logo"
           src={"/logo.svg"}
           objectFit="cover"
           width="421"

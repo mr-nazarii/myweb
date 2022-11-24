@@ -34,13 +34,7 @@
     filter: blur(85px);
   }
 
-  background: linear-gradient(
-    135deg,
-    hsla(279, 95%, 49%, 1) 0%,
-    hsla(295, 96%, 50%, 1) 25%,
-    hsla(263, 100%, 40%, 1) 80%,
-    hsla(281, 95%, 49%, 1) 100%
-  );
+  background: linear-gradient(135deg, #ec1c24 0%, #6b006b 100%);
 
   background-size: 150%;
   background-position: left;

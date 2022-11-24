@@ -27,13 +27,9 @@
     border-radius: 100%;
     background: linear-gradient(
       172.55deg,
-      #bd6bf3 9.02%,
-      #9b33e0 25.14%,
-      #6e34c8 39.47%,
-      #5b34ae 53.79%,
-      #2f0d76 70.36%,
-      #330140 84.24%,
-      #260038 93.64%
+      #ec1c24 9.02%,
+
+      #6b006b 93.64%
     );
   }
 
@@ -69,7 +65,7 @@
     top: 0;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #52006f;
+    background-color: #6b006b;
     display: inline-flex;
     padding: 15px;
     border-radius: 100%;
@@ -96,10 +92,10 @@
     font-size: 15px;
     line-height: 16px;
     text-align: center;
-    background: #c67ef5;
+    background: #6b006b;
     padding: 18px 20px;
     width: 100%;
-    color: #470060;
+    color: #cc81cc;
     margin: 0;
   }
 
@@ -119,7 +115,7 @@
     padding: 0;
     margin: 0;
     list-style-type: none;
-    background-color: #472b84;
+    background-color: #bd8abd;
     padding: 9px;
     display: flex;
     flex-wrap: wrap;
