@@ -27,15 +27,16 @@ export const About = () => {
           viewport={{ once: true }}
           className={styles.about}
         >
-          Enthusiastic{" "}
+          As a passionate{" "}
           <span className={styles.position}>Front-End Developer</span> &
           <span className={styles.position}>
             {" "}
             Google Certified UX/UI designer
           </span>{" "}
-          ready to make your business initiative come to life. Adore learning
-          and developing with new cutting-edge technologies, fixing all kinds of
-          bugs, and most importantly creating great web projects.
+          I am eager to bring your business vision to fruition. I have a love
+          for learning and working with the latest technologies, troubleshooting
+          challenges, and most importantly, crafting exceptional web projects.
+          Let{"'"}s create something amazing together!
         </motion.p>
       </div>
     </AnimatePresence>
