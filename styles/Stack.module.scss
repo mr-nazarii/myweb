@@ -9,30 +9,6 @@
   align-items: center;
   gap: 20px;
 
-  .sphere {
-    z-index: 0;
-    position: absolute;
-    width: 150%;
-    height: 100%;
-    top: 0px;
-
-    @media screen and (max-width: 935px) {
-      width: 250%;
-    }
-
-    @media screen and (max-width: 454px) {
-      width: 350%;
-    }
-
-    border-radius: 100%;
-    background: linear-gradient(
-      172.55deg,
-      #ec1c24 9.02%,
-
-      #6b006b 93.64%
-    );
-  }
-
   &__title {
     @include titleBlack;
   }
@@ -59,13 +35,16 @@
   max-width: 430px;
   padding: 35px 0px 0px 0px;
   background-color: white;
+  border-left: 10px solid #104559;
+  border-bottom: 15px solid #186684;
+  border-radius: 15px;
 
   &__image {
     position: absolute;
     top: 0;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #6b006b;
+    background-color: #1d7ca1;
     display: inline-flex;
     padding: 15px;
     border-radius: 100%;
@@ -80,7 +59,7 @@
     text-align: center;
     text-transform: uppercase;
     margin: 0;
-    color: #52006f;
+    color: #0b2e3c;
     padding: 0px 10px;
     margin-bottom: 5px;
   }
@@ -92,10 +71,10 @@
     font-size: 15px;
     line-height: 16px;
     text-align: center;
-    background: #6b006b;
+    background: #155b76;
     padding: 18px 20px;
     width: 100%;
-    color: #cc81cc;
+    color: #46b3de;
     margin: 0;
   }
 
@@ -115,7 +94,7 @@
     padding: 0;
     margin: 0;
     list-style-type: none;
-    background-color: #bd8abd;
+    background-color: #46b3de;
     padding: 9px;
     display: flex;
     flex-wrap: wrap;

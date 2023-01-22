@@ -57,8 +57,6 @@ const Product: any = ({ data }: any) => {
         transition={{ type: "linear" }}
       >
         <div className={styles.section}>
-          <div className={styles.sphere} />
-
           <Link href={"/"}>
             <div className={styles.backLinkWrapper}>
               <Image

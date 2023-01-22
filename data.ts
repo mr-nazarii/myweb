@@ -1,6 +1,72 @@
 export const serverResponse = () => {
   return [
     {
+      id: 1.1,
+      type: {
+        ux: true,
+        it: false,
+      },
+      name: "Themis",
+      quote:
+        "Corporate and professional website and branding for Themis Law Firm. The website features a clean and modern design with easy navigation, animations to engage visitors, and custom graphic design work.",
+      features: [
+        "Cohesive and professional image that effectively conveyed the firm's identity and message, which helped to increase trust and credibility among the firm's target audience.",
+
+      ],
+      techList: ["Figma", "Adobe Illustrator",],
+      uxMethods: [
+        "UX Research",
+        "Wireframes",
+        "Mockups",
+        "UX Usability Study",
+        "High-Fidelity prototypes",
+        "Low-Fidelity prototypes",
+      ],
+      sources: [
+        {
+          category: "website",
+          address: false,
+        },
+        {
+          category: "UX Study Case",
+          address: false,
+        },
+      ],
+    },
+    {
+      id: 1.2,
+      type: {
+        ux: true,
+        it: false,
+      },
+      name: "GlobalTax",
+      quote:
+        "A sleek and user-friendly website with engaging animations and custom graphics, designed for GlobalTax Accounting Firm's corporate and professional branding needs.",
+      features: [
+        "A cohesive and professional image that effectively communicated the firm's identity and message, resulting in increased trust and credibility among the target audience.",
+
+      ],
+      techList: ["Figma", "Adobe Illustrator",],
+      uxMethods: [
+        "UX Research",
+        "Wireframes",
+        "Mockups",
+        "UX Usability Study",
+        "High-Fidelity prototypes",
+        "Low-Fidelity prototypes",
+      ],
+      sources: [
+        {
+          category: "website",
+          address: false,
+        },
+        {
+          category: "UX Study Case",
+          address: false,
+        },
+      ],
+    },
+    {
       id: 1,
       type: {
         ux: true,
@@ -313,6 +379,7 @@ export const serverResponse = () => {
         },
       ],
     },
+
   ];
 };
 

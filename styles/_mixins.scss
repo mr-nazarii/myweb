@@ -65,7 +65,7 @@
 }
 
 @mixin sectionTitle {
-  background-color: #1a1a1a;
+  background-color: #1d7ca1;
   color: $white;
   position: absolute;
   white-space: nowrap;
@@ -74,13 +74,14 @@
   font-weight: 400;
   font-size: 23px;
   line-height: 25px;
-  text-transform: uppercase;
+  text-transform: Uppercase;
   padding-bottom: 7px;
   padding: 10px;
   margin: 0;
   border-radius: 5px;
-  border-bottom: 6px #b1b1b1 solid;
-  border-left: 4px #ffffff solid;
+  border-bottom: 6px #104559 solid;
+  border-left: 4px #0b2e3c solid;
+
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
@@ -118,10 +119,10 @@
     border-radius: 8px;
     border-bottom: 6px #b1b1b1 solid;
     border-left: 4px #ffffff solid;
-    background-color: #b92131;
-    color: #961a27;
-    border-bottom: 6px #bf6a6a solid;
-    border-left: 4px #e19696 solid;
+    background-color: #63bfe3;
+    color: #0d3a4b;
+    border-bottom: 6px #46b3de solid;
+    border-left: 4px #29a7d9 solid;
   }
 
   .actionWrapper {

@@ -25,6 +25,7 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@600&display=swap"
             rel="stylesheet"
           ></link>
+
         </Head>
         <body>
           <Main />

@@ -72,9 +72,10 @@ export const Stack = () => {
       <Btn active={active} setActive={setActive} color={false} styles={styles}>
         My Stack
       </Btn>
-      <div className={styles.sphere} />
-      <OneTable data={data1} />
-      <OneTable data={data2} />
+      <div style={{ display: "flex", flexWrap: "wrap" }}>
+        <OneTable data={data1} />
+        <OneTable data={data2} />
+      </div>
     </div>
   );
 };

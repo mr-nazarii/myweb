@@ -22,16 +22,16 @@ export const TitleSection = () => {
   return (
     <AnimatePresence exitBeforeEnter>
       <div className={styles.section}>
-        <Image
-          alt="logo"
-          src={"/logo.svg"}
-          objectFit="cover"
-          width="421"
-          height="435"
-          style={{ zIndex: 1 }}
-        />
-        <div className={styles.sphere1} />
-        <div className={styles.spherewrapper} />
+        <div className={styles.logo}>
+          <div className={styles.sphere}/>
+          <Image
+            alt="logo"
+            src={"/logo.svg"}
+            objectFit="contain"
+            style={{ zIndex: 1 }}
+            layout="fill"
+          />
+        </div>
       </div>
     </AnimatePresence>
   );

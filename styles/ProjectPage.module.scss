@@ -9,21 +9,8 @@
   align-items: flex-start;
   padding-top: 70px;
   gap: 20px;
-}
+  background:#135067;
 
-.sphere {
-  z-index: 0;
-  position: absolute;
-  width: 175%;
-  height: 100%;
-  top: 0px;
-  border-radius: 0px 0px 100% 100%;
-  background: linear-gradient(
-    172.55deg,
-    #ec1c24 9.02%,
-
-    #6b006b 93.64%
-  );
 }
 
 .backLinkWrapper {
