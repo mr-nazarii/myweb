@@ -1,6 +1,70 @@
 export const serverResponse = () => {
   return [
     {
+      id: 1.14,
+      type: {
+        ux: true,
+        it: false,
+      },
+      name: "Grand Foods",
+      quote:
+        "Professional app and branding for Grand Foods. The app features a clean and modern design with easy navigation, animations to engage visitors, and custom graphic design work.",
+      features: [
+        "Cohesive and professional image that effectively conveyed the company's identity and message, which helped to increase trust and credibility among the company's target audience.",
+      ],
+      techList: ["Figma", "Adobe Illustrator"],
+      uxMethods: [
+        "UX Research",
+        "Wireframes",
+        "Mockups",
+        "UX Usability Study",
+        "High-Fidelity prototypes",
+        "Low-Fidelity prototypes",
+      ],
+      sources: [
+        {
+          category: "website",
+          address: false,
+        },
+        {
+          category: "UX Study Case",
+          address: "https://www.behance.net/gallery/166934975/Grand-Foods",
+        },
+      ],
+    },
+    {
+      id: 1.13,
+      type: {
+        ux: true,
+        it: false,
+      },
+      name: "HSP Law",
+      quote:
+        "Professional website and branding for HSP Law. The website features a clean and modern design with easy navigation, animations to engage visitors, and custom graphic design work.",
+      features: [
+        "Cohesive and professional image that effectively conveyed the company's identity and message, which helped to increase trust and credibility among the company's target audience.",
+      ],
+      techList: ["Figma", "Adobe Illustrator"],
+      uxMethods: [
+        "UX Research",
+        "Wireframes",
+        "Mockups",
+        "UX Usability Study",
+        "High-Fidelity prototypes",
+        "Low-Fidelity prototypes",
+      ],
+      sources: [
+        {
+          category: "website",
+          address: false,
+        },
+        {
+          category: "UX Study Case",
+          address: "https://www.brandvm.com/case-studies/hsp-law",
+        },
+      ],
+    },
+    {
       id: 1.11,
       type: {
         ux: true,
