@@ -5,7 +5,7 @@
   z-index: 1;
   @include sectionBlack;
   @include sectionColumn;
-  background:#135067;
+  background: #135067;
 
   height: 100%;
 
@@ -48,7 +48,7 @@
   font-weight: 400;
   font-size: 15px;
   align-items: center;
-  text-align: left;
+  text-align: center;
   color: $white;
   padding: 0px 10px;
   min-width: 150px;
@@ -64,6 +64,6 @@
 }
 
 .position {
-  color: #55B9E0;
+  color: #55b9e0;
   font-weight: Bold;
 }
