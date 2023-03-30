@@ -74,7 +74,7 @@ const Product: any = ({ data }: any) => {
             </h1>
             <div className={styles.projectPage__imgWrap}>
               <Image
-                src={"/projects/" + data[0].id + ".png"}
+                src={"/projects/" + `${data[0].name}/` + "1.png"}
                 alt={data[0].name}
                 layout="fill"
                 objectFit="cover"
