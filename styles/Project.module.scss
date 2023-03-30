@@ -7,8 +7,7 @@
   height: 100%;
   align-items: center;
   gap: 20px;
-  background:#135067;
-
+  background: #135067;
 
   &__title {
     @include titleWhite;
@@ -73,8 +72,8 @@
   height: 100%;
   background: linear-gradient(
     180deg,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.516) 77.6%
+    rgba(0, 0, 0, 0.179) 0%,
+    rgba(0, 0, 0, 0.896) 80.6%
   );
   position: absolute;
   transition: opacity 0.5s ease;
@@ -86,28 +85,30 @@
 
   &__name {
     margin: 0;
-    background-color: white;
     display: inline-block;
     padding: 5px;
     font-family: "Archivo Black";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
+    font-size: 1.1em;
     line-height: 20px;
     text-transform: uppercase;
-    color: $black;
+    color: $white;
   }
 
   &__action {
-    background-color: $black;
     display: inline-block;
+    position: relative;
+
     padding: 5px;
-    font-family: "Archivo Black";
-    font-style: normal;
+    font-family: "Archivo";
     font-weight: 400;
-    font-size: 18px;
+    font-size: 0.9em;
     line-height: 20px;
     text-transform: uppercase;
     color: white;
+
+    &:after {
+      content: "➡️";
+      margin-left: 5px;
+    }
   }
 }

@@ -7,6 +7,12 @@ export const Projects = (props: any) => {
   const [active, setActive] = useState(false);
   const [ux, setUX] = useState("all");
 
+  const sortedProjects = props.planets.sort((a: any, b: any) => {
+    const aDate = new Date(a.monthYear);
+    const bDate = new Date(b.monthYear);
+    return bDate.getTime() - aDate.getTime();
+  });
+
   return (
     <div className={styles.section} id="projects">
       <Btn active={active} setActive={setActive} color={true} styles={styles}>
@@ -17,7 +23,7 @@ export const Projects = (props: any) => {
         <p onClick={() => setUX("true")}>UX/UI</p>
         <p onClick={() => setUX("false")}>Development</p>
       </div>
-      {props.planets.map((project: any) => {
+      {sortedProjects.map((project: any) => {
         if (ux === "true" && project.type.ux) {
           return (
             <OneProject
