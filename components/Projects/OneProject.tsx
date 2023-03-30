@@ -20,7 +20,7 @@ export const OneProject = (props: any) => {
           <Image
             layout="fill"
             alt={props.name}
-            src={"/projects/" + props.id + ".png"}
+            src={"/projects/" + props.name + "1.png"}
             objectFit="cover"
           />
         </div>

@@ -1,6 +1,7 @@
 export const serverResponse = () => {
   return [
     {
+      monthYear: "2023-03",
       id: 1.14,
       type: {
         ux: true,
@@ -36,6 +37,7 @@ export const serverResponse = () => {
       ],
     },
     {
+      monthYear: "2023-02",
       id: 1.13,
       type: {
         ux: true,
@@ -73,6 +75,7 @@ export const serverResponse = () => {
       ],
     },
     {
+      monthYear: "2023-02",
       id: 1.11,
       type: {
         ux: true,
@@ -110,6 +113,7 @@ export const serverResponse = () => {
       ],
     },
     {
+      monthYear: "2023-02",
       id: 1.12,
       type: {
         ux: true,
@@ -148,6 +152,7 @@ export const serverResponse = () => {
       ],
     },
     {
+      monthYear: "2022-12",
       id: 1.1,
       type: {
         ux: true,
@@ -186,6 +191,7 @@ export const serverResponse = () => {
       ],
     },
     {
+      monthYear: "2023-01",
       id: 1.2,
       type: {
         ux: true,
@@ -224,6 +230,7 @@ export const serverResponse = () => {
       ],
     },
     {
+      monthYear: "2022-03",
       id: 1,
       type: {
         ux: true,
@@ -257,6 +264,7 @@ export const serverResponse = () => {
     },
 
     {
+      monthYear: "2022-02",
       id: 2,
       type: {
         ux: true,
@@ -288,6 +296,7 @@ export const serverResponse = () => {
       ],
     },
     {
+      monthYear: "2022-01",
       id: 3,
       type: {
         ux: true,
@@ -313,6 +322,7 @@ export const serverResponse = () => {
       ],
     },
     {
+      monthYear: "2021-12",
       id: 4,
       type: {
         ux: true,
@@ -363,6 +373,7 @@ export const serverResponse = () => {
     },
 
     {
+      monthYear: "2021-11",
       id: 5,
       type: {
         ux: true,
@@ -398,6 +409,7 @@ export const serverResponse = () => {
       ],
     },
     {
+      monthYear: "2023-08",
       id: 6,
       type: {
         ux: false,
@@ -425,6 +437,7 @@ export const serverResponse = () => {
       ],
     },
     {
+      monthYear: "2021-10",
       id: 7,
       type: {
         ux: false,
@@ -452,6 +465,7 @@ export const serverResponse = () => {
       ],
     },
     {
+      monthYear: "2022-01",
       id: 8,
       type: {
         ux: true,
@@ -480,6 +494,7 @@ export const serverResponse = () => {
       ],
     },
     {
+      monthYear: "2022-04",
       id: 9,
       type: {
         ux: false,
@@ -508,6 +523,7 @@ export const serverResponse = () => {
       ],
     },
     {
+      monthYear: "2021-12",
       id: 10,
       type: {
         ux: false,
