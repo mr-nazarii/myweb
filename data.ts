@@ -8,9 +8,12 @@ export const serverResponse = () => {
       },
       name: "Grand Foods",
       quote:
-        "Professional app and branding for Grand Foods. The app features a clean and modern design with easy navigation, animations to engage visitors, and custom graphic design work.",
+        "Grand Foods now has a professional and beautiful app and branding with a clean, modern design and easy navigation, as well as custom graphic design work to showcase the brand's unique identity.",
       features: [
-        "Cohesive and professional image that effectively conveyed the company's identity and message, which helped to increase trust and credibility among the company's target audience.",
+        "The app incorporates a user-friendly interface that allows for easy and intuitive navigation, making it accessible to a wider audience.",
+        "The branding includes a custom color scheme and typography that gives a distinct and recognizable visual identity to Grand Foods.",
+        "The app includes personalized user experiences, such as the ability to save favorite items and receive personalized recommendations based on past purchases, increasing customer engagement and satisfaction.",
+        "The app and branding were designed with accessibility in mind, particularly in terms of color contrast and the use of elements. The color palette was carefully selected to ensure that there is sufficient contrast between background and foreground elements, making it easier for users with visual impairments to read and navigate the app. Additionally, the use of elements, such as icons and buttons, was considered to ensure that they are easily distinguishable and have clear labels and text, helping users to easily understand their purpose and functionality.",
       ],
       techList: ["Figma", "Adobe Illustrator"],
       uxMethods: [
@@ -40,9 +43,13 @@ export const serverResponse = () => {
       },
       name: "HSP Law",
       quote:
-        "Professional website and branding for HSP Law. The website features a clean and modern design with easy navigation, animations to engage visitors, and custom graphic design work.",
+        "A professional website and branding has been developed for HSP Law, featuring a sleek and modern design with user-friendly navigation and custom graphic design work. The website has also been crafted to engage visitors with carefully chosen graphics and a dynamic layout.",
       features: [
-        "Cohesive and professional image that effectively conveyed the company's identity and message, which helped to increase trust and credibility among the company's target audience.",
+        "The website's UX/UI design was tailored to the needs of HSP Law's clients, with a focus on creating an intuitive and streamlined user experience that guides visitors through the website with ease.",
+        "The design incorporates effective use of negative space, typography, and color theory to enhance the website's aesthetic appeal, visual hierarchy, and overall readability, leading to a more engaging user experience.",
+        "The website's responsive design ensures that it is optimized for viewing on a wide range of devices and screen sizes, resulting in a consistent user experience across all platforms.",
+        "The use of interactive features, such as call-to-action buttons, forms, and live chat support, makes it easier for visitors to connect with HSP Law and take action on the website, leading to increased conversion rates.",
+        "The UX/UI design is informed by user research and usability testing, ensuring that it is based on the needs and preferences of HSP Law's target audience, leading to higher levels of user satisfaction and engagement.",
       ],
       techList: ["Figma", "Adobe Illustrator"],
       uxMethods: [
@@ -52,6 +59,7 @@ export const serverResponse = () => {
         "UX Usability Study",
         "High-Fidelity prototypes",
         "Low-Fidelity prototypes",
+        "User testing",
       ],
       sources: [
         {
@@ -72,9 +80,14 @@ export const serverResponse = () => {
       },
       name: "NA Structures",
       quote:
-        "Professional website and branding for NA Structures. The website features a clean and modern design with easy navigation, animations to engage visitors, and custom graphic design work.",
+        "NA Structures' professional website and branding is characterized by a sleek and contemporary design, intuitive navigation, and custom graphics that enhance the user experience. The website's animations also contribute to its engaging nature, making it a dynamic and memorable platform.",
       features: [
         "Cohesive and professional image that effectively conveyed the company's identity and message, which helped to increase trust and credibility among the company's target audience.",
+        "The UX/UI design for NA Structures' website was crafted to provide an intuitive and effortless user experience, enabling visitors to easily navigate the site and access the information they need.",
+        "The design incorporates a visually appealing color palette and layout that conveys the brand's identity and values, resulting in a more cohesive and immersive user experience.",
+        "The use of responsive design ensures that the website is optimized for various devices and screen sizes, allowing users to access the site seamlessly from desktops, tablets, and smartphones.",
+        "Interactive features, such as chatbots and contact forms, are integrated into the website's design, making it easier for visitors to engage with NA Structures and obtain the information they require.",
+        "The UX/UI design is based on user-centered design principles, ensuring that it is grounded in the needs and preferences of NA Structures' target audience, leading to higher levels of user satisfaction and engagement.",
       ],
       techList: ["Figma", "Adobe Illustrator"],
       uxMethods: [
@@ -104,9 +117,15 @@ export const serverResponse = () => {
       },
       name: "Sylvestre & Co",
       quote:
-        "Professional website and branding for Sylvestre & Co. The website features a clean and modern design with easy navigation, animations to engage visitors, and custom graphic design work.",
+        "Sylvestre & Co's professional website and branding boasts a sleek and modern design, complete with user-friendly navigation and captivating animations that engage visitors. Additionally, the website features custom graphic design work, elevating the user experience and reinforcing the brand's identity.",
+
       features: [
-        "Cohesive and professional image that effectively conveyed the company's identity and message, which helped to increase trust and credibility among the company's target audience.",
+        "Sylvestre & Co's website has a clean and minimalist UX/UI design that allows visitors to focus on the content and message of the brand, resulting in a streamlined and immersive experience.",
+        "The website's navigation is easy to use, enabling visitors to find the information they need quickly and efficiently.",
+        "Animations are strategically placed throughout the website to create a dynamic and engaging user experience without overwhelming visitors or detracting from the content.",
+        "The custom graphic design work on the website is visually appealing and conveys Sylvestre & Co's brand identity and values, further enhancing the user experience.",
+        "The UX/UI design is optimized for different devices and screen sizes, ensuring a seamless experience for visitors accessing the site from desktops, tablets, and smartphones.",
+        "User-centered design principles were applied to the UX/UI design, resulting in a website that meets the needs and preferences of Sylvestre & Co's target audience, leading to higher levels of engagement and satisfaction.",
       ],
       techList: ["Figma", "Adobe Illustrator"],
       uxMethods: [
@@ -136,9 +155,15 @@ export const serverResponse = () => {
       },
       name: "Themis",
       quote:
-        "Corporate and professional website and branding for Themis Law Firm. The website features a clean and modern design with easy navigation, animations to engage visitors, and custom graphic design work.",
+        "Themis Law Firm's website and branding are corporate and professional, featuring a clean and modern design, easy navigation, animations to engage visitors, and custom graphic design work to elevate the user experience and reinforce the brand's identity.",
+
       features: [
-        "Cohesive and professional image that effectively conveyed the firm's identity and message, which helped to increase trust and credibility among the firm's target audience.",
+        "The website's UX/UI design is carefully crafted to provide a seamless and intuitive experience for visitors, allowing them to quickly and easily access the information they need.",
+        "Animations and graphic elements are used strategically throughout the website to capture the attention of visitors and create an engaging user experience, without compromising the functionality or usability of the site.",
+        "The website's navigation is designed with the user in mind, featuring clear and concise menu options and intuitive navigation paths that make it easy for visitors to find what they're looking for.",
+        "The website's design is fully responsive, ensuring a consistent user experience across a wide range of devices and screen sizes.",
+        "User testing was conducted throughout the UX/UI design process to ensure that the website meets the needs and preferences of Themis Law Firm's target audience, resulting in a website that is both functional and aesthetically pleasing.",
+        "The custom graphic design work on the website is visually appealing and reinforces Themis Law Firm's brand identity and values, helping to build trust and credibility with visitors.",
       ],
       techList: ["Figma", "Adobe Illustrator"],
       uxMethods: [
@@ -168,9 +193,15 @@ export const serverResponse = () => {
       },
       name: "GlobalTax",
       quote:
-        "A sleek and user-friendly website with engaging animations and custom graphics, designed for GlobalTax Accounting Firm's corporate and professional branding needs.",
+        "GlobalTax Accounting Firm's corporate and professional branding needs are met with a sleek and user-friendly website that includes engaging animations and custom graphics designed to enhance the user experience.",
       features: [
-        "A cohesive and professional image that effectively communicated the firm's identity and message, resulting in increased trust and credibility among the target audience.",
+        "The website's UX/UI design is optimized for ease of use, with clear and intuitive navigation that makes it easy for visitors to find the information they need.",
+        "Animations are used strategically to draw attention to key features and information on the website, without detracting from the overall user experience.",
+        "The custom graphics on the website are designed to reinforce GlobalTax Accounting Firm's brand identity and messaging, helping to build trust and credibility with visitors.",
+        "The website is fully responsive, ensuring a consistent user experience across all devices and screen sizes.",
+        "User testing was conducted throughout the UX/UI design process to ensure that the website meets the needs and preferences of GlobalTax Accounting Firm's target audience.",
+        "The website's design is optimized for speed and performance, ensuring that visitors can access the information they need quickly and efficiently.",
+        "The website's visual design is modern and aesthetically pleasing, providing visitors with an enjoyable browsing experience that reflects GlobalTax Accounting Firm's commitment to excellence and professionalism.",
       ],
       techList: ["Figma", "Adobe Illustrator"],
       uxMethods: [
