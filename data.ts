@@ -66,7 +66,7 @@ export const serverResponse = () => {
       sources: [
         {
           category: "website",
-          address: false,
+          address: "https://www.hsplaw.ca/",
         },
         {
           category: "UX Study Case",
