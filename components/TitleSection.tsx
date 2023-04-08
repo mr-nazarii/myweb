@@ -23,7 +23,6 @@ export const TitleSection = () => {
     <AnimatePresence exitBeforeEnter>
       <div className={styles.section}>
         <div className={styles.logo}>
-          <div className={styles.sphere}/>
           <Image
             alt="logo"
             src={"/logo.svg"}
