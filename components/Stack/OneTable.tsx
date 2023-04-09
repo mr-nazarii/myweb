@@ -16,12 +16,7 @@ export const OneTable = (props: any) => {
     >
       <div className={styles.skill}>
         <div className={styles.skill__image}>
-          <Image
-            alt="laptop"
-            src={props.data[0].imgSource}
-            width={37}
-            height={37}
-          />
+          <Image alt="laptop" src={props.data[0].imgSource} layout="fill" />
         </div>
         <h4 className={styles.skill__title}>{props.data[0].title}</h4>
         <p className={styles.skill__about}>{props.data[0].about}</p>

@@ -14,7 +14,15 @@ export const Projects = (props: any) => {
   });
 
   return (
-    <div className={styles.section} id="projects">
+    <div
+      className={styles.section}
+      id="projects"
+      style={{
+        backgroundImage: "url('./frame2.png')",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+      }}
+    >
       <Btn active={active} setActive={setActive} color={true} styles={styles}>
         Projects
       </Btn>

@@ -8,7 +8,14 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
-
+  box-shadow: inset 0px 0px 155px #eb1eaa11;
+  background: repeating-linear-gradient(
+    -45deg,
+    #26003c,
+    #26003c 1.5px,
+    #190027 1.5px,
+    #140027 50px
+  );
   &__title {
     @include titleBlack;
   }
@@ -35,54 +42,65 @@
   max-width: 430px;
   padding: 35px 0px 0px 0px;
   background-color: white;
-  border-left: 10px solid #104559;
-  border-bottom: 15px solid #186684;
-  border-radius: 15px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 55px #eb1eaa5c;
 
   &__image {
     position: absolute;
-    top: 0;
+    top: -20px;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #1d7ca1;
     display: inline-flex;
     padding: 15px;
     border-radius: 100%;
+    width: 90px;
+    height: 90px;
   }
 
   &__title {
-    font-family: "Archivo Black";
     font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 22px;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 33px;
     text-align: center;
     text-transform: uppercase;
-    margin: 0;
-    color: #0b2e3c;
+    color: $accentColor2;
     padding: 0px 10px;
     margin-bottom: 5px;
+    position: relative;
+    bottom: 5px;
+
+    @media (max-width: 495px) {
+      font-size: 20px;
+      line-height: 28px;
+    }
   }
 
   &__about {
     font-family: "Archivo";
     font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 16px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
     text-align: center;
-    background: #155b76;
+    background: $accentColor2;
     padding: 18px 20px;
     width: 100%;
-    color: #46b3de;
+    color: $white;
     margin: 0;
+    z-index: 1;
+    position: relative;
+
+    @media (max-width: 495px) {
+      font-size: 16px;
+      line-height: 18px;
+    }
   }
 
   &__section {
-    font-family: "Archivo Black";
     font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
+    font-weight: 500;
+    font-size: 19px;
     text-transform: capitalize;
     color: #ffffff;
     background: #170f04;
@@ -94,14 +112,17 @@
     padding: 0;
     margin: 0;
     list-style-type: none;
-    background-color: #46b3de;
+    background-color: $accentColor;
     padding: 9px;
     display: flex;
     flex-wrap: wrap;
+    border-radius: 0px 0px 5px 5px;
 
     li {
       @include techDefault;
       flex-grow: 1;
+      font-weight: 500;
+      border-radius: 6px;
     }
   }
 }

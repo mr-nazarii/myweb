@@ -6,7 +6,7 @@ import { OneTable } from "./OneTable";
 export const Stack = () => {
   const data1 = [
     {
-      imgSource: "/laptop.svg",
+      imgSource: "/laptop.png",
       title: "FULLSTACK DEVELOPER",
       about: "Coding is my passion. Love to create and manage",
       sectionName1: "TECHNOLOGIES I USE",
@@ -45,7 +45,7 @@ export const Stack = () => {
   ];
   const data2 = [
     {
-      imgSource: "/art.svg",
+      imgSource: "/art.png",
       title: "UX/UI DESIGNER",
       about:
         "I favor clear design principles, straightforward information organization",
@@ -72,7 +72,15 @@ export const Stack = () => {
       <Btn active={active} setActive={setActive} color={false} styles={styles}>
         My Stack
       </Btn>
-      <div style={{ display: "flex", flexWrap: "wrap" }}>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          flexWrap: "wrap",
+          gap: "80px",
+          marginTop: "30px",
+        }}
+      >
         <OneTable data={data1} />
         <OneTable data={data2} />
       </div>

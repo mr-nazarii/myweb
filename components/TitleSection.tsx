@@ -11,21 +11,22 @@ export const TitleSection = () => {
   //   "Entrepreneur",
   // ];
 
-  const [gradient, setGradient] = useState(true);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setGradient(false);
-    }, 2000);
-  }, [gradient]);
-
   return (
     <AnimatePresence exitBeforeEnter>
-      <div className={styles.section}>
+      <div
+        className={styles.section}
+        style={{
+          backgroundImage: "url('./frame.png')",
+          backgroundRepeat: "no-repeat",
+          // backgroundAttachment: "fixed",
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+        }}
+      >
         <div className={styles.logo}>
           <Image
             alt="logo"
-            src={"/logo.svg"}
+            src={"/logo.png"}
             objectFit="contain"
             style={{ zIndex: 1 }}
             layout="fill"

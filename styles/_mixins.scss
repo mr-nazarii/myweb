@@ -65,11 +65,10 @@
 }
 
 @mixin sectionTitle {
-  background-color: #1d7ca1;
+  background-color: $accentColor;
   color: $white;
   position: absolute;
   white-space: nowrap;
-  font-family: "Archivo Black";
   font-style: normal;
   font-weight: 400;
   font-size: 23px;
@@ -79,9 +78,9 @@
   padding: 10px;
   margin: 0;
   border-radius: 5px;
-  border-bottom: 6px #104559 solid;
-  border-left: 4px #0b2e3c solid;
-
+  border-bottom: 6px $accentColor2 solid;
+  border-left: 4px $accentColor3 solid;
+  font-weight: 600;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
@@ -119,10 +118,10 @@
     border-radius: 8px;
     border-bottom: 6px #b1b1b1 solid;
     border-left: 4px #ffffff solid;
-    background-color: #63bfe3;
-    color: #0d3a4b;
-    border-bottom: 6px #46b3de solid;
-    border-left: 4px #29a7d9 solid;
+    background-color: $accentColor;
+    color: $accentColor3;
+    border-bottom: 6px $accentColor2 solid;
+    border-left: 4px $accentColor4 solid;
   }
 
   .actionWrapper {
@@ -139,7 +138,7 @@
   }
 
   &__top {
-    background-color: #4e4e4e;
+    background-color: #1f1942;
     width: 100%;
     height: 160px;
     display: flex;
@@ -147,13 +146,13 @@
     align-items: center;
 
     p {
-      font-family: "Archivo Black";
       font-size: 30px;
-      margin-top: 10px;
-      margin-bottom: 0px;
+      margin-top: 20px;
+      margin-bottom: 10px;
       text-transform: uppercase;
       font-weight: bolder;
-      color: #2d2d2d;
+      color: #fa9cf2;
+      text-shadow: 0px 0px 5px #8b56a3;
       z-index: 2;
     }
   }
@@ -176,8 +175,9 @@
     );
   }
   &__glass {
-    border: #4e4e4e 20px solid;
-    background-color: rgba(16, 0, 46, 0.464);
+    border: #1f1942 20px solid;
+    background-color: rgba(21, 0, 61, 0.57);
+    box-shadow: inset 0px 0px 50px #8b56a375;
     width: 100%;
     height: 100%;
   }
@@ -202,7 +202,6 @@
 
 @mixin techDefault {
   display: inline-block;
-  font-family: "Archivo";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
