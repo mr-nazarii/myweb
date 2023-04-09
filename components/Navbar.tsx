@@ -33,19 +33,9 @@ export const Navbar = (props: any) => {
             onClick={() => props.setOpen(!props.open)}
           >
             {props.open ? (
-              <Image
-                alt="closebtn"
-                src={"/btnOpen.svg"}
-                width={30}
-                height={30}
-              />
+              <Image alt="closebtn" src={"/btnOpen.png"} layout="fill" />
             ) : (
-              <Image
-                alt="closebtn"
-                src={"/btnClose.svg"}
-                width={30}
-                height={30}
-              />
+              <Image alt="closebtn" src={"/btnClose.png"} layout="fill" />
             )}
           </div>
 

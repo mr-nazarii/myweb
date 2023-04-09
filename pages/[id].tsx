@@ -42,8 +42,6 @@ const Product: any = ({ data }: any) => {
     exit: { opacity: 0, x: 0, y: -100 },
   };
 
-  console.log(data[0]);
-
   return (
     <>
       <Head>
@@ -128,7 +126,7 @@ const Product: any = ({ data }: any) => {
                 color: "black",
                 alignItems: "center",
                 justifyContent: "space-between",
-                padding: "10px",
+                padding: "10px 10px",
               }}
             >
               {data[0].sources.map((source: any) => {
@@ -138,11 +136,13 @@ const Product: any = ({ data }: any) => {
                       rel="noopener noreferrer"
                       target="_blank"
                       style={{
+                        fontSize: "18px",
                         display: "inline-block",
                         textTransform: "uppercase",
                         fontWeight: "bold",
                         backgroundColor: "white",
                         padding: "10px",
+                        borderRadius: "6px",
                       }}
                       key={source.address}
                       href={source.address}
@@ -154,12 +154,14 @@ const Product: any = ({ data }: any) => {
                 return (
                   <p
                     style={{
+                      fontSize: "18px",
                       display: "inline-block",
                       textTransform: "uppercase",
                       fontWeight: "bold",
                       backgroundColor: "#C6C6C6",
                       padding: "10px",
                       color: "#8F8F8F",
+                      borderRadius: "6px",
                     }}
                     key={source.address}
                   >

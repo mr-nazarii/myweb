@@ -17,16 +17,16 @@ export const Shield = (props: any) => {
 
   const activeVariant = {
     closed: {
-      color: "#57737d",
-      background: "linear-gradient(90deg, #0d3a4b 0%, #08232e 100%)",
+      color: "#c34278",
+      background: "linear-gradient(90deg, #96184c 0%, #c3105b 100%)",
       transition: {
         delay: 0.5,
       },
     },
     open: {
-      color: "#46B3DE",
-      background: "linear-gradient(90deg, #1A7193 0%, ##2292BE 100%)",
-      boxShadow: "#8ED1EB 0px 0px 25px",
+      color: "#ffffff",
+      background: "linear-gradient(90deg, #cc296d 0%, #c3105b 100%)",
+      boxShadow: "#cc296d 0px 0px 25px",
       transition: {
         delay: 1.8,
       },

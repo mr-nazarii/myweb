@@ -18,13 +18,16 @@ export const OneProject: React.FC<Props> = ({ name, id }) => {
             alt={name}
             src={`/projects/${name}/1.png`}
             objectFit="cover"
+            style={{ borderRadius: "6px" }}
           />
         </div>
         <div className={styles.details}>
-          <h5 className={styles.details__name}>{name}</h5>
-          <Link key={id} href={`/${id}`}>
-            <a className={styles.details__action}>Open</a>
-          </Link>
+          <div className={styles.detailsInner}>
+            <h5 className={styles.details__name}>{name}</h5>
+            <Link key={id} href={`/${id}`}>
+              <a className={styles.details__action}>Open</a>
+            </Link>
+          </div>
         </div>
       </div>
     </>
