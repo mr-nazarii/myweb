@@ -57,12 +57,6 @@ export const Footer = () => {
             <Image alt="email" width={40} height={40} src="/icons/email.svg" />
           </a>
         </Btn>
-
-        <Btn color="link" styles={styles}>
-          <a href="tel:+380639669833">
-            <Image alt="phone" width={40} height={40} src="/icons/phone.svg" />
-          </a>
-        </Btn>
       </div>
     </div>
   );
