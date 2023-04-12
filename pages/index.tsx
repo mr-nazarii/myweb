@@ -1,6 +1,6 @@
 import { TitleSection } from "../components/TitleSection";
 import type { NextPage } from "next";
-import React, { useRef, useState } from "react";
+import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { About } from "../components/About";
 import { Stack } from "../components/Stack/Stack";
 import { Projects } from "components/Projects/Projects";
@@ -9,6 +9,7 @@ import { Footer } from "components/Footer";
 import { motion } from "framer-motion";
 import { Navbar } from "components/Navbar";
 import styles from "../styles/Home.module.scss";
+import { Experiance } from "components/Experiance";
 
 export const getStaticProps = async () => {
   const response = await serverResponse();
@@ -28,7 +29,14 @@ const variants = {
 
 const Home: NextPage = ({ planets }: any) => {
   const [open, setOpen] = useState(true);
-
+  useLayoutEffect(() => {
+    const scrollHeight = document.documentElement.scrollHeight;
+    const innerHeight = window.innerHeight;
+    const distanceToBottom = scrollHeight - innerHeight;
+    console.log(
+      `You can scroll ${distanceToBottom}px to reach the bottom of the page.`
+    );
+  }, []);
   return (
     <>
       <motion.main
@@ -43,6 +51,7 @@ const Home: NextPage = ({ planets }: any) => {
         <TitleSection />
         <About />
         <Stack />
+        {/* <Experiance /> */}
         <Projects planets={planets} />
         <Footer />
       </motion.main>

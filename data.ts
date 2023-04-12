@@ -1,6 +1,43 @@
 export const serverResponse = () => {
   return [
     {
+      monthYear: "2023-01",
+      id: 1.15,
+      type: {
+        ux: true,
+        it: false,
+      },
+      name: "SportFlex",
+      quote:
+        "The SportFlex website project aimed to create a strong online presence with a professional, modern design, easy navigation, engaging animations, and custom graphics. The successful completion of the project resulted in an appealing and user-friendly platform that effectively communicates the brand's identity and services.",
+      features: [
+        "The website boasts a professional and modern design that showcases the unique identity of SportFlex and aligns with its branding.",
+        "Users can effortlessly access relevant information thanks to the intuitive interface and seamless navigation implemented on the website.",
+        "Engaging animations are integrated into the website, captivating visitors and promoting interaction with its content.",
+        "Custom graphic design is incorporated into the website, enhancing the user experience and reinforcing the brand identity of SportFlex.",
+        "The website delivers a cohesive, visually striking, and user-focused experience that effectively highlights the brand's offerings and values to its target audience.",
+      ],
+      techList: ["Figma", "Adobe Illustrator"],
+      uxMethods: [
+        "UX Research",
+        "Wireframes",
+        "Mockups",
+        "UX Usability Study",
+        "High-Fidelity prototypes",
+        "Low-Fidelity prototypes",
+      ],
+      sources: [
+        {
+          category: "website",
+          address: false,
+        },
+        {
+          category: "UX Study Case",
+          address: false,
+        },
+      ],
+    },
+    {
       monthYear: "2023-03",
       id: 1.14,
       type: {

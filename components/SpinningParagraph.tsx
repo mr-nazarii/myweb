@@ -19,7 +19,7 @@ const SpinningParagraph = () => {
         <div className={styles.titleOverflow}>
           <div className={styles.titleWrapper}>
             {words.map((word) => (
-              <span key={word + Date().toString}>{word}</span>
+              <span key={word + Date().toString + Math.random()}>{word}</span>
             ))}
           </div>
         </div>
