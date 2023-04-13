@@ -35,7 +35,6 @@ export const Projects = (props: any) => {
       }
     });
     setCount(newCount);
-    console.log(newCount);
   };
 
   useEffect(() => {
