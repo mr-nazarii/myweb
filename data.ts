@@ -5,7 +5,7 @@ export const serverResponse = () => {
       id: 1.15,
       type: {
         ux: true,
-        it: false,
+        it: true,
       },
       name: "Dress For Success",
       quote:
@@ -115,7 +115,7 @@ export const serverResponse = () => {
       id: 1.13,
       type: {
         ux: true,
-        it: false,
+        it: true,
       },
       name: "HSP Law",
       quote:
