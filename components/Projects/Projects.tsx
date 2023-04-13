@@ -1,5 +1,5 @@
 import { Btn } from "components/Btn/Btn";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "../../styles/Project.module.scss";
 import { OneProject } from "./OneProject";
 
@@ -7,11 +7,40 @@ export const Projects = (props: any) => {
   const [active, setActive] = useState(false);
   const [ux, setUX] = useState("all");
 
+  const [count, setCount] = useState({
+    all: 0,
+    uxProjects: 0,
+    itProjects: 0,
+  });
+
   const sortedProjects = props.planets.sort((a: any, b: any) => {
     const aDate = new Date(a.monthYear);
     const bDate = new Date(b.monthYear);
     return bDate.getTime() - aDate.getTime();
   });
+
+  const projectCount = (sortedProjects: any) => {
+    const newCount = { ...count };
+    sortedProjects.forEach((element: { type: any }) => {
+      if (element.type.ux && element.type.it) {
+        newCount.all += 1;
+        newCount.uxProjects += 1;
+        newCount.itProjects += 1;
+      } else if (element.type.ux) {
+        newCount.all += 1;
+        newCount.uxProjects += 1;
+      } else if (element.type.it) {
+        newCount.all += 1;
+        newCount.itProjects += 1;
+      }
+    });
+    setCount(newCount);
+    console.log(newCount);
+  };
+
+  useEffect(() => {
+    projectCount(sortedProjects);
+  }, []);
 
   return (
     <div
@@ -27,9 +56,9 @@ export const Projects = (props: any) => {
         Projects
       </Btn>
       <div className={styles.filter}>
-        <p onClick={() => setUX("all")}>All</p>
-        <p onClick={() => setUX("true")}>UX/UI</p>
-        <p onClick={() => setUX("false")}>Development</p>
+        <p onClick={() => setUX("all")}>All [{count.all}]</p>
+        <p onClick={() => setUX("true")}>UX/UI [{count.uxProjects}]</p>
+        <p onClick={() => setUX("false")}>Development [{count.itProjects}]</p>
       </div>
       {sortedProjects.map((project: any) => {
         if (ux === "true" && project.type.ux) {
