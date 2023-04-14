@@ -6,7 +6,7 @@
   @include sectionBlack;
   @include sectionColumn;
   background: $accentColor;
-
+  justify-content: flex-start;
   height: 100%;
 
   &__title {
