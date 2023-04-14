@@ -29,14 +29,7 @@ const variants = {
 
 const Home: NextPage = ({ planets }: any) => {
   const [open, setOpen] = useState(true);
-  useLayoutEffect(() => {
-    const scrollHeight = document.documentElement.scrollHeight;
-    const innerHeight = window.innerHeight;
-    const distanceToBottom = scrollHeight - innerHeight;
-    console.log(
-      `You can scroll ${distanceToBottom}px to reach the bottom of the page.`
-    );
-  }, []);
+
   return (
     <>
       <motion.main
