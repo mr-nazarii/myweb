@@ -7,7 +7,7 @@ import { Link } from "react-scroll";
 
 export const Navbar = (props: any) => {
   const variants = {
-    open: { opacity: 1, x: "100%" },
+    open: { opacity: 1, x: "110%" },
     closed: { opacity: 1, x: 30 },
   };
 

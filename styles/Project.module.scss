@@ -7,6 +7,8 @@
   height: 100%;
   align-items: center;
   gap: 20px;
+  flex-direction: column;
+  overflow-x: hidden;
 
   &__title {
     @include titleWhite;
@@ -19,14 +21,43 @@
   &__titleWrapper {
     @include titleWrapper;
   }
+
+  &__projects {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 10px;
+    justify-content: center;
+    align-content: center;
+
+    @media (max-width: 1160px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* For mobile devices and smaller screens */
+    @media (max-width: 894px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 607px) {
+      grid-template-columns: 1fr;
+    }
+  }
 }
 
 .filter {
   color: #252525;
   display: flex;
-  position: absolute;
-  top: 160px;
+
   gap: 20px;
+
+  @media (max-width: 607px) {
+    flex-direction: column;
+    text-align: center;
+    min-width: auto;
+    width: 100%;
+    max-width: 269px;
+  }
   p {
     margin: 0;
     font-weight: 700;
@@ -49,7 +80,7 @@
 }
 
 .project {
-  position: relative;
+  justify-self: center;
   border-radius: 6px;
   filter: grayscale(100%) brightness(50%);
   transition: filter 0.5s ease;
