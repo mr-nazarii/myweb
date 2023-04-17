@@ -9,7 +9,6 @@ import { Footer } from "components/Footer";
 import { motion } from "framer-motion";
 import { Navbar } from "components/Navbar";
 import styles from "../styles/Home.module.scss";
-// import { Experiance } from "components/Experiance";
 
 export const getStaticProps = async () => {
   const response = await serverResponse();
