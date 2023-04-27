@@ -6,7 +6,8 @@
   @include sectionBlack;
   @include sectionColumn;
   background: $accentColor;
-
+  position: relative;
+  z-index: 2;
   height: 100%;
 
   &__title {

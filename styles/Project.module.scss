@@ -9,7 +9,8 @@
   gap: 20px;
   flex-direction: column;
   overflow-x: hidden;
-
+  position: relative;
+  z-index: 2;
   &__title {
     @include titleWhite;
   }
@@ -34,7 +35,6 @@
 .filter {
   color: #252525;
   display: flex;
-
   gap: 20px;
 
   @media (max-width: 607px) {

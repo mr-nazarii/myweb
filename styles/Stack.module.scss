@@ -16,6 +16,8 @@
     #190027 1.5px,
     #140027 50px
   );
+  position: relative;
+  z-index: 2;
   &__title {
     @include titleBlack;
   }

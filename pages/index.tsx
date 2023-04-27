@@ -8,7 +8,7 @@ import { serverResponse } from "data";
 import { Footer } from "components/Footer";
 import { motion } from "framer-motion";
 import { Navbar } from "components/Navbar";
-import styles from "../styles/Home.module.scss";
+import { Experience } from "components/Experience";
 
 export const getStaticProps = async () => {
   const response = await serverResponse();
@@ -43,7 +43,7 @@ const Home: NextPage = ({ planets }: any) => {
         <TitleSection />
         <About />
         <Stack />
-        {/* <Experiance /> */}
+        <Experience />
         <Projects planets={planets} />
         <Footer />
       </motion.main>
