@@ -1,6 +1,43 @@
 export const serverResponse = () => {
   return [
     {
+      monthYear: "2023-05",
+      id: 1.16,
+      type: {
+        ux: true,
+        it: true,
+      },
+      name: "DistinctAI",
+      quote:
+        "The Distinct AI website project focused on developing an informative, user-friendly, and visually appealing platform using Webflow. The successful completion of the project resulted in an engaging online presence that effectively communicates the brand's personality, values, and services.",
+      features: [
+        "Created well-structured and informative content that effectively showcases the brand's offerings, expertise, and values.",
+        "Developed an intuitive interface with seamless navigation on Webflow, allowing users to effortlessly access relevant information.",
+        "Implemented a visually striking design with high-quality graphics and design elements that reflect the brand's personality and values.",
+        "Crafted a cohesive, user-focused website that effectively communicates the brand's mission, values, and services to its target audience.",
+        "Delivered an engaging and accessible platform that captivates visitors and encourages interaction with the brand.",
+      ],
+      techList: ["Figma", "Adobe Illustrator", "Webflow"],
+      uxMethods: [
+        "UX Research",
+        "Wireframes",
+        "Mockups",
+        "UX Usability Study",
+        "High-Fidelity prototypes",
+        "Low-Fidelity prototypes",
+      ],
+      sources: [
+        {
+          category: "website",
+          address: "https://www.distinctplugins.io/",
+        },
+        {
+          category: "UX Study Case",
+          address: "https://www.brandvm.com/case-studies/distinct-ai",
+        },
+      ],
+    },
+    {
       monthYear: "2023-04",
       id: 1.16,
       type: {
