@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react";
 import styles from "../styles/Title.module.scss";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
-import { Application } from "@splinetool/runtime";
-import Spline from "@splinetool/react-spline";
 
 export const TitleSection = () => {
   // const titles = [
@@ -18,27 +16,23 @@ export const TitleSection = () => {
       <div
         className={styles.section}
         style={{
-          background: "black",
+          backgroundImage: "url('./frame.png')",
           backgroundRepeat: "no-repeat",
           // backgroundAttachment: "fixed",
-          display: "flex",
-          flexDirection: "column",
+          backgroundPosition: "center",
+          backgroundSize: "cover",
         }}
       >
-        <Spline scene="https://prod.spline.design/sBdg08G15NthM4nq/scene.splinecode" />
+        <div className={styles.logo}>
+          <Image
+            alt="logo"
+            src={"/logo.png"}
+            objectFit="contain"
+            style={{ zIndex: 1 }}
+            layout="fill"
+          />
+        </div>
       </div>
     </AnimatePresence>
   );
 };
-{
-  /* <div className={styles.logo}>
-<Image
-  alt="logo"
-  src={"/logo.png"}
-  objectFit="contain"
-  style={{ zIndex: 1 }}
-  layout="fill"
-/>
-
-</div> */
-}
