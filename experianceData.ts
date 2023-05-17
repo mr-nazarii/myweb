@@ -23,4 +23,16 @@ export const getExperianceData = () => [
       "At my previous position, I collaborated with the executive team to gather requirements and converted them into actionable technical specifications. I developed efficient databases on MongoDB and constructed back-end servers using Express.js to ensure seamless integration with front-end applications. Additionally, I designed visually appealing website mockups using Adobe XD that led to a 75% increase in client satisfaction rates. Within the intern developer team, I excelled and achieved the highest score in the internal performance evaluation system.",
     ],
   },
+  {
+    company: "DAN-IT Education",
+    position: "Full-Stack Development Student",
+    employmentPeriod: {
+      start: new Date(2021, 8, 1),
+      end: new Date(2023, 2, 1),
+    },
+    location: "Toronto, Ontario, Canada",
+    responsibilities: [
+      "During my studies, I honed my JavaScript, CSS, and HTML skills and integrated UX/UI principles to develop dynamic, user-centric websites and React.js applications. I utilized Node.js for back-end development, ensuring seamless connectivity for front-end interfaces. I became proficient in CI/CD systems, Git operations, and automated Jest testing, facilitating high code quality and dependable deployments. My education provided a collaborative environment where I applied problem-solving skills to complex system issues, effectively enhancing system efficiency and user experience.",
+    ],
+  },
 ];
