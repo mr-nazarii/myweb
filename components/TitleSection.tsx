@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import styles from "../styles/Title.module.scss";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
-
+import Spline from "@splinetool/react-spline";
 export const TitleSection = () => {
   // const titles = [
   //   "Full-Stack Developer",
@@ -16,14 +16,17 @@ export const TitleSection = () => {
       <div
         className={styles.section}
         style={{
-          backgroundImage: "url('./frame.png')",
-          backgroundRepeat: "no-repeat",
-          // backgroundAttachment: "fixed",
-          backgroundPosition: "center",
-          backgroundSize: "cover",
+          background: "black",
         }}
       >
-        <div className={styles.logo}>
+        <div>
+          <Spline
+            className={styles.logo2}
+            scene="https://prod.spline.design/sBdg08G15NthM4nq/scene.splinecode"
+          />
+        </div>
+
+        {/* <div className={styles.logo}>
           <Image
             alt="logo"
             src={"/logo.png"}
@@ -31,7 +34,7 @@ export const TitleSection = () => {
             style={{ zIndex: 1 }}
             layout="fill"
           />
-        </div>
+        </div> */}
       </div>
     </AnimatePresence>
   );
