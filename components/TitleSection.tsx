@@ -11,6 +11,12 @@ export const TitleSection = () => {
   //   "Entrepreneur",
   // ];
 
+  const [isClient, setIsClient] = useState(false); // Initializing state
+
+  useEffect(() => {
+    setIsClient(true); // Change state on client side
+  }, []);
+
   return (
     <AnimatePresence exitBeforeEnter>
       <div
@@ -20,10 +26,12 @@ export const TitleSection = () => {
         }}
       >
         <div>
-          <Spline
-            className={styles.logo2}
-            scene="https://prod.spline.design/sBdg08G15NthM4nq/scene.splinecode"
-          />
+          {isClient && ( // Only render Spline on client side
+            <Spline
+              className={styles.logo2}
+              scene="https://prod.spline.design/sBdg08G15NthM4nq/scene.splinecode"
+            />
+          )}
         </div>
 
         {/* <div className={styles.logo}>
