@@ -4,17 +4,10 @@ import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import Spline from "@splinetool/react-spline";
 export const TitleSection = () => {
-  // const titles = [
-  //   "Full-Stack Developer",
-  //   "Front-End Developer",
-  //   "UX/UI Designer",
-  //   "Entrepreneur",
-  // ];
-
-  const [isClient, setIsClient] = useState(false); // Initializing state
+  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
-    setIsClient(true); // Change state on client side
+    setIsClient(true);
   }, []);
 
   return (
@@ -23,18 +16,20 @@ export const TitleSection = () => {
         className={styles.section}
         style={{
           background: "black",
+          backgroundImage: "url(frame.png)",
+          backgroundSize: "cover",
         }}
       >
-        <div>
-          {isClient && ( // Only render Spline on client side
+        {/* <div>
+          {isClient && (
             <Spline
               className={styles.logo2}
               scene="https://prod.spline.design/sBdg08G15NthM4nq/scene.splinecode"
             />
           )}
-        </div>
+        </div> */}
 
-        {/* <div className={styles.logo}>
+        <div className={styles.logo}>
           <Image
             alt="logo"
             src={"/logo.png"}
@@ -42,7 +37,7 @@ export const TitleSection = () => {
             style={{ zIndex: 1 }}
             layout="fill"
           />
-        </div> */}
+        </div>
       </div>
     </AnimatePresence>
   );
