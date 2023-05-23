@@ -63,7 +63,7 @@ export const Projects = (props: any) => {
       </div>
       <div className={styles.projectsWrapper}>
         <div className={styles.wall}>
-          <h1>Contact Me to Get Access to the Projects</h1>
+          <h1>portfolio available upon request</h1>
           <div className={styles.linkWrapper}>
             <Btn color="link" styles={styles}>
               <a href="mailto: nazariikubik@gmail.com">
