@@ -27,8 +27,8 @@ export const getExperianceData = () => [
     company: "DAN-IT Education",
     position: "Full-Stack Development Student",
     employmentPeriod: {
-      start: new Date(2021, 8, 1),
-      end: new Date(2023, 2, 1),
+      start: new Date(2020, 8, 1),
+      end: new Date(2023, 1, 1),
     },
     location: "Toronto, Ontario, Canada",
     responsibilities: [
