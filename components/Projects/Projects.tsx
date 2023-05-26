@@ -9,38 +9,38 @@ export const Projects = (props: any) => {
   const [ux, setUX] = useState("all");
 
   const [count, setCount] = useState({
-    all: 19,
-    uxProjects: 15,
-    itProjects: 10,
+    all: 0,
+    uxProjects: 0,
+    itProjects: 0,
   });
 
-  // const sortedProjects = props.planets.sort((a: any, b: any) => {
-  //   const aDate = new Date(a.monthYear);
-  //   const bDate = new Date(b.monthYear);
-  //   return bDate.getTime() - aDate.getTime();
-  // });
+  const sortedProjects = props.planets.sort((a: any, b: any) => {
+    const aDate = new Date(a.monthYear);
+    const bDate = new Date(b.monthYear);
+    return bDate.getTime() - aDate.getTime();
+  });
 
-  // const projectCount = (sortedProjects: any) => {
-  //   const newCount = { ...count };
-  //   sortedProjects.forEach((element: { type: any }) => {
-  //     if (element.type.ux && element.type.it) {
-  //       newCount.all += 1;
-  //       newCount.uxProjects += 1;
-  //       newCount.itProjects += 1;
-  //     } else if (element.type.ux) {
-  //       newCount.all += 1;
-  //       newCount.uxProjects += 1;
-  //     } else if (element.type.it) {
-  //       newCount.all += 1;
-  //       newCount.itProjects += 1;
-  //     }
-  //   });
-  //   setCount(newCount);
-  // };
+  const projectCount = (sortedProjects: any) => {
+    const newCount = { ...count };
+    sortedProjects.forEach((element: { type: any }) => {
+      if (element.type.ux && element.type.it) {
+        newCount.all += 1;
+        newCount.uxProjects += 1;
+        newCount.itProjects += 1;
+      } else if (element.type.ux) {
+        newCount.all += 1;
+        newCount.uxProjects += 1;
+      } else if (element.type.it) {
+        newCount.all += 1;
+        newCount.itProjects += 1;
+      }
+    });
+    setCount(newCount);
+  };
 
-  // useEffect(() => {
-  //   projectCount(sortedProjects);
-  // }, [sortedProjects]);
+  useEffect(() => {
+    projectCount(sortedProjects);
+  }, [sortedProjects]);
 
   return (
     <div
@@ -61,7 +61,36 @@ export const Projects = (props: any) => {
         <p onClick={() => setUX("true")}>UX/UI [{count.uxProjects}]</p>
         <p onClick={() => setUX("false")}>Development [{count.itProjects}]</p>
       </div>
-      <div className={styles.projectsWrapper}>
+      <div className={styles.section__projects}>
+        {sortedProjects.map((project: any) => {
+          if (ux === "true" && project.type.ux) {
+            return (
+              <OneProject
+                key={project.name}
+                name={project.name}
+                id={project.id}
+              />
+            );
+          } else if (ux === "false" && project.type.it) {
+            return (
+              <OneProject
+                key={project.name}
+                name={project.name}
+                id={project.id}
+              />
+            );
+          } else if (ux === "all") {
+            return (
+              <OneProject
+                key={project.name}
+                name={project.name}
+                id={project.id}
+              />
+            );
+          }
+        })}
+      </div>
+      {/* <div className={styles.projectsWrapper}>
         <div className={styles.wall}>
           <h1>portfolio available upon request</h1>
           <div className={styles.linkWrapper}>
@@ -77,6 +106,7 @@ export const Projects = (props: any) => {
             </Btn>
           </div>
         </div>
+
         <Image
           alt="gs"
           layout="fill"
@@ -84,36 +114,7 @@ export const Projects = (props: any) => {
           objectFit="cover"
           style={{ borderRadius: "6px", width: "100%", height: "100%" }}
         />
-        {/* <div className={styles.section__projects}>
-          {sortedProjects.map((project: any) => {
-            if (ux === "true" && project.type.ux) {
-              return (
-                <OneProject
-                  key={project.name}
-                  name={project.name}
-                  id={project.id}
-                />
-              );
-            } else if (ux === "false" && project.type.it) {
-              return (
-                <OneProject
-                  key={project.name}
-                  name={project.name}
-                  id={project.id}
-                />
-              );
-            } else if (ux === "all") {
-              return (
-                <OneProject
-                  key={project.name}
-                  name={project.name}
-                  id={project.id}
-                />
-              );
-            }
-          })}
-        </div> */}
-      </div>
+      </div> */}
     </div>
   );
 };
