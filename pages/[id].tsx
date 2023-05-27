@@ -70,7 +70,7 @@ const Product: any = ({ data }: any) => {
             <h1 className={styles.projectPage__title}>
               {data ? data[0].name : null}
             </h1>
-            {data ? (
+            {data & data[0].company ? (
               <div style={{ padding: "10px 20px" }}>
                 <p>
                   Disclaimer: The project displayed on this page,{" "}
