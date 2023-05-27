@@ -8,6 +8,7 @@ export const serverResponse = () => {
         it: true,
       },
       name: "DistinctAI",
+      company: "Brand Vision Marketing",
       quote:
         "The Distinct AI website project focused on developing an informative, user-friendly, and visually appealing platform using Webflow. The successful completion of the project resulted in an engaging online presence that effectively communicates the brand's personality, values, and services.",
       features: [
@@ -44,6 +45,8 @@ export const serverResponse = () => {
         ux: true,
         it: true,
       },
+      company: "Brand Vision Marketing",
+
       name: "Dress For Success",
       quote:
         "The Dress for Success website project focused on developing a sophisticated and polished online presence for the esteemed not-for-profit organization. The successful completion of the project resulted in a visually appealing and user-friendly platform that effectively communicates the organization's mission, values, and services.",
@@ -82,6 +85,8 @@ export const serverResponse = () => {
         it: false,
       },
       name: "SportFlex",
+      company: "Brand Vision Marketing",
+
       quote:
         "The SportFlex website project aimed to create a strong online presence with a professional, modern design, easy navigation, engaging animations, and custom graphics. The successful completion of the project resulted in an appealing and user-friendly platform that effectively communicates the brand's identity and services.",
       features: [
@@ -155,6 +160,8 @@ export const serverResponse = () => {
         it: true,
       },
       name: "HSP Law",
+      company: "Brand Vision Marketing",
+
       quote:
         "A professional website and branding has been developed for HSP Law, featuring a sleek and modern design with user-friendly navigation and custom graphic design work. The website has also been crafted to engage visitors with carefully chosen graphics and a dynamic layout.",
       features: [
@@ -193,6 +200,8 @@ export const serverResponse = () => {
         it: false,
       },
       name: "NA Structures",
+      company: "Brand Vision Marketing",
+
       quote:
         "NA Structures' professional website and branding is characterized by a sleek and contemporary design, intuitive navigation, and custom graphics that enhance the user experience. The website's animations also contribute to its engaging nature, making it a dynamic and memorable platform.",
       features: [
@@ -231,6 +240,8 @@ export const serverResponse = () => {
         it: false,
       },
       name: "Sylvestre & Co",
+      company: "Brand Vision Marketing",
+
       quote:
         "Sylvestre & Co's professional website and branding boasts a sleek and modern design, complete with user-friendly navigation and captivating animations that engage visitors. Additionally, the website features custom graphic design work, elevating the user experience and reinforcing the brand's identity.",
 
@@ -270,6 +281,8 @@ export const serverResponse = () => {
         it: false,
       },
       name: "Themis",
+      company: "Brand Vision Marketing",
+
       quote:
         "Themis Law Firm's website and branding are corporate and professional, featuring a clean and modern design, easy navigation, animations to engage visitors, and custom graphic design work to elevate the user experience and reinforce the brand's identity.",
 
@@ -309,6 +322,8 @@ export const serverResponse = () => {
         it: false,
       },
       name: "GlobalTax",
+      company: "Brand Vision Marketing",
+
       quote:
         "GlobalTax Accounting Firm's corporate and professional branding needs are met with a sleek and user-friendly website that includes engaging animations and custom graphics designed to enhance the user experience.",
       features: [
@@ -340,185 +355,185 @@ export const serverResponse = () => {
         },
       ],
     },
-    {
-      monthYear: "2022-03",
-      id: 1,
-      type: {
-        ux: true,
-        it: false,
-      },
-      name: "ThereJob",
-      quote:
-        "ThereJob is an application for people finding job opportunities with maximum simplicity and result.",
-      features: [
-        "Search and apply with simplicity",
-        "Great filter capabilities",
-        "Event System",
-        "Application History",
-        "Responsive",
-      ],
-      uxMethods: [
-        "UX Research",
-        "Wireframes",
-        "Mockups",
-        "UX Usability Study",
-        "High-Fidelity prototypes",
-        "Low-Fidelity prototypes",
-      ],
-      sources: [
-        { category: "website", address: false },
-        {
-          category: "UX Study Case",
-          address: "https://www.behance.net/gallery/155212065/ThereJob",
-        },
-      ],
-    },
+    // {
+    //   monthYear: "2022-03",
+    //   id: 1,
+    //   type: {
+    //     ux: true,
+    //     it: false,
+    //   },
+    //   name: "ThereJob",
+    //   quote:
+    //     "ThereJob is an application for people finding job opportunities with maximum simplicity and result.",
+    //   features: [
+    //     "Search and apply with simplicity",
+    //     "Great filter capabilities",
+    //     "Event System",
+    //     "Application History",
+    //     "Responsive",
+    //   ],
+    //   uxMethods: [
+    //     "UX Research",
+    //     "Wireframes",
+    //     "Mockups",
+    //     "UX Usability Study",
+    //     "High-Fidelity prototypes",
+    //     "Low-Fidelity prototypes",
+    //   ],
+    //   sources: [
+    //     { category: "website", address: false },
+    //     {
+    //       category: "UX Study Case",
+    //       address: "https://www.behance.net/gallery/155212065/ThereJob",
+    //     },
+    //   ],
+    // },
 
-    {
-      monthYear: "2022-02",
-      id: 2,
-      type: {
-        ux: true,
-        it: false,
-      },
-      name: "ZooLoo",
-      quote:
-        "ZooLoo is an application for ordering treats and clothes for pets.",
-      features: [
-        "Has an awesome Deisgn",
-        "Checkout options",
-        "Treats and clothes page",
-        "Responsive",
-      ],
-      uxMethods: [
-        "UX Research",
-        "Wireframes",
-        "Mockups",
-        "UX Usability Study",
-        "High-Fidelity prototypes",
-        "Low-Fidelity prototypes",
-      ],
-      sources: [
-        { category: "website", address: false },
-        {
-          category: "UX Study Case",
-          address: "https://www.behance.net/gallery/155224033/ZooLoo",
-        },
-      ],
-    },
-    {
-      monthYear: "2022-01",
-      id: 3,
-      type: {
-        ux: true,
-        it: false,
-      },
-      name: "Localoop",
-      quote: "Localoop website is a Local Restaurant food order UX Project.",
-      features: ["Has an awesome Deisgn", "Checkout options"],
-      uxMethods: [
-        "UX Research",
-        "Wireframes",
-        "Mockups",
-        "UX Usability Study",
-        "High-Fidelity prototypes",
-        "Low-Fidelity prototypes",
-      ],
-      sources: [
-        { category: "website", address: false },
-        {
-          category: "UX Study Case",
-          address: "https://www.behance.net/gallery/155303917/Localoop",
-        },
-      ],
-    },
-    {
-      monthYear: "2021-12",
-      id: 4,
-      type: {
-        ux: true,
-        it: true,
-      },
-      name: "Dr.Finance",
-      quote:
-        "A must for every person who wants to get a hang of their finances and finally buy that beautiful house of the dream",
-      features: [
-        "Ability to add Income and Expenses to a stats table",
-        "Possibility to view data of overall income/expenses on a doughnut chart",
-        "Become up to date with rest of money from income and expenses",
-        "Modify records in the table and delete if needed",
-        "User Page with information",
-        "Strong and safe authorization process using tokens",
-        "All is saved and encrypted in a database",
-      ],
-      uxMethods: [
-        "UX Research",
-        "Wireframes",
-        "Mockups",
-        "UX Usability Study",
-        "High-Fidelity prototypes",
-        "Low-Fidelity prototypes",
-      ],
-      techList: [
-        "React.js",
-        "TypeScript",
-        "Express.js",
-        "Redux-toolkit",
-        "styled-components",
-        "MaterialUI",
-        "axios",
-        "Formik",
-        "Yup",
-        "react-chartjs-2",
-        "JWT",
-        "MongoDB",
-        "bcrypt",
-      ],
-      sources: [
-        { category: "website", address: false },
-        {
-          category: "UX Study Case",
-          address: "https://www.behance.net/gallery/155484441/DrFinance",
-        },
-      ],
-    },
+    // {
+    //   monthYear: "2022-02",
+    //   id: 2,
+    //   type: {
+    //     ux: true,
+    //     it: false,
+    //   },
+    //   name: "ZooLoo",
+    //   quote:
+    //     "ZooLoo is an application for ordering treats and clothes for pets.",
+    //   features: [
+    //     "Has an awesome Deisgn",
+    //     "Checkout options",
+    //     "Treats and clothes page",
+    //     "Responsive",
+    //   ],
+    //   uxMethods: [
+    //     "UX Research",
+    //     "Wireframes",
+    //     "Mockups",
+    //     "UX Usability Study",
+    //     "High-Fidelity prototypes",
+    //     "Low-Fidelity prototypes",
+    //   ],
+    //   sources: [
+    //     { category: "website", address: false },
+    //     {
+    //       category: "UX Study Case",
+    //       address: "https://www.behance.net/gallery/155224033/ZooLoo",
+    //     },
+    //   ],
+    // },
+    // {
+    //   monthYear: "2022-01",
+    //   id: 3,
+    //   type: {
+    //     ux: true,
+    //     it: false,
+    //   },
+    //   name: "Localoop",
+    //   quote: "Localoop website is a Local Restaurant food order UX Project.",
+    //   features: ["Has an awesome Deisgn", "Checkout options"],
+    //   uxMethods: [
+    //     "UX Research",
+    //     "Wireframes",
+    //     "Mockups",
+    //     "UX Usability Study",
+    //     "High-Fidelity prototypes",
+    //     "Low-Fidelity prototypes",
+    //   ],
+    //   sources: [
+    //     { category: "website", address: false },
+    //     {
+    //       category: "UX Study Case",
+    //       address: "https://www.behance.net/gallery/155303917/Localoop",
+    //     },
+    //   ],
+    // },
+    // {
+    //   monthYear: "2021-12",
+    //   id: 4,
+    //   type: {
+    //     ux: true,
+    //     it: true,
+    //   },
+    //   name: "Dr.Finance",
+    //   quote:
+    //     "A must for every person who wants to get a hang of their finances and finally buy that beautiful house of the dream",
+    //   features: [
+    //     "Ability to add Income and Expenses to a stats table",
+    //     "Possibility to view data of overall income/expenses on a doughnut chart",
+    //     "Become up to date with rest of money from income and expenses",
+    //     "Modify records in the table and delete if needed",
+    //     "User Page with information",
+    //     "Strong and safe authorization process using tokens",
+    //     "All is saved and encrypted in a database",
+    //   ],
+    //   uxMethods: [
+    //     "UX Research",
+    //     "Wireframes",
+    //     "Mockups",
+    //     "UX Usability Study",
+    //     "High-Fidelity prototypes",
+    //     "Low-Fidelity prototypes",
+    //   ],
+    //   techList: [
+    //     "React.js",
+    //     "TypeScript",
+    //     "Express.js",
+    //     "Redux-toolkit",
+    //     "styled-components",
+    //     "MaterialUI",
+    //     "axios",
+    //     "Formik",
+    //     "Yup",
+    //     "react-chartjs-2",
+    //     "JWT",
+    //     "MongoDB",
+    //     "bcrypt",
+    //   ],
+    //   sources: [
+    //     { category: "website", address: false },
+    //     {
+    //       category: "UX Study Case",
+    //       address: "https://www.behance.net/gallery/155484441/DrFinance",
+    //     },
+    //   ],
+    // },
 
-    {
-      monthYear: "2021-11",
-      id: 5,
-      type: {
-        ux: true,
-        it: true,
-      },
-      name: "Cookie Shop",
-      quote:
-        "The Cookie-shop website is a React build website using best practices of component development, and Redux technology.",
-      features: [
-        "The main page which fetches data from the server and sets it in the Redux Store for further usage.",
-        "Creating unique Items from stored data",
-        "Ability to add the item to the favorite list or to the cart",
-        "The app tracks/stores your chosen items",
-        "Modal which shows when clicked on the 'Add to Cart' or 'Remove from Cart'",
-      ],
-      techList: [
-        "React",
-        "React-router",
-        "SCSS",
-        "JavaScript",
-        "Redux",
-        "HTML/CSS",
-      ],
-      sources: [
-        {
-          category: "website",
-          address: "https://cookie-shop.vercel.app/",
-        },
-        {
-          category: "UX Study Case",
-          address: false,
-        },
-      ],
-    },
+    // {
+    //   monthYear: "2021-11",
+    //   id: 5,
+    //   type: {
+    //     ux: true,
+    //     it: true,
+    //   },
+    //   name: "Cookie Shop",
+    //   quote:
+    //     "The Cookie-shop website is a React build website using best practices of component development, and Redux technology.",
+    //   features: [
+    //     "The main page which fetches data from the server and sets it in the Redux Store for further usage.",
+    //     "Creating unique Items from stored data",
+    //     "Ability to add the item to the favorite list or to the cart",
+    //     "The app tracks/stores your chosen items",
+    //     "Modal which shows when clicked on the 'Add to Cart' or 'Remove from Cart'",
+    //   ],
+    //   techList: [
+    //     "React",
+    //     "React-router",
+    //     "SCSS",
+    //     "JavaScript",
+    //     "Redux",
+    //     "HTML/CSS",
+    //   ],
+    //   sources: [
+    //     {
+    //       category: "website",
+    //       address: "https://cookie-shop.vercel.app/",
+    //     },
+    //     {
+    //       category: "UX Study Case",
+    //       address: false,
+    //     },
+    //   ],
+    // },
     {
       monthYear: "2021-08",
       id: 6,
@@ -604,65 +619,65 @@ export const serverResponse = () => {
         },
       ],
     },
-    {
-      monthYear: "2021-12",
-      id: 9,
-      type: {
-        ux: false,
-        it: true,
-      },
-      name: "Phototopia",
-      quote:
-        "Phototopia is a phone app written in React Native that works simullar to Pinterest. It shows the user Top of the daily pictures taken by great professionals around the world.",
-      features: [
-        "Form created with formik",
-        "Authentication (of email and password fields through Yup)",
-        "State managment using (Redux toolkit)",
-        "Written fully on TypeScript",
-        "Profile page with fetched data from server",
-      ],
-      techList: ["TypeScript", "React Native", "Formik", "HTML/CSS", "Yup"],
-      sources: [
-        {
-          category: "website",
-          address: "https://github.com/mr-nazarii/phototopia",
-        },
-        {
-          category: "UX Study Case",
-          address: false,
-        },
-      ],
-    },
-    {
-      monthYear: "2021-12",
-      id: 10,
-      type: {
-        ux: false,
-        it: true,
-      },
-      name: "Hospital web",
-      quote:
-        "The Hospital task management website is a simple, quick, and responsive website built with the best principles of JavaScript Bootstrap technologies and Responsive Web UX Study Case.",
-      features: [
-        "A login mechanism that connects to the server and verifies the user's identity.",
-        "Creating hospital visits by selecting a doctor and filling out the form's needed areas for that doctor.",
-        "Render of any visits from the server that have been made and turning them into cards to display on the board.",
-        "Unique filter which handles the card data and filters as selected by the user",
-        "Cards offering the ability to modify, show more info or cancel a visit",
-        "Fully responsive",
-      ],
-      techList: ["JavaScript", "Bootstrap", "HTML/CSS"],
-      sources: [
-        {
-          category: "website",
-          address: "https://github.com/mr-nazarii/hospital-task-manager",
-        },
-        {
-          category: "UX Study Case",
-          address: false,
-        },
-      ],
-    },
+    // {
+    //   monthYear: "2021-12",
+    //   id: 9,
+    //   type: {
+    //     ux: false,
+    //     it: true,
+    //   },
+    //   name: "Phototopia",
+    //   quote:
+    //     "Phototopia is a phone app written in React Native that works simullar to Pinterest. It shows the user Top of the daily pictures taken by great professionals around the world.",
+    //   features: [
+    //     "Form created with formik",
+    //     "Authentication (of email and password fields through Yup)",
+    //     "State managment using (Redux toolkit)",
+    //     "Written fully on TypeScript",
+    //     "Profile page with fetched data from server",
+    //   ],
+    //   techList: ["TypeScript", "React Native", "Formik", "HTML/CSS", "Yup"],
+    //   sources: [
+    //     {
+    //       category: "website",
+    //       address: "https://github.com/mr-nazarii/phototopia",
+    //     },
+    //     {
+    //       category: "UX Study Case",
+    //       address: false,
+    //     },
+    //   ],
+    // },
+    // {
+    //   monthYear: "2021-12",
+    //   id: 10,
+    //   type: {
+    //     ux: false,
+    //     it: true,
+    //   },
+    //   name: "Hospital web",
+    //   quote:
+    //     "The Hospital task management website is a simple, quick, and responsive website built with the best principles of JavaScript Bootstrap technologies and Responsive Web UX Study Case.",
+    //   features: [
+    //     "A login mechanism that connects to the server and verifies the user's identity.",
+    //     "Creating hospital visits by selecting a doctor and filling out the form's needed areas for that doctor.",
+    //     "Render of any visits from the server that have been made and turning them into cards to display on the board.",
+    //     "Unique filter which handles the card data and filters as selected by the user",
+    //     "Cards offering the ability to modify, show more info or cancel a visit",
+    //     "Fully responsive",
+    //   ],
+    //   techList: ["JavaScript", "Bootstrap", "HTML/CSS"],
+    //   sources: [
+    //     {
+    //       category: "website",
+    //       address: "https://github.com/mr-nazarii/hospital-task-manager",
+    //     },
+    //     {
+    //       category: "UX Study Case",
+    //       address: false,
+    //     },
+    //   ],
+    // },
   ];
 };
 

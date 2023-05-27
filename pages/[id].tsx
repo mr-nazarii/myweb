@@ -70,6 +70,19 @@ const Product: any = ({ data }: any) => {
             <h1 className={styles.projectPage__title}>
               {data ? data[0].name : null}
             </h1>
+            {data ? (
+              <div style={{ padding: "10px 20px" }}>
+                <p>
+                  Disclaimer: The project displayed on this page,{" "}
+                  <b>{data[0].name}</b>, was completed during my employment with{" "}
+                  <b>{data[0].company}</b>. All rights, title, and interest in
+                  this project, including any intellectual property rights,
+                  belong exclusively to <b>{data[0].company}</b>. No claim of
+                  ownership or control over this project is intended or implied.
+                  <b>{data[0].company}</b>
+                </p>
+              </div>
+            ) : null}
             <div className={styles.projectPage__imgWrap}>
               <Image
                 src={"/projects/" + `${data[0].name}/` + "1.png"}
