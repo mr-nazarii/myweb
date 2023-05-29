@@ -1,6 +1,44 @@
 export const serverResponse = () => {
   return [
     {
+      monthYear: "2023-06",
+      id: 2.1,
+      type: {
+        ux: true,
+        it: true,
+      },
+      name: "TuneToken",
+      quote:
+        "The TuneToken project aimed at developing an intuitive, engaging, and visually impactful platform integrating blockchain technology for a unique music experience. The end result was a user-centric platform that effectively communicates the innovative approach to music sharing, discovery, and monetization.",
+      features: [
+        "Developed a robust structure to enable easy minting, listing, and trading of music Non-Fungible Tokens (NFTs).",
+        "Designed an intuitive user interface with a sleek, dark theme that enhances the 3D elements, providing an immersive experience for users.",
+        "Crafted compelling content for each section of the site to effectively communicate the brand's vision, mission, and services.",
+        "Incorporated seamless navigation and user-friendly features to enhance usability and engagement.",
+        "Successfully created a unique platform that bridges the gap between artists and fans, fostering a sense of community.",
+      ],
+      techList: ["Figma", "Three.js", "Adobe Illustrator"],
+      uxMethods: [
+        "User Persona Creation",
+        "User Flow Mapping",
+        "Wireframes",
+        "Mockups",
+        "Usability Testing",
+        "High-Fidelity Prototypes",
+        "Low-Fidelity Prototypes",
+      ],
+      sources: [
+        {
+          category: "website",
+          address: false,
+        },
+        {
+          category: "UX Case Study",
+          address: false,
+        },
+      ],
+    },
+    {
       monthYear: "2023-05",
       id: 1.17,
       type: {
