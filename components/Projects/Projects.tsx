@@ -90,7 +90,7 @@ export const Projects = (props: any) => {
           }
         })}
       </div>
-      {/* <div className={styles.projectsWrapper}>
+      <div className={styles.projectsWrapper}>
         <div className={styles.wall}>
           <h1>portfolio available upon request</h1>
           <div className={styles.linkWrapper}>
@@ -114,7 +114,7 @@ export const Projects = (props: any) => {
           objectFit="cover"
           style={{ borderRadius: "6px", width: "100%", height: "100%" }}
         />
-      </div> */}
+      </div>
     </div>
   );
 };
