@@ -10,7 +10,7 @@ interface Props {
 
 export const OneProject: React.FC<Props> = ({ name, id }) => {
   return (
-    <>
+    <Link key={id} href={`/${id}`}>
       <div className={styles.project}>
         <div className={styles.project__img}>
           <Image
@@ -24,12 +24,10 @@ export const OneProject: React.FC<Props> = ({ name, id }) => {
         <div className={styles.details}>
           <div className={styles.detailsInner}>
             <h5 className={styles.details__name}>{name}</h5>
-            <Link key={id} href={`/${id}`}>
-              <a className={styles.details__action}>Open</a>
-            </Link>
+            <a className={styles.details__action}>Open</a>
           </div>
         </div>
       </div>
-    </>
+    </Link>
   );
 };

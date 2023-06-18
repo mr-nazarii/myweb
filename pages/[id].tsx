@@ -60,9 +60,10 @@ const Product: any = ({ data }: any) => {
               <Image
                 src={"/icons/back.svg"}
                 alt={"back"}
-                width={35}
-                height={35}
-              />{" "}
+                width={23}
+                height={23}
+              />
+
               <p className={styles.backLinkWrapper__backLink}>HOME</p>
             </div>
           </Link>
@@ -70,7 +71,7 @@ const Product: any = ({ data }: any) => {
             <h1 className={styles.projectPage__title}>
               {data ? data[0].name : null}
             </h1>
-            {data[0].company ? (
+            {/* {data[0].company ? (
               <div style={{ padding: "10px 20px" }}>
                 <p>
                   Disclaimer: The project displayed on this page,{" "}
@@ -82,7 +83,7 @@ const Product: any = ({ data }: any) => {
                   <b>{data[0].company}</b>
                 </p>
               </div>
-            ) : null}
+            ) : null} */}
             <div className={styles.projectPage__imgWrap}>
               <Image
                 src={"/projects/" + `${data[0].name}/` + "1.png"}
@@ -90,10 +91,11 @@ const Product: any = ({ data }: any) => {
                 layout="fill"
                 objectFit="cover"
               />
+              <p className={styles.projectPage__quote}>
+                &ldquo;{data[0].quote}&rdquo;
+              </p>
             </div>
-            <p className={styles.projectPage__quote}>
-              &ldquo;{data[0].quote}&rdquo;
-            </p>
+
             <p className={styles.projectPage__sectionTitle}>FEATURES:</p>
             <ul className={styles.projectPage__featureList}>
               {data[0].features
@@ -136,7 +138,7 @@ const Product: any = ({ data }: any) => {
                 height: "60px",
                 background: "black",
                 display: "flex",
-                color: "black",
+
                 alignItems: "center",
                 justifyContent: "space-between",
                 padding: "10px 10px",
@@ -150,17 +152,23 @@ const Product: any = ({ data }: any) => {
                       target="_blank"
                       style={{
                         fontSize: "18px",
-                        display: "inline-block",
                         textTransform: "uppercase",
                         fontWeight: "bold",
                         backgroundColor: "white",
                         padding: "10px",
-                        borderRadius: "6px",
+                        display: "flex",
+                        gap: "5px",
                       }}
                       key={source.address}
                       href={source.address}
                     >
                       {source.category}
+                      <Image
+                        alt="link"
+                        src={"/icons/link.svg"}
+                        width={20}
+                        height={20}
+                      />
                     </a>
                   );
                 }
@@ -174,7 +182,6 @@ const Product: any = ({ data }: any) => {
                       backgroundColor: "#C6C6C6",
                       padding: "10px",
                       color: "#8F8F8F",
-                      borderRadius: "6px",
                     }}
                     key={source.address}
                   >

@@ -2,6 +2,45 @@ export const serverResponse = () => {
   return [
     {
       monthYear: "2023-06",
+      id: 4,
+      type: {
+        ux: true,
+        it: true,
+      },
+      name: "Fusion",
+      quote:
+        "The Fusion Design System aimed at developing a scalable, reusable, and intuitive design language. The end result was a comprehensive design system that effectively communicates the brand's visual and interaction guidelines, creating a consistent and seamless user experience.",
+      features: [
+        "Developed an atomic structure, breaking down the UI elements into Atoms, Molecules, and Organisms.",
+        "Designed a versatile and visually appealing color scheme to create a distinct visual identity.",
+        "Established a flexible grid system to ensure consistency in layout across different screen sizes.",
+        "Incorporated a range of components with defined states to facilitate a multitude of user interactions.",
+        "Successfully created a unified design language that ensures a cohesive look and feel across all digital products.",
+      ],
+      techList: ["Figma", "Sketch", "InVision", "Adobe Illustrator"],
+      uxMethods: [
+        "Style Guide Creation",
+        "Color Palette Development",
+        "Grid System Design",
+        "Component Design",
+        "Prototyping",
+        "Usability Testing",
+        "High-Fidelity Design",
+      ],
+      sources: [
+        {
+          category: "Design System",
+          address: false,
+        },
+        {
+          category: "UX Case Study",
+          address:
+            "https://www.behance.net/gallery/173260807/Fusion-The-Design-Sytem",
+        },
+      ],
+    },
+    {
+      monthYear: "2023-06",
       id: 2.1,
       type: {
         ux: true,
