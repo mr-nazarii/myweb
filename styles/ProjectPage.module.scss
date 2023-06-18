@@ -140,29 +140,36 @@
 
     li {
       display: flex;
+      position: relative;
       align-items: flex-start;
       gap: 20px;
       font-size: 1.1em;
       line-height: (1.1em * 1.618);
-      padding: 30px 50px 30px 50px;
+      padding: 30px 50px 30px 80px;
       background-color: white;
       border-bottom: 1px solid rgba(0, 0, 0, 0.092);
+
+      @media (max-width: 526px) {
+        font-size: 1em;
+        line-height: (1em * 1.618);
+        padding: 30px 40px;
+      }
 
       &::before {
         content: "";
         margin-top: 11px;
         display: block;
+        position: absolute;
         width: 10px;
         height: 10px;
+        left: 50px;
         background-color: #7d57a6;
         border-radius: 100%;
         outline: 6px solid #7d57a646;
-      }
 
-      @media (max-width: 526px) {
-        font-size: 1em;
-        line-height: (1em * 1.618);
-        padding: 30px 20px;
+        @media (max-width: 526px) {
+          left: 15px;
+        }
       }
     }
   }
