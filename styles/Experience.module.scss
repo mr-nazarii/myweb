@@ -6,6 +6,7 @@
   position: relative;
   display: flex;
   justify-content: center;
+  background-color: #e9e9e9;
 
   @media (max-width: 776.98px) {
     justify-content: flex-start;
@@ -15,7 +16,7 @@
     top: 0px;
     height: 240px;
     width: 5px;
-    background: #9888ff;
+    background: #fdd85c;
     position: fixed;
     z-index: 0;
 
@@ -31,7 +32,7 @@
     display: inline-block;
     height: 100%;
     width: 5px;
-    background: #1d1d1d;
+    background: #f3f3f3;
 
     @media (max-width: 776.98px) {
       margin-left: 23px;
@@ -44,7 +45,7 @@
     position: absolute;
     top: 0px;
     z-index: 2;
-    background: linear-gradient(180deg, #111111 0%, rgba(17, 17, 17, 0) 100%);
+    background: linear-gradient(180deg, #ffffff 0%, rgba(17, 17, 17, 0) 100%);
     width: 100%;
   }
 
@@ -162,7 +163,7 @@
     width: 30px;
     height: 30px;
     border-radius: 8px;
-    border: 4px solid #9888ff;
+    border: 4px solid #fdd85c;
     z-index: 4;
     transition: border 0.3s ease-in-out;
 

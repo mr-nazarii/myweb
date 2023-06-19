@@ -10,7 +10,7 @@ export const Experience = () => {
   console.log(data);
 
   return (
-    <div className={styles.section}>
+    <div className={styles.section} id="Experience">
       <div className={styles.section__line} />
       <ul className={styles.experience}>
         {data.map((experience) => (

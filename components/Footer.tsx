@@ -8,9 +8,6 @@ export const Footer = () => {
 
   return (
     <div className={styles.section} id="contacts">
-      <Btn active={active} setActive={setActive} colore={true} styles={styles}>
-        CONTACTS
-      </Btn>
       <div className={styles.linkWrapper}>
         <Btn color="link" styles={styles}>
           <a href="https://github.com/mr-nazarii">

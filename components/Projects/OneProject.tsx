@@ -18,13 +18,13 @@ export const OneProject: React.FC<Props> = ({ name, id }) => {
             alt={name}
             src={`/projects/${name}/1.png`}
             objectFit="cover"
-            style={{ borderRadius: "6px" }}
+            style={{ borderRadius: "35px" }}
           />
         </div>
         <div className={styles.details}>
           <div className={styles.detailsInner}>
             <h5 className={styles.details__name}>{name}</h5>
-            <a className={styles.details__action}>Open</a>
+            <a className={styles.details__action}>Learn More</a>
           </div>
         </div>
       </div>

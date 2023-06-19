@@ -43,19 +43,7 @@ export const Projects = (props: any) => {
   }, [sortedProjects]);
 
   return (
-    <div
-      className={styles.section}
-      id="projects"
-      style={{
-        backgroundImage: "url('./frame2.png')",
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-      }}
-    >
-      <Btn active={active} setActive={setActive} color={true} styles={styles}>
-        Projects
-      </Btn>
-
+    <div className={styles.section} id="Works">
       <div className={styles.filter}>
         <p onClick={() => setUX("all")}>All [{count.all}]</p>
         <p onClick={() => setUX("true")}>UX/UI [{count.uxProjects}]</p>

@@ -6,44 +6,47 @@
 
   &__wrapper {
     position: fixed;
-    background-color: $accentColor2;
     display: flex;
-    flex-direction: column;
+    background-color: #ffffffff;
+
     margin: 0px;
-    padding: 0px;
+    padding: 20px 30px;
+
+    border: 1px solid #f5f5f5;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.07);
+
+    @media (max-width: 365px) {
+      padding: 20px 20px;
+    }
+
     list-style-type: none;
-    height: 100vh;
+
     z-index: 4;
-    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
     transition: all 200ms ease-in-out;
+
+    top: 80px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 40px;
+
+    gap: 30px;
 
     li {
       a {
-        display: block;
-        padding: 20px 105px 20px 20px;
-        text-transform: uppercase;
+        cursor: pointer;
       }
-    }
-
-    li:hover {
-      background-color: $black;
-      color: white;
       transition: all 200ms ease-in-out;
     }
 
-    li:first-child {
-      margin-top: 100px;
+    li:hover {
+      color: rgb(101, 101, 101);
+      transition: all 200ms ease-in-out;
     }
   }
-}
-
-.btnClose {
-  width: 60px;
-  height: 60px;
-  z-index: 5;
-  position: fixed;
-  top: 23px;
-  right: 23px;
 }
 
 .background {

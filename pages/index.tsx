@@ -27,8 +27,6 @@ const variants = {
 };
 
 const Home: NextPage = ({ planets }: any) => {
-  const [open, setOpen] = useState(true);
-
   return (
     <>
       <motion.main
@@ -38,10 +36,10 @@ const Home: NextPage = ({ planets }: any) => {
         exit="exit"
         transition={{ type: "linear" }}
       >
-        <Navbar open={open} setOpen={setOpen} />
+        <Navbar />
 
         <TitleSection />
-        <About />
+        {/* <About /> */}
         <Stack />
         <Experience />
         <Projects planets={planets} />

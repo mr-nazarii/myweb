@@ -7,16 +7,9 @@
   @include sectionYellow;
   height: 100%;
   align-items: center;
-  padding-top: 180px;
-  padding-bottom: 30px;
+
   gap: 20px;
-  background: repeating-linear-gradient(
-    -45deg,
-    #26003c,
-    #26003c 1.5px,
-    #190027 1.5px,
-    #140027 50px
-  );
+
   position: relative;
   z-index: 2;
   &__title {

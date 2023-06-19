@@ -20,7 +20,7 @@ interface EmploymentPeriod {
 
 export const ExperienceItem: React.FC<ExperienceItemProps> = ({
   backgroundColor = "white",
-  textColor = "#535353",
+  textColor = "#b1b1b1",
   position,
   location,
   company,
@@ -60,7 +60,7 @@ export const ExperienceItem: React.FC<ExperienceItemProps> = ({
     <li className={styles.experience__wrapper}>
       <motion.div
         initial={{ color: textColor }}
-        animate={{ color: inView ? textColor : "#ffffff" }}
+        animate={{ color: inView ? textColor : "#212121" }}
         ref={ref}
         viewport={{ once: true }}
         transition={{ duration: 1, ease: "easeInOut" }}
@@ -70,7 +70,7 @@ export const ExperienceItem: React.FC<ExperienceItemProps> = ({
 
         <motion.p
           initial={{ color: textColor }}
-          animate={{ borderColor: inView ? "#535353" : "#ffffff" }}
+          animate={{ borderColor: inView ? "#b1b1b1" : "#212121" }}
           ref={ref}
           viewport={{ once: true }}
           transition={{ duration: 1, ease: "easeInOut" }}
@@ -91,7 +91,7 @@ export const ExperienceItem: React.FC<ExperienceItemProps> = ({
 
         <motion.p
           initial={{ color: textColor }}
-          animate={{ color: inView ? textColor : "#9786FB" }}
+          animate={{ color: inView ? textColor : "#000000" }}
           ref={ref}
           viewport={{ once: true }}
           transition={{ duration: 1, ease: "easeInOut" }}
@@ -104,8 +104,8 @@ export const ExperienceItem: React.FC<ExperienceItemProps> = ({
       <motion.div
         initial={{ backgroundColor, borderColor: textColor }}
         animate={{
-          backgroundColor: inView ? "#111111" : backgroundColor,
-          borderColor: inView ? "#1D1D1D" : "#8E7EEB",
+          backgroundColor: inView ? "#ffffff" : backgroundColor,
+          borderColor: inView ? "#F3F3F3" : "#FDD85C",
         }}
         ref={ref}
         viewport={{ once: true }}
@@ -114,7 +114,7 @@ export const ExperienceItem: React.FC<ExperienceItemProps> = ({
       />
       <motion.div
         initial={{ color: textColor }}
-        animate={{ color: inView ? textColor : "#ffffff" }}
+        animate={{ color: inView ? textColor : "#212121" }}
         ref={ref}
         viewport={{ once: true }}
         transition={{ duration: 1, ease: "easeInOut" }}

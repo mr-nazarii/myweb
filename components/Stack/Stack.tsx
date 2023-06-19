@@ -7,10 +7,9 @@ export const Stack = () => {
   const data1 = [
     {
       imgSource: "/laptop.png",
-      title: "FULLSTACK DEVELOPER",
+      title: "Full-Stack Developer",
       about: "Coding is my passion. Love to create and manage",
-      sectionName1: "TECHNOLOGIES I USE",
-      sectionName2: "DEV TOOLS",
+      sectionName1: "Technologies I use",
       languages: [
         "JavaScript",
         "TypeScript",
@@ -39,18 +38,22 @@ export const Stack = () => {
         "MUI",
         "Next.js",
         "Styled-components",
+        "GIT",
+        "GitHub",
+        "Postman",
+        "Visual Studio",
+        "Docker",
+        "Slack",
       ],
-      tools: ["GIT", "GitHub", "Postman", "Visual Studio", "Docker", "Slack"],
     },
   ];
   const data2 = [
     {
       imgSource: "/art.png",
-      title: "UX/UI DESIGNER",
+      title: "UX/UI Designer",
       about:
         "I favor clear design principles, straightforward information organization",
-      sectionName1: "WHAT I DESIGN",
-      sectionName2: "DESIGN TOOLS",
+      sectionName1: "What I create",
       languages: [
         "Apps",
         "Logos",
@@ -61,26 +64,28 @@ export const Stack = () => {
         "Low-Fidelity prototypes",
         "High-Fidelity prototypes",
         "UX research",
+        "Mobile Games",
+        "Websites",
+        "User Interfaces (UI)",
+        "User Experience (UX) Designs",
+        "Branding Materials",
+        "Infographics",
+        "Illustrations",
+        "Video Editing",
+        "Social Media Graphics",
+        "Print Materials",
+        "Responsive Designs",
+        "Iconography",
+        "Style Guides",
+        "User Flow Diagrams",
       ],
-      tools: ["Figma", "Adobe Illustrator", "Adobe XD"],
     },
   ];
   const [active, setActive] = useState(false);
 
   return (
-    <div className={styles.section} id="stack">
-      <Btn active={active} setActive={setActive} color={false} styles={styles}>
-        My Stack
-      </Btn>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          flexWrap: "wrap",
-          gap: "80px",
-          marginTop: "30px",
-        }}
-      >
+    <div className={styles.section} id="Skills">
+      <div className={styles.skillswrap}>
         <OneTable data={data1} />
         <OneTable data={data2} />
       </div>
