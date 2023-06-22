@@ -7,8 +7,6 @@ import { getExperianceData } from "experianceData";
 export const Experience = () => {
   const data = getExperianceData();
 
-  console.log(data);
-
   return (
     <div className={styles.section} id="Experience">
       <div className={styles.section__line} />

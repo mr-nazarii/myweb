@@ -5,7 +5,6 @@ import styles from "../../styles/Project.module.scss";
 import { OneProject } from "./OneProject";
 
 export const Projects = (props: any) => {
-  const [active, setActive] = useState(false);
   const [ux, setUX] = useState("all");
 
   const [count, setCount] = useState({
@@ -56,6 +55,7 @@ export const Projects = (props: any) => {
               <OneProject
                 key={project.name}
                 name={project.name}
+                quote={project.quote}
                 id={project.id}
               />
             );
@@ -65,6 +65,7 @@ export const Projects = (props: any) => {
                 key={project.name}
                 name={project.name}
                 id={project.id}
+                quote={project.quote}
               />
             );
           } else if (ux === "all") {
@@ -73,6 +74,7 @@ export const Projects = (props: any) => {
                 key={project.name}
                 name={project.name}
                 id={project.id}
+                quote={project.quote}
               />
             );
           }
@@ -97,7 +99,7 @@ export const Projects = (props: any) => {
 
         <Image
           alt="gs"
-          layout="fill"
+          fill={true}
           src={"/projects.png"}
           objectFit="cover"
           style={{ borderRadius: "6px", width: "100%", height: "100%" }}

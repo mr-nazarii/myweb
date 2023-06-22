@@ -39,7 +39,6 @@ const Home: NextPage = ({ planets }: any) => {
         <Navbar />
 
         <TitleSection />
-        {/* <About /> */}
         <Stack />
         <Experience />
         <Projects planets={planets} />

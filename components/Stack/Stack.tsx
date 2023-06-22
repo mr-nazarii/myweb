@@ -1,5 +1,5 @@
 import { Btn } from "components/Btn/Btn";
-import React, { useState } from "react";
+import React from "react";
 import styles from "../../styles/Stack.module.scss";
 import { OneTable } from "./OneTable";
 
@@ -81,7 +81,6 @@ export const Stack = () => {
       ],
     },
   ];
-  const [active, setActive] = useState(false);
 
   return (
     <div className={styles.section} id="Skills">
