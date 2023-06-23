@@ -13,7 +13,7 @@ export const Experience = () => {
       <ul className={styles.experience}>
         {data.map((experience) => (
           <ExperienceItem
-            key={experience.company}
+            key={experience.id}
             position={experience.position}
             company={experience.company}
             location={experience.location}

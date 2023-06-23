@@ -7,7 +7,10 @@ export const serverResponse = () => {
         ux: true,
         it: true,
       },
+      color: "#addff3",
       name: "Fusion",
+      desc: "Design language reimagined: Consistent, scalable, and intuitive.",
+
       quote:
         "The Fusion Design System aimed at developing a scalable, reusable, and intuitive design language. The end result was a comprehensive design system that effectively communicates the brand's visual and interaction guidelines, creating a consistent and seamless user experience.",
       features: [
@@ -47,6 +50,8 @@ export const serverResponse = () => {
         it: true,
       },
       name: "TuneToken",
+      color: "#b184e3",
+      desc: "Blockchain-empowered music: Discover, share, monetize.",
       quote:
         "The TuneToken project aimed at developing an intuitive, engaging, and visually impactful platform integrating blockchain technology for a unique music experience. The end result was a user-centric platform that effectively communicates the innovative approach to music sharing, discovery, and monetization.",
       features: [
@@ -201,6 +206,9 @@ export const serverResponse = () => {
         it: false,
       },
       name: "Grand Foods",
+      color: "#fff7b2",
+      desc: "Savor the simplicity: Modern design and branding meet easy navigation.",
+
       quote:
         "Grand Foods now has a professional and beautiful app and branding with a clean, modern design and easy navigation, as well as custom graphic design work to showcase the brand's unique identity.",
       features: [
@@ -409,6 +417,9 @@ export const serverResponse = () => {
         it: true,
       },
       name: "The Ham",
+      color: "#bafff1",
+      desc: "Simplicity meets speed: Responsive UX with top-tier web tech.",
+
       quote:
         "The Ham is a stunningly simple and compact fast responsive website built using the finest principles of HTML/CSS JavaScript technology and Responsive Web UX Study Case.",
       features: [
@@ -437,6 +448,8 @@ export const serverResponse = () => {
         it: true,
       },
       name: "Forkio",
+      color: "#b5abe4",
+      desc: "Sleek and speedy: Responsive web UX powered by best-practice technologies.",
       quote:
         "Forkio website is a beautifully simple and compact fast responsive website which is written using the best practices of JavaScript HTML/SCSS technologies and Responsive Web UX Study Case.",
       features: [
@@ -465,6 +478,8 @@ export const serverResponse = () => {
         it: true,
       },
       name: "Galaxio",
+      color: "#f1c0ad",
+      desc: "Tour the cosmos: A UX journey through galaxy tourism.",
       quote: "Galaxio website is a Galaxy tourism UX Project.",
       features: [
         "Simple and beautiful for Business purposes",

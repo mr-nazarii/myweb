@@ -5,6 +5,8 @@ import React from "react";
 import styles from "../styles/ProjectPage.module.scss";
 import { motion } from "framer-motion";
 import Head from "next/head";
+import TitleSection from "components/Projects/TitleSection";
+import ListComponent from "components/Projects/ListComponent";
 
 export const getStaticPaths = async () => {
   const res = await serverResponse();
@@ -69,7 +71,7 @@ const Product: any = ({ data }: any) => {
           </Link>
           <div className={styles.projectPage}>
             <h1 className={styles.projectPage__title}>
-              {data ? data[0].name : null}
+              {data ? data[0].desc : null}
             </h1>
             {/* {data[0].company ? (
               <div style={{ padding: "10px 20px" }}>
@@ -86,17 +88,24 @@ const Product: any = ({ data }: any) => {
             ) : null} */}
             <div className={styles.projectPage__imgWrap}>
               <Image
-                src={"/projects/" + `${data[0].name}/` + "1.png"}
+                src={"/projects/" + `${data[0].name}/` + "1.png?v=1233"}
                 alt={data[0].name}
                 layout="fill"
                 objectFit="cover"
               />
-              <p className={styles.projectPage__quote}>
-                &ldquo;{data[0].quote}&rdquo;
-              </p>
             </div>
 
-            <p className={styles.projectPage__sectionTitle}>FEATURES:</p>
+            <TitleSection
+              title={`Shortly about ${data[0].name}`}
+              subtitle={`The Beginning`}
+            />
+            <p className={styles.projectPage__paragraph}>{data[0].quote}</p>
+
+            <TitleSection
+              title={`Features of the project`}
+              subtitle={`Interesting Stuff`}
+            />
+
             <ul className={styles.projectPage__featureList}>
               {data[0].features
                 ? data[0].features.map((feature: any) => (
@@ -104,61 +113,20 @@ const Product: any = ({ data }: any) => {
                   ))
                 : null}
             </ul>
-            {data[0].techList ? (
-              <>
-                <p className={styles.projectPage__sectionTitle}>TECH USED:</p>
-                <ul className={styles.projectPage__techList}>
-                  {data[0].techList
-                    ? data[0].techList.map((feature: any) => (
-                        <li key={Date.now() + feature}>{feature}</li>
-                      ))
-                    : null}
-                </ul>
-              </>
-            ) : null}
+            <ListComponent data={data} />
 
-            {data[0].uxMethods ? (
-              <>
-                <p className={styles.projectPage__sectionTitle}>
-                  UI/UX Methods used:
-                </p>
-                <ul className={styles.projectPage__techList}>
-                  {data[0].uxMethods
-                    ? data[0].uxMethods.map((feature: any) => (
-                        <li key={Date.now() + feature}>{feature}</li>
-                      ))
-                    : null}
-                </ul>
-              </>
-            ) : null}
-
-            <div
-              style={{
-                width: "100%",
-                height: "60px",
-                background: "black",
-                display: "flex",
-
-                alignItems: "center",
-                justifyContent: "space-between",
-                padding: "10px 10px",
-              }}
-            >
+            <TitleSection
+              title={`Continue viewing the features`}
+              subtitle={`Links`}
+            />
+            <div className={styles.linkwrapper}>
               {data[0].sources.map((source: any) => {
                 if (source.address) {
                   return (
                     <a
                       rel="noopener noreferrer"
                       target="_blank"
-                      style={{
-                        fontSize: "18px",
-                        textTransform: "uppercase",
-                        fontWeight: "bold",
-                        backgroundColor: "white",
-                        padding: "10px",
-                        display: "flex",
-                        gap: "5px",
-                      }}
+                      className={styles.action}
                       key={source.address}
                       href={source.address}
                     >
@@ -173,18 +141,7 @@ const Product: any = ({ data }: any) => {
                   );
                 }
                 return (
-                  <p
-                    style={{
-                      fontSize: "18px",
-                      display: "inline-block",
-                      textTransform: "uppercase",
-                      fontWeight: "bold",
-                      backgroundColor: "#C6C6C6",
-                      padding: "10px",
-                      color: "#8F8F8F",
-                    }}
-                    key={source.address}
-                  >
+                  <p className={styles.actionUnpressed} key={source.address}>
                     {source.category}
                   </p>
                 );

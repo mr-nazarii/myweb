@@ -53,6 +53,8 @@ export const Projects = (props: any) => {
           if (ux === "true" && project.type.ux) {
             return (
               <OneProject
+                desc={project.desc}
+                color={project.color}
                 key={project.name}
                 name={project.name}
                 quote={project.quote}
@@ -62,6 +64,8 @@ export const Projects = (props: any) => {
           } else if (ux === "false" && project.type.it) {
             return (
               <OneProject
+                desc={project.desc}
+                color={project.color}
                 key={project.name}
                 name={project.name}
                 id={project.id}
@@ -71,6 +75,8 @@ export const Projects = (props: any) => {
           } else if (ux === "all") {
             return (
               <OneProject
+                desc={project.desc}
+                color={project.color}
                 key={project.name}
                 name={project.name}
                 id={project.id}
@@ -101,8 +107,13 @@ export const Projects = (props: any) => {
           alt="gs"
           fill={true}
           src={"/projects.png"}
-          objectFit="cover"
-          style={{ borderRadius: "6px", width: "100%", height: "100%" }}
+          style={{
+            objectFit: "cover",
+            background: "#000000",
+            borderRadius: "35px",
+            width: "100%",
+            height: "100%",
+          }}
         />
       </div>
     </div>

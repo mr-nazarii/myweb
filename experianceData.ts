@@ -1,5 +1,6 @@
 export const getExperianceData = () => [
   {
+    id: "1",
     company: "Law firm of 'Bogdan Kubik'",
     position: "Chief Design Officer",
     employmentPeriod: {
@@ -12,6 +13,7 @@ export const getExperianceData = () => [
     ],
   },
   {
+    id: "2",
     company: "Brand Vision Marketing",
     position: "UX/UI Designer & Front-End Developer",
     employmentPeriod: {
@@ -24,6 +26,7 @@ export const getExperianceData = () => [
     ],
   },
   {
+    id: "3",
     company: "Unicorn",
     position: "Full Stack Developer",
     employmentPeriod: {
@@ -36,6 +39,7 @@ export const getExperianceData = () => [
     ],
   },
   {
+    id: "4",
     company: "DAN-IT Education",
     position: "Full-Stack Development Student",
     employmentPeriod: {
@@ -48,6 +52,7 @@ export const getExperianceData = () => [
     ],
   },
   {
+    id: "5",
     company: "Utex Ukraine LLC",
     position: "UX/UI Designer",
     employmentPeriod: {
@@ -60,6 +65,7 @@ export const getExperianceData = () => [
     ],
   },
   {
+    id: "6",
     company: "Utex Ukraine LLC",
     position: "Junior UX/UI Designer",
     employmentPeriod: {
