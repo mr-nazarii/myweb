@@ -81,7 +81,8 @@ export const serverResponse = () => {
         },
         {
           category: "UX Case Study",
-          address: "https://www.behance.net/gallery/174481179/Amethyst-AI",
+          address:
+            "https://www.behance.net/gallery/173260807/Fusion-The-Design-Sytem",
         },
       ],
     },
