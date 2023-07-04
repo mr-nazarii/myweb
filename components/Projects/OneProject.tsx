@@ -45,7 +45,7 @@ export const OneProject: React.FC<Props> = ({
         </Link>
       </div>
       <div className={styles.project__img}>
-        <Image alt={name} fill={true} src={`/projects/${name}/2.png?v=1233`} />
+        <Image alt={name} fill={true} src={`/projects/${name}/2.png?v=13`} />
       </div>
 
       {/*

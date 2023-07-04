@@ -1,6 +1,50 @@
 export const serverResponse = () => {
   return [
     {
+      monthYear: "2023-07",
+      id: 5,
+      type: {
+        finance: true,
+        ai: true,
+      },
+      color: "#E1BFFF",
+      name: "Amethyst AI",
+      desc: "Revolutionizing Investments: Intelligent, Adaptive, and Personalized.",
+      quote:
+        "Amethyst AI is a groundbreaking investment platform that harnesses the power of artificial intelligence to analyze market trends and provide personalized investment advice. With its adaptive algorithms and user-centric design, Amethyst AI is redefining the investment landscape, making it more accessible and tailored to individual financial goals and risk profiles.",
+      features: [
+        "Employs advanced AI algorithms for real-time market analysis and trend prediction.",
+        "Offers personalized investment advice and portfolio management tailored to individual risk profiles and financial goals.",
+        "Integrates a user-friendly interface with powerful analytical tools for both novice and experienced investors.",
+        "Utilizes machine learning to continuously improve and adapt investment strategies based on market conditions and user feedback.",
+        "Incorporates a secure and transparent transaction system, ensuring the safety and integrity of user investments.",
+      ],
+
+      techList: ["Python", "TensorFlow", "Blockchain", "React"],
+
+      aiMethods: [
+        "Market Trend Analysis",
+        "Risk Assessment Algorithms",
+        "Portfolio Optimization",
+        "Predictive Analytics",
+        "Natural Language Processing",
+        "User Behavior Analysis",
+        "Security and Fraud Detection",
+      ],
+
+      sources: [
+        {
+          category: "Website",
+          address: false,
+        },
+        {
+          category: "AI Case Study",
+          address: "https://www.behance.net/gallery/174481179/Amethyst-AI",
+        },
+      ],
+    },
+
+    {
       monthYear: "2023-06",
       id: 4,
       type: {
@@ -37,8 +81,7 @@ export const serverResponse = () => {
         },
         {
           category: "UX Case Study",
-          address:
-            "https://www.behance.net/gallery/173260807/Fusion-The-Design-Sytem",
+          address: "https://www.behance.net/gallery/174481179/Amethyst-AI",
         },
       ],
     },
