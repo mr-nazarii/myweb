@@ -4,8 +4,8 @@ export const serverResponse = () => {
       monthYear: "2023-07",
       id: 5,
       type: {
-        finance: true,
-        ai: true,
+        ux: true,
+        it: false,
       },
       color: "#E1BFFF",
       name: "Amethyst AI",
@@ -34,11 +34,11 @@ export const serverResponse = () => {
 
       sources: [
         {
-          category: "Website",
+          category: "website",
           address: false,
         },
         {
-          category: "AI Case Study",
+          category: "UX Case Study",
           address: "https://www.behance.net/gallery/174481179/Amethyst-AI",
         },
       ],
@@ -49,7 +49,7 @@ export const serverResponse = () => {
       id: 4,
       type: {
         ux: true,
-        it: true,
+        it: false,
       },
       color: "#addff3",
       name: "Fusion",
@@ -76,7 +76,7 @@ export const serverResponse = () => {
       ],
       sources: [
         {
-          category: "Design System",
+          category: "website",
           address: false,
         },
         {
@@ -91,7 +91,7 @@ export const serverResponse = () => {
       id: 2.1,
       type: {
         ux: true,
-        it: true,
+        it: false,
       },
       name: "TuneToken",
       color: "#b184e3",

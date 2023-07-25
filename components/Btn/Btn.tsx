@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { buttonVariantsBlack } from "./BtnVariants";
-import { Shield } from "components/Shield/Shield";
 
 export const Btn = (props: any) => {
   const bulbVariant = {
@@ -45,11 +44,6 @@ export const Btn = (props: any) => {
               animate={props.active ? "open" : "closed"}
             />
           </div>
-          <Shield
-            active={props.active}
-            setActive={props.setActive}
-            styles={props.styles}
-          />
         </>
       )}
     </>

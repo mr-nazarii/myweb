@@ -1,11 +1,29 @@
 import { Btn } from "components/Btn/Btn";
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useMemo } from "react";
 import styles from "../../styles/Project.module.scss";
+import Filter from "./Filter";
 import { OneProject } from "./OneProject";
 
-export const Projects = (props: any) => {
-  const [ux, setUX] = useState("all");
+interface ProjectType {
+  desc: string;
+  color: string;
+  name: string;
+  quote: string;
+  id: string;
+  monthYear: string;
+  type: {
+    ux: boolean;
+    it: boolean;
+  };
+}
+
+interface ProjectsProps {
+  planets: ProjectType[];
+}
+
+export const Projects = (props: ProjectsProps) => {
+  const [selectedFilter, setSelectedFilter] = useState("all");
 
   const [count, setCount] = useState({
     all: 0,
@@ -13,15 +31,17 @@ export const Projects = (props: any) => {
     itProjects: 0,
   });
 
-  const sortedProjects = props.planets.sort((a: any, b: any) => {
-    const aDate = new Date(a.monthYear);
-    const bDate = new Date(b.monthYear);
-    return bDate.getTime() - aDate.getTime();
-  });
+  const sortedProjects = useMemo(() => {
+    return props.planets.sort((a, b) => {
+      const aDate = new Date(a.monthYear);
+      const bDate = new Date(b.monthYear);
+      return bDate.getTime() - aDate.getTime();
+    });
+  }, [props.planets]);
 
-  const projectCount = (sortedProjects: any) => {
+  const projectCount = (sortedProjects: ProjectType[]) => {
     const newCount = { ...count };
-    sortedProjects.forEach((element: { type: any }) => {
+    sortedProjects.forEach((element) => {
       if (element.type.ux && element.type.it) {
         newCount.all += 1;
         newCount.uxProjects += 1;
@@ -43,14 +63,14 @@ export const Projects = (props: any) => {
 
   return (
     <div className={styles.section} id="Works">
-      <div className={styles.filter}>
-        <p onClick={() => setUX("all")}>All [{count.all}]</p>
-        <p onClick={() => setUX("true")}>UX/UI [{count.uxProjects}]</p>
-        <p onClick={() => setUX("false")}>Development [{count.itProjects}]</p>
-      </div>
+      <Filter count={count} setFilter={setSelectedFilter} />
       <div className={styles.section__projects}>
-        {sortedProjects.map((project: any) => {
-          if (ux === "true" && project.type.ux) {
+        {sortedProjects.map((project: ProjectType) => {
+          if (
+            (selectedFilter === "true" && project.type.ux) ||
+            (selectedFilter === "false" && project.type.it) ||
+            selectedFilter === "all"
+          ) {
             return (
               <OneProject
                 desc={project.desc}
@@ -59,62 +79,10 @@ export const Projects = (props: any) => {
                 name={project.name}
                 quote={project.quote}
                 id={project.id}
-              />
-            );
-          } else if (ux === "false" && project.type.it) {
-            return (
-              <OneProject
-                desc={project.desc}
-                color={project.color}
-                key={project.name}
-                name={project.name}
-                id={project.id}
-                quote={project.quote}
-              />
-            );
-          } else if (ux === "all") {
-            return (
-              <OneProject
-                desc={project.desc}
-                color={project.color}
-                key={project.name}
-                name={project.name}
-                id={project.id}
-                quote={project.quote}
               />
             );
           }
         })}
-      </div>
-      <div className={styles.projectsWrapper}>
-        <div className={styles.wall}>
-          <h1>portfolio available upon request</h1>
-          <div className={styles.linkWrapper}>
-            <Btn color="link" styles={styles}>
-              <a href="mailto: nazariikubik@gmail.com">
-                <Image
-                  alt="email"
-                  width={40}
-                  height={40}
-                  src="/icons/email.svg"
-                />
-              </a>
-            </Btn>
-          </div>
-        </div>
-
-        <Image
-          alt="gs"
-          fill={true}
-          src={"/projects.png"}
-          style={{
-            objectFit: "cover",
-            background: "#000000",
-            borderRadius: "35px",
-            width: "100%",
-            height: "100%",
-          }}
-        />
       </div>
     </div>
   );
