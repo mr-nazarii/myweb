@@ -9,13 +9,12 @@
   align-items: center;
   gap: 20px;
   background-color: #ffffff;
-
   position: relative;
 
   .skillswrap {
     display: flex;
     justify-content: space-between;
-    gap: 35px;
+    gap: 24px;
 
     @media (max-width: 843px) {
       flex-direction: column;
@@ -39,7 +38,7 @@
     @include titleWrapper;
   }
 
-  padding: 35px;
+  padding: 24px;
   padding-top: 0px;
 
   @media (max-width: 550px) {
@@ -52,11 +51,12 @@
 }
 
 .skill {
+  display: flex;
+  flex-direction: column;
   position: relative;
   width: 100%;
   flex: 1;
   text-align: center;
-
   padding: 15px 0px 0px 0px;
   background-color: rgb(2, 2, 2);
   border-radius: 25px;
@@ -116,17 +116,19 @@
     padding: 0;
     margin: 0;
     list-style-type: none;
-
     padding: 9px;
     display: flex;
     flex-wrap: wrap;
     border-radius: 0px 0px 5px 5px;
+    flex-grow: 1;
+    gap: 1px;
 
     li {
       @include techDefault;
       flex-grow: 1;
       font-weight: 500;
       border-radius: 6px;
+      align-self: center;
     }
   }
 }
