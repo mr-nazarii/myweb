@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import styles from "../styles/Title.module.scss";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
-import Spline from "@splinetool/react-spline";
 import ReactRotatingText from "react-rotating-text";
+import Spline from "@splinetool/react-spline";
 
 export const TitleSection = () => {
   return (
@@ -38,55 +38,13 @@ export const TitleSection = () => {
                 </h1>
               </div>
             </div>
-            <video className={styles.section__video} autoPlay loop muted>
+            <Spline
+              className={styles.graphBg}
+              scene="https://prod.spline.design/v2B2UfNsPCyBqktG/scene.splinecode"
+            />
+            {/* <video className={styles.section__video} autoPlay loop muted>
               <source src="/me.mp4" />
-            </video>
-            <div className={styles.graph1}>
-              <Image
-                alt="graph1"
-                src={"/graphs/1.png"}
-                objectFit="contain"
-                style={{ zIndex: 1 }}
-                layout="fill"
-              />
-            </div>
-            <div className={styles.graph2}>
-              <Image
-                alt="graph1"
-                src={"/graphs/2.png"}
-                objectFit="contain"
-                style={{ zIndex: 1 }}
-                layout="fill"
-              />
-            </div>
-            <div className={styles.graph3}>
-              <Image
-                alt="graph1"
-                src={"/graphs/3.png"}
-                objectFit="contain"
-                style={{ zIndex: 1 }}
-                layout="fill"
-              />
-            </div>
-            <div className={styles.graph4}>
-              <Image
-                alt="graph1"
-                src={"/graphs/4.png"}
-                objectFit="contain"
-                style={{ zIndex: 1 }}
-                layout="fill"
-              />
-            </div>
-
-            <div className={styles.graph5}>
-              <Image
-                alt="graph1"
-                src={"/graphs/5.png"}
-                objectFit="contain"
-                style={{ zIndex: 1 }}
-                layout="fill"
-              />
-            </div>
+            </video> */}
           </div>
         </div>
       </div>

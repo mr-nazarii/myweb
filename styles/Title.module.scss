@@ -20,7 +20,7 @@
     height: 100%;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 80px;
     position: relative;
@@ -72,6 +72,12 @@
   }
 }
 
+.graphBg {
+  width: 100%;
+  height: 200px;
+  position: absolute;
+}
+
 .graph1 {
   width: 500px;
   height: 200px;
@@ -115,6 +121,7 @@
 .titleSection {
   display: flex;
   flex-direction: column;
+  align-items: center;
   color: #ffffff;
   white-space: nowrap;
   position: relative;
