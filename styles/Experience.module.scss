@@ -6,7 +6,7 @@
   position: relative;
   display: flex;
   justify-content: center;
-  background-color: #e9e9e9;
+  overflow: hidden;
 
   @media (max-width: 776.98px) {
     justify-content: flex-start;
@@ -18,7 +18,7 @@
     width: 5px;
     background: #fdd85c;
     position: fixed;
-    z-index: 0;
+    z-index: 2;
 
     @media (max-width: 776.98px) {
       margin-left: 23px;

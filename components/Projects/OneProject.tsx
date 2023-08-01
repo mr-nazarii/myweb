@@ -2,6 +2,7 @@ import React from "react";
 import styles from "../../styles/Project.module.scss";
 import Image from "next/image";
 import Link from "next/link";
+import { motion, useViewportScroll, useTransform } from "framer-motion";
 
 interface Props {
   name: string;

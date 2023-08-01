@@ -2,50 +2,87 @@ import { Btn } from "components/Btn/Btn";
 import React from "react";
 import styles from "../../styles/Stack.module.scss";
 import { OneTable } from "./OneTable";
+import { Carrousel } from "../../components/Carrousel";
 
 export const Stack = () => {
+  // const data1 = [
+  //   {
+  //     imgSource: "/laptop.png",
+  //     title: "Full-Stack Developer",
+  //     about: "Coding is my passion. Love to create and manage",
+  //     sectionName1: "Technologies I use",
+  //     languages: [
+  //       "JavaScript",
+  //       "TypeScript",
+  //       "Python",
+  //       "Express.Js",
+  //       "MongoDB",
+  //       "React.js",
+  //       "React Native",
+  //       "React Native navigation",
+  //       "Redux",
+  //       "Redux-toolkit",
+  //       "Redux-thunk",
+  //       "React-Router",
+  //       "Framer Motion",
+  //       "Node.js",
+  //       "BEM",
+  //       "GraphQL",
+  //       "Git",
+  //       "Gulp",
+  //       "Sass",
+  //       "Bootstrap",
+  //       "Php",
+  //       "jQuery",
+  //       "HTML/CSS",
+  //       "JSON",
+  //       "MUI",
+  //       "Next.js",
+  //       "Styled-components",
+  //       "GIT",
+  //       "GitHub",
+  //       "Postman",
+  //       "Visual Studio",
+  //       "Docker",
+  //       "Slack",
+  //     ],
+  //   },
+  // ];
+
   const data1 = [
-    {
-      imgSource: "/laptop.png",
-      title: "Full-Stack Developer",
-      about: "Coding is my passion. Love to create and manage",
-      sectionName1: "Technologies I use",
-      languages: [
-        "JavaScript",
-        "TypeScript",
-        "Python",
-        "Express.Js",
-        "MongoDB",
-        "React.js",
-        "React Native",
-        "React Native navigation",
-        "Redux",
-        "Redux-toolkit",
-        "Redux-thunk",
-        "React-Router",
-        "Framer Motion",
-        "Node.js",
-        "BEM",
-        "GraphQL",
-        "Git",
-        "Gulp",
-        "Sass",
-        "Bootstrap",
-        "Php",
-        "jQuery",
-        "HTML/CSS",
-        "JSON",
-        "MUI",
-        "Next.js",
-        "Styled-components",
-        "GIT",
-        "GitHub",
-        "Postman",
-        "Visual Studio",
-        "Docker",
-        "Slack",
-      ],
-    },
+    "JavaScript",
+    "TypeScript",
+    "Python",
+    "Express.Js",
+    "MongoDB",
+    "React.js",
+    "React Native",
+    // "React Native navigation",
+    "Redux",
+    "Redux-toolkit",
+    "Redux-thunk",
+    "React-Router",
+    "Framer Motion",
+    "Node.js",
+    "BEM",
+    "GraphQL",
+    "Git",
+    "Gulp",
+    "Sass",
+    "Bootstrap",
+    "Php",
+    "jQuery",
+    "HTML/CSS",
+    "JSON",
+    "MUI",
+    "Next.js",
+    "Styled-components",
+    "GIT",
+    "GitHub",
+    "Postman",
+    "Visual Studio",
+    "Docker",
+    "Slack",
   ];
   const data2 = [
     {
@@ -84,10 +121,7 @@ export const Stack = () => {
 
   return (
     <div className={styles.section} id="Skills">
-      <div className={styles.skillswrap}>
-        <OneTable data={data1} />
-        <OneTable data={data2} />
-      </div>
+      <Carrousel toRight={false} languages={data1} />
     </div>
   );
 };
