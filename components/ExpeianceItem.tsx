@@ -70,7 +70,12 @@ export const ExperienceItem: React.FC<ExperienceItemProps> = ({
 
         <motion.p
           initial={{ color: textColor }}
-          animate={{ borderColor: inView ? "#b1b1b1" : "#212121" }}
+          animate={{
+            borderColor: inView ? "#b1b1b1" : "#f9f9ff",
+            boxShadow: inView
+              ? "rgba(0, 128, 255, 0) 0px 7px 29px 0px"
+              : "rgba(0, 128, 255, 0.2) 0px 7px 29px 0px",
+          }}
           ref={ref}
           viewport={{ once: true }}
           transition={{ duration: 1, ease: "easeInOut" }}
@@ -109,7 +114,7 @@ export const ExperienceItem: React.FC<ExperienceItemProps> = ({
         }}
         ref={ref}
         viewport={{ once: true }}
-        transition={{ duration: 1, ease: "easeInOut" }}
+        transition={{ duration: 0.5, ease: "easeInOut" }}
         className={styles.experience__sphere}
       />
       <motion.div

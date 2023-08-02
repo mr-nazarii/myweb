@@ -25,19 +25,19 @@ export const getExperianceData = () => [
       "At my previous position, I collaborated with the executive team to gather requirements and converted them into actionable technical specifications. I developed efficient databases on MongoDB and constructed back-end servers using Express.js to ensure seamless integration with front-end applications. Additionally, I designed visually appealing website mockups using Adobe XD that led to a 75% increase in client satisfaction rates. Within the intern developer team, I excelled and achieved the highest score in the internal performance evaluation system.",
     ],
   },
-  {
-    id: "4",
-    company: "DAN-IT Education",
-    position: "Full-Stack Development Student",
-    employmentPeriod: {
-      start: new Date(2020, 7, 1),
-      end: new Date(2023, 0, 1),
-    },
-    location: "Toronto, Ontario, Canada",
-    responsibilities: [
-      "During my studies, I honed my JavaScript, CSS, and HTML skills and integrated UX/UI principles to develop dynamic, user-centric websites and React.js applications. I utilized Node.js for back-end development, ensuring seamless connectivity for front-end interfaces. I became proficient in CI/CD systems, Git operations, and automated Jest testing, facilitating high code quality and dependable deployments. My education provided a collaborative environment where I applied problem-solving skills to complex system issues, effectively enhancing system efficiency and user experience.",
-    ],
-  },
+  // {
+  //   id: "4",
+  //   company: "DAN-IT Education",
+  //   position: "Full-Stack Development Student",
+  //   employmentPeriod: {
+  //     start: new Date(2020, 7, 1),
+  //     end: new Date(2023, 0, 1),
+  //   },
+  //   location: "Toronto, Ontario, Canada",
+  //   responsibilities: [
+  //     "During my studies, I honed my JavaScript, CSS, and HTML skills and integrated UX/UI principles to develop dynamic, user-centric websites and React.js applications. I utilized Node.js for back-end development, ensuring seamless connectivity for front-end interfaces. I became proficient in CI/CD systems, Git operations, and automated Jest testing, facilitating high code quality and dependable deployments. My education provided a collaborative environment where I applied problem-solving skills to complex system issues, effectively enhancing system efficiency and user experience.",
+  //   ],
+  // },
   {
     id: "5",
     company: "Utex Ukraine LLC",
@@ -49,19 +49,6 @@ export const getExperianceData = () => [
     location: "Kyiv, Ukraine",
     responsibilities: [
       "Took charge of the UX/UI design for a significant new product, starting from initial wireframes and prototypes, through to the final UI design. The product was well-received by users and stakeholders alike, contributing to a successful launch. Conducted user interviews and usability testing sessions for various products, providing valuable insights that informed design improvements. The enhancements improved the overall user experience and increased user engagement. Fostered a productive working relationship with the development team, ensuring smooth handoffs and effective implementation of designs. This cross-functional collaboration led to fewer revisions and a faster product development cycle.",
-    ],
-  },
-  {
-    id: "6",
-    company: "Utex Ukraine LLC",
-    position: "Junior UX/UI Designer",
-    employmentPeriod: {
-      start: new Date(2015, 2, 1),
-      end: new Date(2017, 0, 1),
-    },
-    location: "Kyiv, Ukraine",
-    responsibilities: [
-      "Collaborated with the senior UX/UI Designers and Product Managers to understand project specifications and user requirements, particularly as they related to cable manufacturing and fiber optic technologies. Assisted in designing and prototyping the user interface for the company's internal systems and software, focusing on ease-of-use, efficiency, and error reduction. Helped design UX/UI for applications used by the production line operators, improving their efficiency and reducing potential for errors. Participated in the creation of user personas and user journeys, specifically considering the unique needs and characteristics of users in the cable manufacturing industry.",
     ],
   },
 ];
