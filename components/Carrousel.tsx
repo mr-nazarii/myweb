@@ -28,7 +28,7 @@ export const Carrousel = ({ languages, toRight }: CarrouselProps) => {
           <Slider.Slide key={i}>
             <p
               style={{
-                border: "2px solid #5a43dd",
+                border: "1.6px solid #ffffff22",
                 color: "#ffffff",
                 padding: "10px 25px",
                 width: "100%",
@@ -36,7 +36,8 @@ export const Carrousel = ({ languages, toRight }: CarrouselProps) => {
                 justifyContent: "center",
                 margin: "4px",
                 borderRadius: "20px",
-                fontWeight: "700",
+                fontWeight: "300",
+                fontSize: "14px",
               }}
             >
               {language}

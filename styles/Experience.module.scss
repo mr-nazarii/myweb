@@ -7,6 +7,7 @@
   display: flex;
   justify-content: center;
   overflow: hidden;
+  height: 100vh;
 
   @media (max-width: 776.98px) {
     justify-content: flex-start;

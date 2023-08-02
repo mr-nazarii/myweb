@@ -128,6 +128,7 @@
   z-index: 2;
 
   cursor: default;
+  user-select: none;
 
   @media (max-width: 1050px) {
     align-items: center;

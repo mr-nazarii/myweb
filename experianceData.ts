@@ -1,18 +1,5 @@
 export const getExperianceData = () => [
   {
-    id: "1",
-    company: "Law firm of 'Bogdan Kubik'",
-    position: "Chief Design Officer",
-    employmentPeriod: {
-      start: new Date(2018, 10, 1),
-      end: new Date(new Date().getFullYear(), new Date().getMonth(), 1),
-    },
-    location: "Toronto, Ontario, Canada",
-    responsibilities: [
-      "Established design guidelines to ensure brand consistency across all digital and print media. I worked closely with our marketing team to ensure that our brand identity is accurately represented and resonates with our target audience. Led user research initiatives to gain insights into our clients' needs and preferences. Implemented key accessibility features across our digital platforms, ensuring compliance with WCAG standards. Leveraged analytics tools to assess the performance of our digital platforms, identifying areas for improvement and measuring the success of various design initiatives. This approach has allowed us to continually refine our platforms and services.",
-    ],
-  },
-  {
     id: "2",
     company: "Brand Vision Marketing",
     position: "UX/UI Designer & Front-End Developer",

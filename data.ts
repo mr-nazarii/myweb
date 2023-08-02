@@ -514,37 +514,37 @@ export const serverResponse = () => {
         },
       ],
     },
-    {
-      monthYear: "2022-01",
-      id: 8,
-      type: {
-        ux: true,
-        it: true,
-      },
-      name: "Galaxio",
-      color: "#f1c0ad",
-      desc: "Tour the cosmos: A UX journey through galaxy tourism.",
-      quote: "Galaxio website is a Galaxy tourism UX Project.",
-      features: [
-        "Simple and beautiful for Business purposes",
-        "Greatly UX Study Caseed",
-      ],
-      techList: [
-        "JavaScript",
-        "SCSS",
-        "TypeScript",
-        "HTML/CSS",
-        "React.js",
-        "React-Bootstrap",
-      ],
-      sources: [
-        { category: "website", address: "https://galaxio.vercel.app/" },
-        {
-          category: "UX Study Case",
-          address: "https://www.figma.com/file/8F3AyzJzeDSE3NODR6RXSa/Galaxio",
-        },
-      ],
-    },
+    // {
+    //   monthYear: "2022-01",
+    //   id: 8,
+    //   type: {
+    //     ux: true,
+    //     it: true,
+    //   },
+    //   name: "Galaxio",
+    //   color: "#f1c0ad",
+    //   desc: "Tour the cosmos: A UX journey through galaxy tourism.",
+    //   quote: "Galaxio website is a Galaxy tourism UX Project.",
+    //   features: [
+    //     "Simple and beautiful for Business purposes",
+    //     "Greatly UX Study Caseed",
+    //   ],
+    //   techList: [
+    //     "JavaScript",
+    //     "SCSS",
+    //     "TypeScript",
+    //     "HTML/CSS",
+    //     "React.js",
+    //     "React-Bootstrap",
+    //   ],
+    //   sources: [
+    //     { category: "website", address: "https://galaxio.vercel.app/" },
+    //     {
+    //       category: "UX Study Case",
+    //       address: "https://www.figma.com/file/8F3AyzJzeDSE3NODR6RXSa/Galaxio",
+    //     },
+    //   ],
+    // },
     // {
     //   monthYear: "2021-12",
     //   id: 9,
