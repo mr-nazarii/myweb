@@ -43,7 +43,7 @@ export const getExperianceData = () => [
     company: "Utex Ukraine LLC",
     position: "UX/UI Designer",
     employmentPeriod: {
-      start: new Date(2017, 0, 1),
+      start: new Date(2015, 2, 1),
       end: new Date(2018, 10, 1),
     },
     location: "Kyiv, Ukraine",
