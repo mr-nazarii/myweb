@@ -9,6 +9,7 @@ import { Footer } from "components/Footer";
 import { motion } from "framer-motion";
 import { Navbar } from "components/Navbar";
 import { Experience } from "components/Experience";
+import { Loader } from "components/Loader";
 
 export const getStaticProps = async () => {
   const response = await serverResponse();
@@ -36,8 +37,8 @@ const Home: NextPage = ({ planets }: any) => {
         exit="exit"
         transition={{ type: "linear" }}
       >
+        <Loader />
         <Navbar />
-
         <TitleSection />
         <Stack />
         <Experience />

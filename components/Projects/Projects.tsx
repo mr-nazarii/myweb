@@ -4,6 +4,8 @@ import React, { useEffect, useState, useMemo } from "react";
 import styles from "../../styles/Project.module.scss";
 import Filter from "./Filter";
 import { OneProject } from "./OneProject";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import gsap from "gsap";
 
 interface ProjectType {
   desc: string;
@@ -24,6 +26,8 @@ interface ProjectsProps {
 
 export const Projects = (props: ProjectsProps) => {
   const [selectedFilter, setSelectedFilter] = useState("all");
+
+  const spacer = 100;
 
   const [count, setCount] = useState({
     all: 0,
