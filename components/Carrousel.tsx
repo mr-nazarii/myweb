@@ -1,50 +1,24 @@
-import Slider from "react-infinite-logo-slider";
+import React, { useEffect } from "react";
+import Image from "next/image";
 
-interface CarrouselProps {
-  languages: Array<string>;
-  toRight: boolean;
+interface BoxAnimationProps {
+  data: string[];
+  left: boolean;
 }
 
-export const Carrousel = ({ languages, toRight }: CarrouselProps) => {
+export const Carrousel: React.FC<BoxAnimationProps> = ({ data, left }) => {
   return (
-    <div
-      style={{
-        background: "#3317cf",
-        position: "relative",
-        left: "-50px",
-        padding: "6px 0px",
-      }}
-    >
-      <Slider
-        width="220px"
-        duration={100}
-        pauseOnHover={false}
-        blurBorders={false}
-        blurBoderColor={"#000000"}
-        slidesToShow={1}
-        toRight={toRight}
-      >
-        {languages.map((language, i) => (
-          <Slider.Slide key={i}>
-            <p
-              style={{
-                border: "1.6px solid #ffffff22",
-                color: "#ffffff",
-                padding: "10px 25px",
-                width: "100%",
-                display: "flex",
-                justifyContent: "center",
-                margin: "4px",
-                borderRadius: "20px",
-                fontWeight: "300",
-                fontSize: "14px",
-              }}
-            >
-              {language}
-            </p>
-          </Slider.Slide>
+    <div className={left ? "slider" : "slider-right"}>
+      <div className="slide-track">
+        {data.map((item, index) => (
+          <>
+            <div key={index} className="slide">
+              {item}
+            </div>
+            <Image src={"./icons/star.svg"} width={15} height={15} />
+          </>
         ))}
-      </Slider>
+      </div>
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import gsap from "gsap";
-import ReactDOM from "react-dom";
+import Rive from "@rive-app/react-canvas";
 
 const simulateFetch = () => new Promise((resolve) => setTimeout(resolve, 5000));
 
@@ -33,7 +33,7 @@ export const Loader: React.FC = () => {
           onComplete: () => setIsLoading(false),
         });
       }
-      loaderAnimation.pause();
+      // loaderAnimation.pause();
     });
   }, []);
 
@@ -56,6 +56,7 @@ export const Loader: React.FC = () => {
         opacity: 1,
       }}
     >
+      <div />
       <svg viewBox="0 0 150 33.2" width="280" height="150">
         <circle ref={blue} cx="16.1" cy="16.6" r="16.1" fill="#ffffff" />
         <circle

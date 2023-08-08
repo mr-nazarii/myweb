@@ -49,41 +49,6 @@ export const Stack = () => {
   //   },
   // ];
 
-  const data1 = [
-    "JavaScript",
-    "TypeScript",
-    "Python",
-    "Express.Js",
-    "MongoDB",
-    "React.js",
-    "React Native",
-    // "React Native navigation",
-    "Redux",
-    "Redux-toolkit",
-    "Redux-thunk",
-    "React-Router",
-    "Framer Motion",
-    "Node.js",
-    "BEM",
-    "GraphQL",
-    "Git",
-    "Gulp",
-    "Sass",
-    "Bootstrap",
-    "Php",
-    "jQuery",
-    "HTML/CSS",
-    "JSON",
-    "MUI",
-    "Next.js",
-    "Styled-components",
-    "GIT",
-    "GitHub",
-    "Postman",
-    "Visual Studio",
-    "Docker",
-    "Slack",
-  ];
   const data2 = [
     {
       imgSource: "/art.png",
@@ -119,9 +84,5 @@ export const Stack = () => {
     },
   ];
 
-  return (
-    <div className={styles.section} id="Skills">
-      <Carrousel toRight={false} languages={data1} />
-    </div>
-  );
+  return <div className={styles.section} id="Skills"></div>;
 };

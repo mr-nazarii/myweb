@@ -4,12 +4,48 @@ import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import ReactRotatingText from "react-rotating-text";
 import Spline from "@splinetool/react-spline";
+import { Carrousel } from "./Carrousel";
+
+const data1 = [
+  "JavaScript",
+  "TypeScript",
+  "Python",
+  "Express.Js",
+  "MongoDB",
+  "React.js",
+  "Redux",
+  "Redux-toolkit",
+  "Redux-thunk",
+  "React-Router",
+  "Framer Motion",
+  "Node.js",
+  "BEM",
+  "GraphQL",
+  "Git",
+  "Gulp",
+  "Sass",
+  "Bootstrap",
+  "Php",
+  "jQuery",
+  "HTML/CSS",
+  "JSON",
+  "MUI",
+  "Next.js",
+  "Styled-components",
+  "GIT",
+  "GitHub",
+  "Postman",
+  "Visual Studio",
+  "Docker",
+  "Slack",
+];
 
 export const TitleSection = () => {
   return (
     <AnimatePresence exitBeforeEnter>
       <div className={styles.section}>
         <div className={styles.section__wrapper}>
+          <div className={styles.noise} />
           <div className={styles.section__innerWrapper}>
             <div className={styles.titleSection}>
               <div className={styles.titleSection__title1}>
@@ -42,9 +78,9 @@ export const TitleSection = () => {
               className={styles.graphBg}
               scene="https://prod.spline.design/v2B2UfNsPCyBqktG/scene.splinecode"
             />
-            {/* <video className={styles.section__video} autoPlay loop muted>
-              <source src="/me.mp4" />
-            </video> */}
+
+            <Carrousel data={data1} left={true} />
+            <Carrousel data={data1} left={false} />
           </div>
         </div>
       </div>
