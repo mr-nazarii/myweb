@@ -1,8 +1,6 @@
 import { TitleSection } from "../components/TitleSection";
 import type { NextPage } from "next";
 import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
-import { About } from "../components/About";
-import { Stack } from "../components/Stack/Stack";
 import { Projects } from "components/Projects/Projects";
 import { serverResponse } from "data";
 import { Footer } from "components/Footer";
@@ -40,7 +38,6 @@ const Home: NextPage = ({ planets }: any) => {
         <Loader />
         <Navbar />
         <TitleSection />
-        <Stack />
         <Experience />
         <Projects planets={planets} />
         <Footer />
