@@ -13,9 +13,9 @@ export const About = () => {
       <p className="section-about__about">
         UX/UI Designer meets passionate Front-End Developer. Elevating your
         business visions with captivating web narratives. With an unyielding
-        thirst for knowledge and a knack for problem-solving, I'm dedicated to
-        sculpting digital masterpieces. Ready to co-create the extraordinary?
-        Let's get started!
+        thirst for knowledge and a knack for problem-solving, I&apos;m dedicated
+        to sculpting digital masterpieces. Ready to co-create the extraordinary?
+        Let&apos;s get started!
       </p>
     </div>
   );
