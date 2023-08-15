@@ -3,7 +3,7 @@ import { PaginationComponent } from "./PaginationComponent";
 import { OneProject } from "./OneProject";
 import { Kaleidoscope } from "./Ka";
 
-interface ProjectType {
+export interface ProjectType {
   desc: string;
   color: string;
   name: string;
@@ -44,7 +44,7 @@ export const Projects: React.FC<ProjectsProps> = ({ planets }) => {
         />
       </div>
       <div className="section-projects" id="Works">
-        <Kaleidoscope project={...sortedProjects[activeIndex]} />
+        <Kaleidoscope {...sortedProjects[activeIndex]} />
         <svg
           className="svg-top"
           viewBox="0 0 1440 30"

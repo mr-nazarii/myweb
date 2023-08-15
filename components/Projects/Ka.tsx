@@ -1,7 +1,7 @@
 import React from "react";
 
 export const Kaleidoscope = (project) => {
-  const name = project.project.name;
+  const name = project.name;
 
   return (
     <div className="kaleidoscopesection">

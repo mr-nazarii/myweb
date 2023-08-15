@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { ProjectType } from "./Projects";
 
 interface Project {
   id: number;
@@ -6,7 +7,7 @@ interface Project {
 }
 
 interface PaginationProps {
-  data: Project[];
+  data: ProjectType[]; // <-- Change this line
   setActiveIndex: (index: number) => void;
   setAutoplay: (autoplay: boolean) => void;
   autoplay: boolean;
@@ -30,13 +31,14 @@ export const PaginationComponent: React.FC<PaginationProps> = ({
   }, [autoplay]);
 
   const nextActive = () => {
-    setActiveIndex((prev) => (prev + 1) % data.length);
+    const newIndex = (activeIndex + 1) % data.length;
+    setActiveIndex(newIndex);
   };
 
   const previousActive = () => {
-    setActiveIndex((prev) => (prev - 1 + data.length) % data.length);
+    const newIndex = (activeIndex - 1 + data.length) % data.length;
+    setActiveIndex(newIndex);
   };
-
   const setActiveDot = (index: number) => {
     setActiveIndex(index);
   };
