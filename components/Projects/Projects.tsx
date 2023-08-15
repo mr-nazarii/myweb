@@ -2,7 +2,7 @@ import React, { useState, useMemo } from "react";
 import { PaginationComponent } from "./PaginationComponent";
 import { OneProject } from "./OneProject";
 import { Kaleidoscope } from "./Ka";
-
+//
 interface ProjectType {
   desc: string;
   color: string;
