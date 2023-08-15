@@ -28,7 +28,7 @@ const variants = {
 
 const Home: NextPage = ({ planets }: any) => {
   return (
-    <>
+    <div style={{ overflow: "hidden" }}>
       <motion.main
         variants={variants}
         initial="hidden"
@@ -43,7 +43,7 @@ const Home: NextPage = ({ planets }: any) => {
         <Projects planets={planets} />
         <Footer />
       </motion.main>
-    </>
+    </div>
   );
 };
 
