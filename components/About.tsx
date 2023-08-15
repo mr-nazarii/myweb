@@ -9,43 +9,14 @@ export const About = () => {
   const [active, setActive] = useState(false);
 
   return (
-    <AnimatePresence exitBeforeEnter>
-      <div
-        className={styles.section}
-        style={{
-          backgroundImage: "url('./frame2.png')",
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-        }}
-        id="aboutMe"
-      >
-        <SpinningParagraph />
-
-        <Btn active={active} setActive={setActive} styles={styles}>
-          About Me
-        </Btn>
-        <div className={styles.imageWrapper}>
-          <Image alt="me" src={"/Me.png"} objectFit="cover" layout="fill" />
-        </div>
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{
-            opacity: 1,
-            transition: {
-              duration: 1,
-            },
-          }}
-          viewport={{ once: true }}
-          className={styles.about}
-        >
-          As a passionate As an enthusiastic{" "}
-          <span className={styles.position}>Front-End Developer</span> &
-          <span className={styles.position}> UX/UI designer</span> , Im ready to
-          help make your business ideas come true. I enjoy learning new
-          technologies, solving problems, and creating great web projects. Lets
-          work together and build something amazing!
-        </motion.p>
-      </div>
-    </AnimatePresence>
+    <div className="section-about" id="About">
+      <p className="section-about__about">
+        UX/UI Designer meets passionate Front-End Developer. Elevating your
+        business visions with captivating web narratives. With an unyielding
+        thirst for knowledge and a knack for problem-solving, I'm dedicated to
+        sculpting digital masterpieces. Ready to co-create the extraordinary?
+        Let's get started!
+      </p>
+    </div>
   );
 };

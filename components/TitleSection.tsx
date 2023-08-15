@@ -5,6 +5,7 @@ import Image from "next/image";
 import ReactRotatingText from "react-rotating-text";
 import Spline from "@splinetool/react-spline";
 import { Carrousel } from "./Carrousel";
+import { ScrollMore } from "./ScrollMore";
 
 const data1 = [
   "JavaScript",
@@ -45,7 +46,6 @@ export const TitleSection = () => {
     <AnimatePresence exitBeforeEnter>
       <div className={styles.section}>
         <div className={styles.section__wrapper}>
-          <div className={styles.noise} />
           <div className={styles.section__innerWrapper}>
             <div className={styles.titleSection}>
               <div className={styles.titleSection__title1}>
@@ -76,9 +76,9 @@ export const TitleSection = () => {
             </div>
             <Spline
               className={styles.graphBg}
-              scene="https://prod.spline.design/v2B2UfNsPCyBqktG/scene.splinecode"
+              scene="https://prod.spline.design/NUwCiaztj4vAOSMB/scene.splinecode"
             />
-
+            <ScrollMore />
             <Carrousel data={data1} left={true} />
             <Carrousel data={data1} left={false} />
           </div>

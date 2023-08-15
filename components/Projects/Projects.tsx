@@ -1,11 +1,7 @@
-import { Btn } from "components/Btn/Btn";
-import Image from "next/image";
-import React, { useEffect, useState, useMemo } from "react";
-import styles from "../../styles/Project.module.scss";
-import Filter from "./Filter";
+import React, { useState, useMemo } from "react";
+import { PaginationComponent } from "./PaginationComponent";
 import { OneProject } from "./OneProject";
-import ScrollTrigger from "gsap/ScrollTrigger";
-import gsap from "gsap";
+import { Kaleidoscope } from "./Ka";
 
 interface ProjectType {
   desc: string;
@@ -24,69 +20,56 @@ interface ProjectsProps {
   planets: ProjectType[];
 }
 
-export const Projects = (props: ProjectsProps) => {
-  const [selectedFilter, setSelectedFilter] = useState("all");
-
-  const spacer = 100;
-
-  const [count, setCount] = useState({
-    all: 0,
-    uxProjects: 0,
-    itProjects: 0,
-  });
+export const Projects: React.FC<ProjectsProps> = ({ planets }) => {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [autoplay, setAutoplay] = useState(false);
 
   const sortedProjects = useMemo(() => {
-    return props.planets.sort((a, b) => {
+    return planets.sort((a, b) => {
       const aDate = new Date(a.monthYear);
       const bDate = new Date(b.monthYear);
       return bDate.getTime() - aDate.getTime();
     });
-  }, [props.planets]);
-
-  const projectCount = (sortedProjects: ProjectType[]) => {
-    const newCount = { ...count };
-    sortedProjects.forEach((element) => {
-      if (element.type.ux && element.type.it) {
-        newCount.all += 1;
-        newCount.uxProjects += 1;
-        newCount.itProjects += 1;
-      } else if (element.type.ux) {
-        newCount.all += 1;
-        newCount.uxProjects += 1;
-      } else if (element.type.it) {
-        newCount.all += 1;
-        newCount.itProjects += 1;
-      }
-    });
-    setCount(newCount);
-  };
-
-  useEffect(() => {
-    projectCount(sortedProjects);
-  }, [sortedProjects]);
+  }, [planets]);
 
   return (
-    <div className={styles.section} id="Works">
-      <Filter count={count} setFilter={setSelectedFilter} />
-      <div className={styles.section__projects}>
-        {sortedProjects.map((project: ProjectType) => {
-          if (
-            (selectedFilter === "true" && project.type.ux) ||
-            (selectedFilter === "false" && project.type.it) ||
-            selectedFilter === "all"
-          ) {
-            return (
-              <OneProject
-                desc={project.desc}
-                color={project.color}
-                key={project.name}
-                name={project.name}
-                quote={project.quote}
-                id={project.id}
-              />
-            );
-          }
-        })}
+    <div>
+      <div className="section-pagination">
+        <PaginationComponent
+          data={planets}
+          activeIndex={activeIndex}
+          setActiveIndex={setActiveIndex}
+          autoplay={autoplay}
+          setAutoplay={setAutoplay}
+        />
+      </div>
+      <div className="section-projects" id="Works">
+        <Kaleidoscope project={...sortedProjects[activeIndex]} />
+        <svg
+          className="svg-top"
+          viewBox="0 0 1440 30"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill="#FFFFFF"
+            d="M0,30C0,30,438.4,0,720,0c281.6,0,720,30,720,30H0z"
+          ></path>
+        </svg>
+        <div className="section-projects__projects">
+          <OneProject {...sortedProjects[activeIndex]} />
+        </div>
+        <svg
+          className="svg-bottom"
+          viewBox="0 0 1440 30"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill="#FFFFFF"
+            d="M0,30C0,30,438.4,0,720,0c281.6,0,720,30,720,30H0z"
+          ></path>
+        </svg>
       </div>
     </div>
   );

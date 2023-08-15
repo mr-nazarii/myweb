@@ -7,7 +7,7 @@ export const Footer = () => {
   const [active, setActive] = useState(false);
 
   return (
-    <div className={styles.section} id="contacts">
+    <div className={styles.section} id="Contacts">
       <div className={styles.linkWrapper}>
         <Btn color="link" styles={styles}>
           <a href="https://github.com/mr-nazarii">

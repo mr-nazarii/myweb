@@ -8,7 +8,7 @@ export const serverResponse = () => {
         it: false,
       },
       color: "#E1BFFF",
-      name: "Amethyst AI",
+      name: "AmethystAI",
       desc: "Revolutionizing Investments: Intelligent, Adaptive, and Personalized.",
       quote:
         "Amethyst AI is a groundbreaking investment platform that harnesses the power of artificial intelligence to analyze market trends and provide personalized investment advice. With its adaptive algorithms and user-centric design, Amethyst AI is redefining the investment landscape, making it more accessible and tailored to individual financial goals and risk profiles.",
@@ -249,7 +249,7 @@ export const serverResponse = () => {
         ux: true,
         it: false,
       },
-      name: "Grand Foods",
+      name: "GrandFoods",
       color: "#fff7b2",
       desc: "Savor the simplicity: Modern design and branding meet easy navigation.",
 
@@ -460,7 +460,7 @@ export const serverResponse = () => {
         ux: false,
         it: true,
       },
-      name: "The Ham",
+      name: "TheHam",
       color: "#bafff1",
       desc: "Simplicity meets speed: Responsive UX with top-tier web tech.",
 

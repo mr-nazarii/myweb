@@ -48,7 +48,7 @@ export const Loader: React.FC = () => {
         left: "0px",
         width: "100%",
         height: "100%",
-        zIndex: 10,
+        zIndex: "999",
         background: "black",
         display: "flex",
         justifyContent: "center",

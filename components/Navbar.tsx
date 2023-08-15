@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 
 export const Navbar = (props: any) => {
-  const nav = ["Works", "Skills", "Experience"];
+  const nav = ["About", "Works", "Contacts"];
 
   return (
     <>

@@ -3,6 +3,8 @@
 .navbar {
   display: flex;
   justify-content: flex-end;
+  z-index: 200;
+  position: relative;
 
   &__wrapper {
     position: fixed;

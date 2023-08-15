@@ -1,5 +1,19 @@
 @import "./colors";
 
+@mixin noise {
+  background-image: url("/Noise.png");
+  object-fit: contain;
+  background-repeat: repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  opacity: 0.1;
+  pointer-events: none;
+}
+
 @mixin sectionDefault {
   padding: 20px;
   display: flex;

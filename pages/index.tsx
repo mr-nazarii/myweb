@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 import { Navbar } from "components/Navbar";
 import { Experience } from "components/Experience";
 import { Loader } from "components/Loader";
+import { About } from "components/About";
 
 export const getStaticProps = async () => {
   const response = await serverResponse();
@@ -38,7 +39,7 @@ const Home: NextPage = ({ planets }: any) => {
         <Loader />
         <Navbar />
         <TitleSection />
-        <Experience />
+        <About />
         <Projects planets={planets} />
         <Footer />
       </motion.main>

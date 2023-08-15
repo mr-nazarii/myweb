@@ -2,13 +2,17 @@ import React, { useEffect, useRef, useState } from "react";
 import styles from "../styles/Experience.module.scss";
 import { ExperienceItem } from "./ExpeianceItem";
 import { getExperianceData } from "experianceData";
+import { Timeline } from "./Timeline";
 
 export const Experience = () => {
-  const data = getExperianceData();
-
   return (
-    <div className={styles.section} id="Experience">
-      <div className={styles.section__line} />
+    <div id="Experience">
+      <Timeline />
+    </div>
+  );
+};
+{
+  /* <div className={styles.section__line} />
       <ul className={styles.experience}>
         {data.map((experience) => (
           <ExperienceItem
@@ -20,7 +24,5 @@ export const Experience = () => {
             employmentPeriod={experience.employmentPeriod}
           />
         ))}
-      </ul>
-    </div>
-  );
-};
+      </ul> */
+}

@@ -9,7 +9,7 @@ export const getExperianceData = () => [
     },
     location: "Toronto, Ontario, Canada",
     responsibilities: [
-      "In my current role, I expertly design and develop user-centric front-end code, skillfully refine designs and front-end implementations through iterative processes while keeping a keen eye on industry trends, best practices, and emerging technologies. I artfully craft wireframes, prototypes, and high-fidelity mockups, conduct comprehensive user research and usability testing, and employ cutting-edge tools and technologies to create visually stunning, high-performance websites. I actively participate in design reviews and collaborate with cross-functional teams to foster a unified user experience while leveraging data-driven insights from user behavior analysis to identify design enhancement opportunities and optimize front-end performance, ensuring exceptional user satisfaction.",
+      "In my current role, I design and develop user-focused front-end code, refine designs through iterative processes, and stay updated on industry trends. I create wireframes, prototypes, and mockups, conduct user research and testing, and use advanced tools to build visually appealing, high-performance websites.",
     ],
   },
   {
@@ -22,7 +22,7 @@ export const getExperianceData = () => [
     },
     location: "Frankfurt, Hesse, Germany",
     responsibilities: [
-      "At my previous position, I collaborated with the executive team to gather requirements and converted them into actionable technical specifications. I developed efficient databases on MongoDB and constructed back-end servers using Express.js to ensure seamless integration with front-end applications. Additionally, I designed visually appealing website mockups using Adobe XD that led to a 75% increase in client satisfaction rates. Within the intern developer team, I excelled and achieved the highest score in the internal performance evaluation system.",
+      "In my previous role, I worked with executives to create technical specifications and developed databases using MongoDB and back-end servers with Express.js for front-end integration. I designed website mockups with Adobe XD, increasing client satisfaction by 75%, and led the intern developer team, achieving the highest score in performance evaluations.",
     ],
   },
   // {
