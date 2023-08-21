@@ -1,12 +1,16 @@
 :root {
   --tile-length: 77.5vmin;
   --animation-duration: 28s;
+
+  @media (max-width: 1849px) {
+    --tile-length: 100.5vmin;
+  }
 }
 
 .kaleidoscopesection {
   position: absolute;
   background-color: black;
-  top: -70px;
+  top: -80px;
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -16,7 +20,7 @@
   overflow: hidden;
 
   @media (max-width: 1849px) {
-    top: -60px;
+    top: -40px;
   }
 }
 
@@ -153,57 +157,4 @@
   background-size: 100%;
   -webkit-animation: rotation var(--animation-duration) linear infinite;
   animation: rotation var(--animation-duration) linear infinite;
-}
-
-.link {
-  position: fixed;
-  left: calc(2.5vmin - 0.75rem);
-  bottom: calc(2.5vmin - 0.75rem);
-  font-size: 1.5rem;
-  font-family: arial, sans-serif;
-  color: whitesmoke;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-
-.my-name {
-  position: relative;
-}
-
-.before,
-.after {
-  overflow: hidden;
-  width: 0px;
-  transition: width 0.5s;
-  transform-origin: right;
-}
-
-.before-text {
-  display: inline-block;
-  width: auto;
-  text-align: right;
-}
-
-.after-text {
-  display: flex;
-  align-items: center;
-  width: auto;
-  height: 3rem;
-  transform-origin: top center;
-}
-
-.link:hover .before {
-  width: 2.5rem;
-}
-
-.link:hover .after {
-  width: 4rem;
-}
-
-.link:hover .spin {
-  display: inline-block;
-  transition: 0.5s transform 0.5s ease-in-out;
-  transform: rotate(360deg);
 }
