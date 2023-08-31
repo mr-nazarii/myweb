@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { ProjectType } from "./Projects";
+import { ProjectType } from "../Projects";
 
 interface Project {
   id: number;

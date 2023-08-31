@@ -2,27 +2,9 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, useViewportScroll, useTransform } from "framer-motion";
+import { ProjectType } from "types/ProjectType";
 
-interface Props {
-  name: string;
-  quote: string;
-  id: string;
-  color: string;
-  desc: string;
-  type: {
-    ux: boolean;
-    it: boolean;
-  };
-}
-
-export const OneProject: React.FC<Props> = ({
-  quote,
-  name,
-  id,
-  color,
-  desc,
-  type,
-}) => {
+export const OneProject: React.FC<ProjectType> = ({ name, id, desc, type }) => {
   return (
     <div className="project">
       <div className="project__detailsTop">

@@ -1,20 +1,8 @@
 import React, { useState, useMemo } from "react";
-import { PaginationComponent } from "./PaginationComponent";
-import { OneProject } from "./OneProject";
-import { Kaleidoscope } from "./Ka";
-
-export interface ProjectType {
-  desc: string;
-  color: string;
-  name: string;
-  quote: string;
-  id: string;
-  monthYear: string;
-  type: {
-    ux: boolean;
-    it: boolean;
-  };
-}
+import { PaginationComponent } from "./Projects/PaginationComponent";
+import { OneProject } from "./Projects/OneProject";
+import { Kaleidoscope } from "./Projects/Ka";
+import { ProjectType } from "types/ProjectType";
 
 interface ProjectsProps {
   planets: ProjectType[];

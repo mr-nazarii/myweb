@@ -1,17 +1,34 @@
-import { TitleSection } from "../components/TitleSection";
-import type { NextPage } from "next";
-import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
-import { Projects } from "components/Projects/Projects";
-import { serverResponse } from "data";
-import { Footer } from "components/Footer";
+// Type imports
+import type { NextPage, GetStaticProps } from "next";
 import { motion } from "framer-motion";
-import { Navbar } from "components/Navbar";
-import { Experience } from "components/Experience";
-import { Loader } from "components/Loader";
-import { About } from "components/About";
+import { ProjectType } from "types/ProjectType";
 
-export const getStaticProps = async () => {
+// Component imports
+import { Navbar } from "components/global/Navbar/Navbar";
+import { TitleSection } from "../components/TitleSection";
+import { About } from "components/About";
+import { Projects } from "components/Projects";
+import { Footer } from "components/Footer";
+import { Loader } from "components/global/Loader/Loader";
+
+// Data imports
+import { serverResponse } from "data";
+
+// Define the type for Source and Project
+interface HomeProps {
+  planets: ProjectType[];
+}
+
+// Animation variants
+const variants = {
+  hidden: { opacity: 0, x: -200, y: 0 },
+  enter: { opacity: 1, x: 0, y: 0 },
+  exit: { opacity: 0, x: 0, y: -100 },
+};
+
+export const getStaticProps: GetStaticProps<HomeProps> = async () => {
   const response = await serverResponse();
+  // Assuming serverResponse is typed to return Project[]
 
   return {
     props: {
@@ -20,13 +37,7 @@ export const getStaticProps = async () => {
   };
 };
 
-const variants = {
-  hidden: { opacity: 0, x: -200, y: 0 },
-  enter: { opacity: 1, x: 0, y: 0 },
-  exit: { opacity: 0, x: 0, y: -100 },
-};
-
-const Home: NextPage = ({ planets }: any) => {
+const Home: NextPage<HomeProps> = ({ planets }) => {
   return (
     <div style={{ overflow: "hidden" }}>
       <motion.main

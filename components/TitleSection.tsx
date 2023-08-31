@@ -76,7 +76,7 @@ export const TitleSection = () => {
             </div>
             <Spline
               className={styles.graphBg}
-              scene="https://prod.spline.design/NUwCiaztj4vAOSMB/scene.splinecode"
+              scene="https://prod.spline.design/vHNq9xt2B8qnfcWr/scene.splinecode"
             />
             <ScrollMore />
             <Carrousel data={data1} left={true} />

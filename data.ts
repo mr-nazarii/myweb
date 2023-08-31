@@ -1,4 +1,6 @@
-export const serverResponse = () => {
+import { ProjectType } from "types/ProjectType";
+
+export const serverResponse = async (): Promise<ProjectType[]> => {
   return [
     {
       monthYear: "2023-07",
@@ -22,7 +24,7 @@ export const serverResponse = () => {
 
       techList: ["Python", "TensorFlow", "Blockchain", "React"],
 
-      aiMethods: [
+      uxMethods: [
         "Market Trend Analysis",
         "Risk Assessment Algorithms",
         "Portfolio Optimization",

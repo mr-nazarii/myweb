@@ -1,6 +1,6 @@
 import "../styles/globals.scss";
 import type { AppProps } from "next/app";
-import { Navbar } from "components/Navbar";
+import { Navbar } from "components/global/Navbar/Navbar";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
