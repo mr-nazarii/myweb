@@ -1,5 +1,9 @@
 .preview2 {
   position: relative;
+
+  @media (max-width: 480px) {
+    right: 100px;
+  }
 }
 
 .section-about {
@@ -26,26 +30,36 @@
   &__about {
     max-width: 1542px;
     @media (max-width: 1570px) {
-      scale: 0.9;
+      font-size: 45px;
+      max-width: 1242px;
     }
 
     @media (max-width: 1286px) {
-      scale: 0.8;
-      font-size: 60px;
+      max-width: 1042px;
+    }
+
+    @media (max-width: 1112px) {
+      max-width: 942px;
     }
 
     @media (max-width: 940px) {
-      font-size: 45px;
+      font-size: 40px;
+      max-width: 842px;
+    }
+
+    @media (max-width: 788px) {
+      font-size: 34px;
+      max-width: 642px;
     }
 
     @media (max-width: 632px) {
-      scale: 0.8;
-      font-size: 35px;
-      max-width: 2342px;
+      font-size: 29px;
+      max-width: 442px;
     }
 
     @media (max-width: 480px) {
-      scale: 0.8;
+      text-align: left;
+      max-width: 319px;
     }
   }
 
