@@ -4,7 +4,7 @@ import React from "react";
 export const ScrollMore = () => {
   return (
     <div className="wrapper-scroll">
-      <Image src={"./icons/mouse.svg"} width={30} height={30} alt="mouse" />
+      <Image src={"./icons/mouse.svg"} width={40} height={40} alt="mouse" />
       Scroll More
     </div>
   );

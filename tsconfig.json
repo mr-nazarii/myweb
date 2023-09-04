@@ -21,7 +21,10 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "components/ThreeCube.js"
+    "components/ThreeCube.js",
+    "components/Projects/Ka.tsx",
+    "components/Blob/index.js",
+    "components/Blob/index.jsx"
   ],
   "exclude": ["node_modules"]
 }

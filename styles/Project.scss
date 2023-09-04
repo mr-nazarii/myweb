@@ -1,6 +1,19 @@
 @import "./colors";
 @import "./mixins";
 
+.waveBottom {
+  position: absolute;
+  width: 100%;
+  bottom: -1px;
+}
+
+.waveTop {
+  position: absolute;
+  width: 100%;
+  top: -1px;
+  rotate: 180deg;
+}
+
 .details {
   opacity: 0;
   padding: 10px 10px;
@@ -81,6 +94,12 @@
   opacity: 0.08;
 }
 
+.project-wrapper {
+  background: #9f2222;
+  padding: 20px 0px 50px 0px;
+  position: relative;
+}
+
 .section-projects {
   z-index: 2;
 
@@ -109,28 +128,15 @@
     z-index: 3;
     justify-content: center;
   }
-
-  .svg-bottom {
-    position: absolute;
-    bottom: -1px;
-    left: 0px;
-    z-index: 2;
-  }
-
-  .svg-top {
-    position: absolute;
-    top: -1px;
-    left: 0px;
-    rotate: 180deg;
-    z-index: 2;
-  }
 }
 
 .project {
   width: 600px;
+  height: 100%;
   background-color: #ffffff;
   display: flex;
   padding: 64px 80px;
+  margin: 70px 20px 35px 20px;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;

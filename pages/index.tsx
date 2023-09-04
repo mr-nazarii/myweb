@@ -47,7 +47,6 @@ const Home: NextPage<HomeProps> = ({ planets }) => {
         exit="exit"
         transition={{ type: "linear" }}
       >
-        <Loader />
         <Navbar />
         <TitleSection />
         <About />

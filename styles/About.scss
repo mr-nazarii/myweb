@@ -1,70 +1,103 @@
+.preview2 {
+  position: relative;
+}
+
 .section-about {
   position: relative;
   width: 100%;
   height: 100%;
   background-color: #ffffff;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 90px 0px;
-  font-weight: 400;
-  font-size: 43px;
+  flex-direction: column;
+  gap: 0px;
+
+  text-align: center;
+
   z-index: 3;
   overflow: hidden;
+  padding: 100px 0px;
+
+  font-weight: 300;
+  font-size: 63px;
 
   &__about {
-    padding: 0px 220px;
-  }
+    max-width: 1542px;
+    @media (max-width: 1570px) {
+      scale: 0.9;
+    }
 
-  @media (max-width: 1351px) {
-    font-size: 43px;
+    @media (max-width: 1286px) {
+      scale: 0.8;
+      font-size: 60px;
+    }
 
-    &__about {
-      padding: 0px 120px;
+    @media (max-width: 940px) {
+      font-size: 45px;
+    }
+
+    @media (max-width: 632px) {
+      scale: 0.8;
+      font-size: 35px;
+      max-width: 2342px;
+    }
+
+    @media (max-width: 480px) {
+      scale: 0.8;
     }
   }
 
-  @media (max-width: 1000px) {
-    font-size: 33px;
+  // @media (max-width: 1351px) {
+  //   font-size: 43px;
 
-    &__about {
-      padding: 0px 120px;
-    }
-  }
+  //   &__about {
+  //     padding: 0px 120px;
+  //   }
+  // }
 
-  @media (max-width: 767px) {
-    font-size: 29px;
-    padding: 60px 0px;
+  // @media (max-width: 1000px) {
+  //   font-size: 33px;
 
-    &__about {
-      padding: 0px 90px;
-    }
-  }
+  //   &__about {
+  //     padding: 0px 120px;
+  //   }
+  // }
 
-  @media (max-width: 500px) {
-    font-size: 29px;
-    padding: 40px 0px;
+  // @media (max-width: 767px) {
+  //   font-size: 29px;
+  //   padding: 60px 0px;
 
-    &__about {
-      padding: 0px 60px;
-    }
-  }
+  //   &__about {
+  //     padding: 0px 90px;
+  //   }
+  // }
 
-  @media (max-width: 434px) {
-    font-size: 26px;
-    padding: 40px 0px;
+  // @media (max-width: 500px) {
+  //   font-size: 29px;
+  //   padding: 40px 0px;
 
-    &__about {
-      padding: 0px 45px;
-    }
-  }
+  //   &__about {
+  //     padding: 0px 60px;
+  //   }
+  // }
 
-  @media (max-width: 360px) {
-    font-size: 24px;
-    padding: 40px 0px;
+  // @media (max-width: 434px) {
+  //   font-size: 26px;
+  //   padding: 40px 0px;
 
-    &__about {
-      padding: 0px 35px;
-    }
-  }
+  //   &__about {
+  //     padding: 0px 45px;
+  //   }
+  // }
+
+  // @media (max-width: 360px) {
+  //   font-size: 24px;
+  //   padding: 40px 0px;
+
+  //   &__about {
+  //     padding: 0px 35px;
+  //   }
+  // }
 }

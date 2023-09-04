@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import Head from "next/head";
 import TitleSection from "components/Projects/TitleSection";
 import ListComponent from "components/Projects/ListComponent";
+import { Kaleidoscope } from "components/Projects/Ka";
 
 export const getStaticPaths = async () => {
   const res = await serverResponse();
@@ -43,6 +44,8 @@ const Product: any = ({ data }: any) => {
     enter: { opacity: 1, x: 0, y: 0 },
     exit: { opacity: 0, x: 0, y: -100 },
   };
+
+  console.log(data[0].name);
 
   return (
     <>
@@ -87,12 +90,38 @@ const Product: any = ({ data }: any) => {
               </div>
             ) : null} */}
             <div className={styles.projectPage__imgWrap}>
-              <Image
+              <div className="section-projects" id="Works">
+                <Kaleidoscope {...data[0]} />
+                <svg
+                  className="svg-top"
+                  viewBox="0 0 1440 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill="#FFFFFF"
+                    d="M0,30C0,30,438.4,0,720,0c281.6,0,720,30,720,30H0z"
+                  ></path>
+                </svg>
+
+                <svg
+                  className="svg-bottom"
+                  viewBox="0 0 1440 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill="#FFFFFF"
+                    d="M0,30C0,30,438.4,0,720,0c281.6,0,720,30,720,30H0z"
+                  ></path>
+                </svg>
+              </div>
+              {/* <Image
                 src={"/projects/" + `${data[0].name}/` + "1.png?v=1233"}
                 alt={data[0].name}
                 layout="fill"
                 objectFit="cover"
-              />
+              /> */}
             </div>
 
             <TitleSection

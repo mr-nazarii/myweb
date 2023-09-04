@@ -1,46 +1,29 @@
 import React, { useEffect } from "react";
 import { ProjectType } from "types/ProjectType";
 
-interface Project {
-  id: number;
-  name: string;
-}
-
 interface PaginationProps {
   data: ProjectType[]; // <-- Change this line
-  setActiveIndex: (index: number) => void;
-  setAutoplay: (autoplay: boolean) => void;
-  autoplay: boolean;
+  nextSlide: () => void; // <-- Add this
   activeIndex: number;
 }
 
 export const PaginationComponent: React.FC<PaginationProps> = ({
+  nextSlide,
   data,
-  setActiveIndex,
-  setAutoplay,
-  autoplay,
   activeIndex,
 }) => {
-  useEffect(() => {
-    if (autoplay) {
-      const autoNext = setInterval(() => {
-        nextActive();
-      }, 1000);
-      return () => clearInterval(autoNext);
-    }
-  }, [autoplay]);
-
   const nextActive = () => {
     const newIndex = (activeIndex + 1) % data.length;
-    setActiveIndex(newIndex);
+    nextSlide(newIndex);
   };
 
   const previousActive = () => {
     const newIndex = (activeIndex - 1 + data.length) % data.length;
-    setActiveIndex(newIndex);
+    nextSlide(newIndex);
   };
+
   const setActiveDot = (index: number) => {
-    setActiveIndex(index);
+    nextSlide(index);
   };
 
   return (

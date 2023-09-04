@@ -40,10 +40,10 @@ $animationSpeed: 40s;
 }
 
 .slider-right {
-  background: #3317cf;
-  color: #ffffff;
-  font-weight: 300;
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  background: #3317cf00;
+  color: #000000;
+  font-weight: 500;
+  text-transform: uppercase;
   height: 50px;
   margin: auto;
   overflow: hidden;
@@ -53,6 +53,7 @@ $animationSpeed: 40s;
   top: 130px;
   width: 960px;
   z-index: 2;
+  border: 1px solid #000000;
 
   .slide-track {
     animation: scroller $animationSpeed linear infinite;
@@ -73,11 +74,13 @@ $animationSpeed: 40s;
 
 // Styling
 .slider {
-  background: #3317cf;
+  border: 1px solid #ffffff;
+  background: #3317cf00;
   color: #ffffff;
   font-weight: 300;
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
   height: 50px;
+  font-weight: 500;
+  text-transform: uppercase;
   margin: auto;
   overflow: hidden;
   position: absolute;
