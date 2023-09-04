@@ -32,7 +32,7 @@ export const Projects: React.FC<ProjectsProps> = ({ planets }) => {
   const swiperRef = React.useRef<SwiperCore>(null);
 
   return (
-    <div className="project-wrapper">
+    <div className="project-wrapper" id="#Works">
       <Kaleidoscope {...sortedProjects[activeIndex]} />
       <svg
         className="waveBottom"
