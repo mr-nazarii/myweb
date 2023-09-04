@@ -17,8 +17,8 @@ const ListComponent: React.FC<ListComponentProps> = ({ data }) => {
       {data[0].techList ? (
         <>
           <TitleSection
-            title={`Tech`}
-            subtitle={`Technologies of the project`}
+            title={`Technologies of the project`}
+            subtitle={`Tech`}
           />
           <ul className={styles.techList}>
             {data[0].techList.map((feature: string) => (
@@ -30,7 +30,7 @@ const ListComponent: React.FC<ListComponentProps> = ({ data }) => {
 
       {data[0].uxMethods ? (
         <>
-          <TitleSection title={`UI/UX`} subtitle={`UX/UI Methods Used`} />
+          <TitleSection title={`UX/UI Methods Used`} subtitle={`UI/UX`} />
           <ul className={styles.techList}>
             {data[0].uxMethods.map((feature: string) => (
               <li key={`${Date.now()}${feature}`}>{feature}</li>

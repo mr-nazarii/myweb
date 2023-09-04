@@ -3,20 +3,29 @@
   display: flex;
   gap: 10px;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 
   &__sectionSubTitle {
     margin: 0;
-    font-weight: 700;
-    color: #b0b0b0;
+    font-weight: 500;
+    color: #aa52ff;
+    text-transform: uppercase;
+    border: #aa52ff 1px solid;
+    border-radius: 20px;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 
   &__sectionTitle {
     margin: 0;
-    font-weight: 700;
-    font-size: 30px;
+    font-weight: 400;
+    font-size: 40px;
 
     @media (max-width: 557px) {
-      font-size: 25px;
+      font-size: 30px;
     }
   }
 }

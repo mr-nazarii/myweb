@@ -7,16 +7,13 @@
   padding: 10px;
   margin: 0px;
   width: 100%;
-
   li {
     @include techDefault;
-    flex-grow: 1;
     margin: 10px;
-    padding: 20px 10px;
-    border-radius: 15px;
+    padding: 20px 20px;
+    border-radius: 0px;
     border: 1px solid rgba(0, 0, 0, 0.092);
     backdrop-filter: blur(20px);
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     font-weight: 500;
   }
 }

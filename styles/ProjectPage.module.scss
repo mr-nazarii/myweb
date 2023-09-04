@@ -1,13 +1,73 @@
 @import "./colors";
 @import "./mixins";
 
+.container {
+  max-width: 1300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 80px;
+
+  @media (max-width: 1300px) {
+    max-width: 1000px;
+  }
+
+  @media (max-width: 1050px) {
+    max-width: 800px;
+  }
+
+  @media (max-width: 850px) {
+    max-width: 600px;
+  }
+
+  @media (max-width: 650px) {
+    max-width: 500px;
+  }
+
+  @media (max-width: 550px) {
+    max-width: 400px;
+  }
+
+  @media (max-width: 450px) {
+    max-width: 319px;
+  }
+}
+
+.projectWrapper {
+  padding: 20px 0px 50px 0px;
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+
+  @media (max-width: 650px) {
+    height: 300px;
+  }
+}
+
+.waveBottom {
+  position: absolute;
+  width: 100%;
+  bottom: -1px;
+  left: 0px;
+}
+
+.waveTop {
+  position: absolute;
+  width: 100%;
+  top: -1px;
+  left: 0px;
+  rotate: 180deg;
+}
+
 .section {
   flex-wrap: wrap;
   position: relative;
   @include sectionYellow;
   height: 100%;
   align-items: flex-start;
-  padding: 0;
+  padding: 0px;
   padding-top: 0px;
   gap: 20px;
   background-color: #ffffff;
@@ -19,6 +79,7 @@
   align-items: center;
   width: 100%;
   gap: 15px;
+  margin-top: 20px;
 
   @media (max-width: 557px) {
     flex-direction: column;
@@ -85,18 +146,46 @@
 .projectPage {
   z-index: 999;
   margin-top: 140px;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  align-items: flex-start;
   gap: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
   &__title {
     margin: 0;
     font-size: 95px;
-    margin-bottom: 120px;
+    margin-bottom: 80px;
     font-weight: 400;
-    padding: 0px 40px;
+
+    @media (max-width: 1162px) {
+      font-size: 70px;
+    }
+
+    @media (max-width: 888px) {
+      font-size: 60px;
+    }
+
+    @media (max-width: 762px) {
+      font-size: 47px;
+    }
+
+    @media (max-width: 557px) {
+      font-size: 38px;
+      margin-bottom: 60px;
+    }
+  }
+
+  &__subparagraph {
+    margin: 0;
+    font-size: 55px;
+    margin: 75px 0px 55px;
+
+    @media (max-width: 1110px) {
+      font-size: 40px;
+      margin: 55px 0px 55px;
+    }
 
     @media (max-width: 557px) {
       font-size: 25px;
@@ -105,8 +194,13 @@
 
   &__paragraph {
     margin: 0;
-    font-size: 20px;
-    margin-bottom: 55px;
+    font-size: 55px;
+    margin: 75px 0px 55px;
+
+    @media (max-width: 557px) {
+      font-size: 30px;
+      margin: 55px 0px 55px;
+    }
   }
 
   &__imgWrap {
@@ -134,6 +228,10 @@
     list-style-type: none;
     padding: 0;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
 
     li {
       display: flex;
@@ -159,9 +257,9 @@
         width: 10px;
         height: 10px;
         left: 50px;
-        background-color: #7d57a6;
+        background-color: #aa52ff;
         border-radius: 100%;
-        outline: 6px solid #7d57a646;
+        outline: 6px solid #ab52ff67;
 
         @media (max-width: 526px) {
           left: 15px;
