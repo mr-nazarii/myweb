@@ -1,10 +1,23 @@
 @import "./colors";
 @import "./mixins";
 
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 60px;
+  height: 60px;
+  background-color: #ffffff;
+  border-radius: 0px;
+  border: 1px solid rgba(0, 0, 0, 0.092);
+}
+
 .section {
   flex-wrap: wrap;
   position: relative;
-  height: 20vh;
+  height: 25vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,6 +25,7 @@
   background-color: #ffffff;
   position: relative;
   z-index: 2;
+
   &__title {
     @include titleBlack;
   }
@@ -33,6 +47,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 25px;
 
   &__link {
     position: relative;
