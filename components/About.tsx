@@ -110,7 +110,7 @@ export const About = () => {
           <motion.div
             variants={{
               visible: { opacity: 1, y: 0 },
-              hidden: { opacity: 0, y: 400 },
+              hidden: { opacity: 0, y: 300 },
             }}
             initial="hidden"
             transition={{ duration: 0.5, delay: 0.5 }}
