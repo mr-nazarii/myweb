@@ -3,37 +3,41 @@ import { ProjectType } from "types/ProjectType";
 export const serverResponse = async (): Promise<ProjectType[]> => {
   return [
     {
-      monthYear: "2023-07",
-      id: 5,
+      monthYear: "2023-08",
+      id: 6,
       type: {
         ux: true,
         it: false,
       },
-      color: "#E1BFFF",
-      name: "AmethystAI",
-      desc: "Revolutionizing Investments: Intelligent, Adaptive, and Personalized.",
+      color: "#4CAF50",
+      name: "WellSync",
+      desc: "A Unified Health & Wellness Dashboard: Integrating Physical, Mental, and Sleep Metrics.",
       quote:
-        "Amethyst AI is a groundbreaking investment platform that harnesses the power of artificial intelligence to analyze market trends and provide personalized investment advice. With its adaptive algorithms and user-centric design, Amethyst AI is redefining the investment landscape, making it more accessible and tailored to individual financial goals and risk profiles.",
+        "WellSync is a comprehensive health platform that centralizes diverse wellness metrics into one intuitive dashboard. By merging physical, mental, and sleep data, it offers users a holistic view of their well-being while its community-driven approach ensures users are both informed and inspired throughout their wellness journey.",
       features: [
-        "Employs advanced AI algorithms for real-time market analysis and trend prediction.",
-        "Offers personalized investment advice and portfolio management tailored to individual risk profiles and financial goals.",
-        "Integrates a user-friendly interface with powerful analytical tools for both novice and experienced investors.",
-        "Utilizes machine learning to continuously improve and adapt investment strategies based on market conditions and user feedback.",
-        "Incorporates a secure and transparent transaction system, ensuring the safety and integrity of user investments.",
+        "Consolidates physical, mental, and sleep metrics for a comprehensive health overview.",
+        "Employs intuitive design for easy tracking and insights.",
+        "Promotes community engagement with shared milestones and challenges.",
+        "Offers journaling and mood tracking for mental well-being.",
+        "Integrates with wearables and other health apps for seamless data collection.",
       ],
-
-      techList: ["Python", "TensorFlow", "Blockchain", "React"],
-
+      techList: [
+        "Figma",
+        "Adobe Illustrator",
+        "React",
+        "Node.js",
+        "MongoDB",
+        "D3.js",
+      ],
       uxMethods: [
-        "Market Trend Analysis",
-        "Risk Assessment Algorithms",
-        "Portfolio Optimization",
-        "Predictive Analytics",
-        "Natural Language Processing",
-        "User Behavior Analysis",
-        "Security and Fraud Detection",
+        "User Personas",
+        "Empathy Maps",
+        "User Journeys",
+        "Interactive Prototyping",
+        "User Testing",
+        "Iterative Design",
+        "Feedback Loops",
       ],
-
       sources: [
         {
           category: "website",
@@ -41,11 +45,11 @@ export const serverResponse = async (): Promise<ProjectType[]> => {
         },
         {
           category: "UX Case Study",
-          address: "https://www.behance.net/gallery/174481179/Amethyst-AI",
+          address:
+            "https://www.behance.net/gallery/179569111/WellSync-A-Holistic-Health-Wellness-Dashboard",
         },
       ],
     },
-
     {
       monthYear: "2023-06",
       id: 4,
@@ -455,67 +459,67 @@ export const serverResponse = async (): Promise<ProjectType[]> => {
     //     },
     //   ],
     // },
-    {
-      monthYear: "2021-08",
-      id: 6,
-      type: {
-        ux: false,
-        it: true,
-      },
-      name: "TheHam",
-      color: "#bafff1",
-      desc: "Simplicity meets speed: Responsive UX with top-tier web tech.",
+    // {
+    //   monthYear: "2021-08",
+    //   id: 6,
+    //   type: {
+    //     ux: false,
+    //     it: true,
+    //   },
+    //   name: "TheHam",
+    //   color: "#bafff1",
+    //   desc: "Simplicity meets speed: Responsive UX with top-tier web tech.",
 
-      quote:
-        "The Ham is a stunningly simple and compact fast responsive website built using the finest principles of HTML/CSS JavaScript technology and Responsive Web UX Study Case.",
-      features: [
-        "UX Study Caseed entirely with Mobile First Technologies in mind",
-        "Simple and attractive for business purposes",
-        "The website is responsive in every aspect",
-        "It is well UX Study Caseed",
-      ],
-      techList: ["JavaScript", "Node.js", "HTML/CSS", "Gulp"],
-      sources: [
-        {
-          category: "website",
-          address: "https://mr-nazarii.github.io/digital-product/",
-        },
-        {
-          category: "UX Study Case",
-          address: false,
-        },
-      ],
-    },
-    {
-      monthYear: "2021-10",
-      id: 7,
-      type: {
-        ux: false,
-        it: true,
-      },
-      name: "Forkio",
-      color: "#b5abe4",
-      desc: "Sleek and speedy: Responsive web UX powered by best-practice technologies.",
-      quote:
-        "Forkio website is a beautifully simple and compact fast responsive website which is written using the best practices of JavaScript HTML/SCSS technologies and Responsive Web UX Study Case.",
-      features: [
-        "Fully written using Mobile First Technologies",
-        "Simple and beautiful for Business purposes",
-        "Responsiveness in every section of the website",
-        "Greatly UX Study Caseed",
-      ],
-      techList: ["JavaScript", "SCSS", "Node.js", "HTML/CSS", "Gulp"],
-      sources: [
-        {
-          category: "website",
-          address: "https://mr-nazarii.github.io/forkio-project/",
-        },
-        {
-          category: "UX Study Case",
-          address: false,
-        },
-      ],
-    },
+    //   quote:
+    //     "The Ham is a stunningly simple and compact fast responsive website built using the finest principles of HTML/CSS JavaScript technology and Responsive Web UX Study Case.",
+    //   features: [
+    //     "UX Study Caseed entirely with Mobile First Technologies in mind",
+    //     "Simple and attractive for business purposes",
+    //     "The website is responsive in every aspect",
+    //     "It is well UX Study Caseed",
+    //   ],
+    //   techList: ["JavaScript", "Node.js", "HTML/CSS", "Gulp"],
+    //   sources: [
+    //     {
+    //       category: "website",
+    //       address: "https://mr-nazarii.github.io/digital-product/",
+    //     },
+    //     {
+    //       category: "UX Study Case",
+    //       address: false,
+    //     },
+    //   ],
+    // },
+    // {
+    //   monthYear: "2021-10",
+    //   id: 7,
+    //   type: {
+    //     ux: false,
+    //     it: true,
+    //   },
+    //   name: "Forkio",
+    //   color: "#b5abe4",
+    //   desc: "Sleek and speedy: Responsive web UX powered by best-practice technologies.",
+    //   quote:
+    //     "Forkio website is a beautifully simple and compact fast responsive website which is written using the best practices of JavaScript HTML/SCSS technologies and Responsive Web UX Study Case.",
+    //   features: [
+    //     "Fully written using Mobile First Technologies",
+    //     "Simple and beautiful for Business purposes",
+    //     "Responsiveness in every section of the website",
+    //     "Greatly UX Study Caseed",
+    //   ],
+    //   techList: ["JavaScript", "SCSS", "Node.js", "HTML/CSS", "Gulp"],
+    //   sources: [
+    //     {
+    //       category: "website",
+    //       address: "https://mr-nazarii.github.io/forkio-project/",
+    //     },
+    //     {
+    //       category: "UX Study Case",
+    //       address: false,
+    //     },
+    //   ],
+    // },
     // {
     //   monthYear: "2022-01",
     //   id: 8,
