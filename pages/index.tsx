@@ -2,6 +2,7 @@
 import type { NextPage, GetStaticProps } from "next";
 import { motion } from "framer-motion";
 import { ProjectType } from "types/ProjectType";
+import { Analytics } from "@vercel/analytics/react";
 
 // Component imports
 import { Navbar } from "components/global/Navbar/Navbar";
@@ -52,6 +53,7 @@ const Home: NextPage<HomeProps> = ({ planets }) => {
         <About />
         <Projects planets={planets} />
         <Footer />
+        <Analytics />
       </motion.main>
     </div>
   );
