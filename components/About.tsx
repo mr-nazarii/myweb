@@ -1,131 +1,173 @@
 import Image from "next/image";
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styles from "../styles/About.module.scss";
 import { Btn } from "./Btn/Btn";
 import { AnimatePresence, motion } from "framer-motion";
 import SpinningParagraph from "./SpinningParagraph";
 import { useInView } from "react-intersection-observer";
-import { StarBig } from "./StarBig";
+import { Canvas } from "@react-three/fiber";
+import Blob from "./Blob";
+
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import { text } from "stream/consumers";
 
 export const About = () => {
   const [active, setActive] = useState(false);
+  const textRef = useRef(null);
+
+  useEffect(() => {
+    let ctx = gsap.context(() => {
+      gsap.registerPlugin(ScrollTrigger);
+      let tl = gsap.timeline({
+        defaults: { duration: 0.2 },
+        scrollTrigger: {
+          trigger: ".about-text",
+          start: "top center",
+          end: "1500 bottom",
+          scrub: true,
+        },
+      });
+
+      let t2 = gsap.timeline({
+        defaults: { duration: 1 },
+        scrollTrigger: {
+          trigger: ".about-img1",
+          start: "top center",
+          end: "bottom center",
+          scrub: true,
+        },
+      });
+
+      let t3 = gsap.timeline({
+        defaults: { duration: 1 },
+        scrollTrigger: {
+          trigger: ".about-img2",
+          start: "top center",
+          end: "bottom center",
+          scrub: true,
+        },
+      });
+
+      let t4 = gsap.timeline({
+        defaults: { duration: 1 },
+        scrollTrigger: {
+          trigger: ".about-img3",
+          start: "top center",
+          end: "bottom center",
+          scrub: true,
+        },
+      });
+
+      let t5 = gsap.timeline({
+        defaults: { duration: 1 },
+        scrollTrigger: {
+          trigger: ".about-img4",
+          start: "top center",
+          end: "bottom center",
+          scrub: true,
+        },
+      });
+
+      tl.to(".about-text", {
+        y: 100,
+        opacity: 1,
+      });
+
+      t2.to(".about-img1", {
+        y: 50,
+        opacity: 1,
+      });
+
+      t3.to(".about-img2", {
+        y: 100,
+        opacity: 1,
+      });
+
+      t4.to(".about-img3", {
+        y: 60,
+        opacity: 1,
+      });
+
+      t5.to(".about-img4", {
+        y: 100,
+        opacity: 1,
+      });
+    });
+
+    return () => ctx.revert();
+  }, []);
 
   return (
-    <AnimatePresence exitBeforeEnter>
+    <>
       <div className="section-about" id="About">
-        <div className="preview2">
-          <motion.svg
-            variants={{
-              visible: {
-                fill: "#AA52FF",
-                stroke: "#AA52FF",
-                rotate: "-20deg",
-                y: -45,
-                x: 55,
-              },
-              hidden: {
-                fill: "#ffffff",
-                stroke: "#ffffff",
-                rotate: "-20deg",
-                y: 20,
-                x: 70,
-              },
+        <p className="about-text">
+          I&apos;m a UX/UI Designer and Front-End Developer dedicated to
+          transforming your business dreams into engaging web realities, one
+          pixel and line of code at a time.
+        </p>
+        <div className="about-img1">
+          <Canvas
+            camera={{ position: [10, 0, 1.0] }}
+            style={{
+              position: "relative",
+              left: "0px",
+              top: "0px",
+              overflow: "visible",
+              background: "black",
             }}
-            viewport={{ once: true }}
-            initial="hidden"
-            transition={{ duration: 0.5, delay: 0.4 }}
-            whileInView="visible"
-            width="44"
-            height="44"
-            viewBox="0 0 324 324"
-            fill="black"
-            xmlns="http://www.w3.org/2000/svg"
           >
-            <g clip-path="url(#clip0_6_48)">
-              <path
-                stroke-width="4"
-                d="M161.693 -0.193756L163.282 7.50162C179.32 85.1659 240.476 145.574 318.331 160.654L323.551 161.665L318.331 162.676C240.476 177.756 179.32 238.164 163.282 315.829L161.693 323.524L160.788 318.778C145.694 239.594 83.7645 177.664 4.58094 162.57L-0.165771 161.665L4.5808 160.76C83.7645 145.666 145.694 83.7365 160.788 4.55282L161.693 -0.193756Z"
-              />
-            </g>
-          </motion.svg>
-          <motion.svg
-            variants={{
-              visible: { fill: "#AA52FF", stroke: "#AA52FF" },
-              hidden: { fill: "#ffffff", stroke: "#c2c2c2" },
-            }}
-            viewport={{ once: true }}
-            initial="hidden"
-            transition={{ duration: 0.5, delay: 0.5 }}
-            whileInView="visible"
-            width="84"
-            height="84"
-            viewBox="0 0 324 324"
-            fill="black"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g clip-path="url(#clip0_6_48)">
-              <path
-                stroke-width="4"
-                d="M161.693 -0.193756L163.282 7.50162C179.32 85.1659 240.476 145.574 318.331 160.654L323.551 161.665L318.331 162.676C240.476 177.756 179.32 238.164 163.282 315.829L161.693 323.524L160.788 318.778C145.694 239.594 83.7645 177.664 4.58094 162.57L-0.165771 161.665L4.5808 160.76C83.7645 145.666 145.694 83.7365 160.788 4.55282L161.693 -0.193756Z"
-              />
-            </g>
-          </motion.svg>
-          <motion.svg
-            variants={{
-              visible: {
-                fill: "#AA52FF",
-                stroke: "#AA52FF",
-                rotate: "20deg",
-                y: 50,
-                x: -70,
-              },
-              hidden: {
-                fill: "#ffffff",
-                stroke: "#ffffff",
-                rotate: "20deg",
-                y: 110,
-                x: -70,
-              },
-            }}
-            viewport={{ once: true }}
-            initial="hidden"
-            transition={{ duration: 0.5, delay: 0.8 }}
-            whileInView="visible"
-            width="44"
-            height="44"
-            viewBox="0 0 324 324"
-            fill="black"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g clip-path="url(#clip0_6_48)">
-              <path
-                stroke-width="4"
-                d="M161.693 -0.193756L163.282 7.50162C179.32 85.1659 240.476 145.574 318.331 160.654L323.551 161.665L318.331 162.676C240.476 177.756 179.32 238.164 163.282 315.829L161.693 323.524L160.788 318.778C145.694 239.594 83.7645 177.664 4.58094 162.57L-0.165771 161.665L4.5808 160.76C83.7645 145.666 145.694 83.7365 160.788 4.55282L161.693 -0.193756Z"
-              />
-            </g>
-          </motion.svg>{" "}
+            <Blob />
+          </Canvas>
         </div>
 
-        <div className={"preview"}>
-          <motion.div
-            variants={{
-              visible: { opacity: 1, y: 0 },
-              hidden: { opacity: 0, y: 300 },
+        <div className="about-img2">
+          <Canvas
+            camera={{ position: [10, 25, 3.0] }}
+            style={{
+              position: "relative",
+              left: "0px",
+              top: "0px",
+              overflow: "visible",
+              background: "green",
             }}
-            initial="hidden"
-            transition={{ duration: 0.5, delay: 0.5 }}
-            whileInView="visible"
-            viewport={{ once: true }}
           >
-            <p className="section-about__about">
-              I&apos;m a UX/UI Designer and Front-End Developer dedicated to
-              transforming your business dreams into engaging web realities, one
-              pixel and line of code at a time.
-            </p>
-          </motion.div>
+            <Blob />
+          </Canvas>
+        </div>
+
+        <div className="about-img3">
+          <Canvas
+            camera={{ position: [-10, 5, 3.0] }}
+            style={{
+              position: "relative",
+              left: "0px",
+              top: "0px",
+              overflow: "visible",
+              background: "green",
+              mixBlendMode: "difference",
+            }}
+          >
+            <Blob />
+          </Canvas>
+        </div>
+
+        <div className="about-img4">
+          <Canvas
+            camera={{ position: [10, 5, 3.0] }}
+            style={{
+              position: "relative",
+              left: "0px",
+              top: "0px",
+              overflow: "visible",
+              background: "white",
+              mixBlendMode: "difference",
+            }}
+          >
+            <Blob />
+          </Canvas>
         </div>
       </div>
-      ;
-    </AnimatePresence>
+    </>
   );
 };

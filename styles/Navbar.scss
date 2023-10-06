@@ -9,42 +9,57 @@
   }
 }
 
-.navbar {
-  position: fixed;
-  display: flex;
-  width: 100%;
-  transition: all 200ms ease-in-out;
-  justify-content: center;
-  animation: fadeInAnimation ease 1500ms;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  top: 45px;
-
-  z-index: 200;
-
+.navbar-desktop {
   &__wrapper {
+    @media (max-width: 800px) {
+      display: none;
+    }
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    position: fixed;
     display: flex;
-    background-color: #ffffffff;
+    padding: 25px;
+    z-index: 3000;
+
+    color: #ffffff;
+    justify-content: space-between;
 
     margin: 0px;
-    padding: 20px 30px;
 
-    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.086);
-
-    @media (max-width: 365px) {
-      padding: 20px 20px;
-    }
+    // @media (max-width: 365px) {
+    //   padding: 20px 20px;
+    // }
 
     list-style-type: none;
-    z-index: 4;
+    z-index: 1999;
 
-    font-size: 15px;
+    font-size: 16px;
     text-transform: uppercase;
     font-weight: 500;
-
+    color: rgb(0, 0, 0);
     border-radius: 40px;
 
     gap: 30px;
+
+    .soon {
+      position: relative;
+      color: #979797;
+      &::before {
+        content: "Comming Soon";
+        color: white;
+
+        font-size: 10px;
+        background-color: #0091ff;
+        border-radius: 4px;
+        padding: 1px 6px;
+        margin-right: 4px;
+        position: absolute;
+        bottom: -14px;
+        left: -12px;
+        text-wrap: nowrap;
+      }
+    }
 
     @keyframes example {
       from {
@@ -60,11 +75,85 @@
       a {
         cursor: pointer;
       }
+
       ::before {
         content: "";
         height: 2px;
         display: block;
         background-color: black;
+
+        position: absolute;
+        top: 9px;
+      }
+    }
+
+    li:hover :not(.soon) {
+      color: #656565;
+      transition: all 200ms ease-in-out;
+
+      ::before {
+        content: "";
+        animation-name: example;
+        animation-duration: 500ms;
+        width: 100%;
+        height: 2px;
+        display: block;
+        background-color: #656565;
+        position: absolute;
+        top: 9px;
+      }
+    }
+  }
+}
+
+.navbar {
+  &__wrapper {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    display: none;
+
+    @media (max-width: 800px) {
+      display: flex;
+    }
+    z-index: 200;
+    justify-content: flex-end;
+    margin: 0px;
+
+    // @media (max-width: 365px) {
+    //   padding: 20px 20px;
+    // }
+
+    list-style-type: none;
+    z-index: 999;
+
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    gap: 30px;
+
+    @keyframes example {
+      from {
+        width: 0%;
+      }
+      to {
+        width: 100%;
+      }
+    }
+
+    li {
+      position: relative;
+
+      a {
+        cursor: pointer;
+      }
+      ::before {
+        content: "";
+        height: 2px;
+        display: block;
+        background-color: black;
+
         position: absolute;
         top: 9px;
       }
@@ -100,4 +189,121 @@
   filter: saturate(0%);
   transition: all 200ms ease-in-out;
   z-index: 3;
+}
+
+$colors: (#ff008c, #d309e1, #9c1aff, #7700ff, #4400ff);
+
+.navMenu {
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2000;
+  width: 100%;
+  height: 100vh;
+  padding: 25px;
+
+  &__background {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+  }
+
+  &__button {
+    outline: none;
+    border: none;
+    user-select: none;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: transparent;
+    z-index: 1001;
+  }
+
+  &__ul {
+    padding: 25px;
+    position: relative;
+    top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__li {
+    list-style: none;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: black;
+
+    font-size: 45px;
+
+    &::before {
+      content: "";
+      height: 2px;
+      display: block;
+      background-color: black;
+
+      position: absolute;
+      top: 9px;
+    }
+
+    &:hover {
+      color: #656565;
+      transition: all 200ms ease-in-out;
+
+      &::before {
+        content: "";
+        animation-name: example;
+        animation-duration: 500ms;
+        width: 100%;
+        height: 2px;
+        display: block;
+        background-color: #656565;
+        position: absolute;
+        top: 48px;
+      }
+    }
+
+    &__icon-placeholder {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      flex: 40px 0;
+      margin-right: 20px;
+      border: 2px solid nth($colors, 1); // Example using the first color
+    }
+
+    &__text-placeholder {
+      border-radius: 5px;
+      width: 200px;
+      height: 20px;
+      flex: 1;
+    }
+  }
+
+  &__refresh {
+    padding: 10px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    width: 20px;
+    height: 20px;
+    top: 10px;
+    left: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
 }

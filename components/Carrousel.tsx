@@ -25,7 +25,7 @@ export const Carrousel: React.FC<BoxAnimationProps> = ({ data, left }) => {
             ) : (
               <Image
                 alt="hey"
-                src={"./icons/starright.svg"}
+                src={"./icons/star.svg"}
                 width={15}
                 height={15}
               />
