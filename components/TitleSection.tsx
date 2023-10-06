@@ -62,36 +62,36 @@ export const TitleSection = () => {
             <Blob />
           </Canvas>
           <div className={"section__innerWrapper"}>
-            <div className={"titleSection"}>
-              <div className={"preview"}>
-                <motion.div
-                  variants={{
-                    visible: { opacity: 1, y: 0 },
-                    hidden: { opacity: 1, y: 400 },
-                  }}
-                  initial="hidden"
-                  animate="visible"
-                  transition={{ duration: 0.5, delay: 0.5 }}
-                >
-                  <h1 className={"titleSection__title2"}>I&#39;m Nazarii</h1>
-                </motion.div>
-              </div>
-              <div className={"titleSection__title3"}>
-                <h1>
-                  <ReactRotatingText
-                    items={[
-                      "UX/UI Designer",
-                      "Front-End Developer",
-                      "Entrepreneur",
-                    ]}
-                  />
-                </h1>
-              </div>
+            <div className="title-wrap-block">
+              <div className={"titleSection"}>
+                <div className={"preview"}>
+                  <motion.div
+                    variants={{
+                      visible: { opacity: 1, y: 0 },
+                      hidden: { opacity: 1, y: 400 },
+                    }}
+                    initial="hidden"
+                    animate="visible"
+                    transition={{ duration: 0.5, delay: 0.5 }}
+                  >
+                    <h1 className={"titleSection__title2"}>I&#39;m Nazarii</h1>
+                  </motion.div>
+                </div>
+                <div className={"titleSection__title3"}>
+                  <h1>
+                    <ReactRotatingText
+                      items={[
+                        "UX/UI Designer",
+                        "Front-End Developer",
+                        "Entrepreneur",
+                      ]}
+                    />
+                  </h1>
+                </div>
+              </div>{" "}
             </div>
 
-            <ScrollMore />
             <Carrousel data={data1} left={true} />
-            <Carrousel data={data1} left={false} />
           </div>
         </div>
       </div>

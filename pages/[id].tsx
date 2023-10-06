@@ -8,6 +8,7 @@ import Head from "next/head";
 import TitleSection from "components/Projects/TitleSection";
 import ListComponent from "components/Projects/ListComponent";
 import { Kaleidoscope } from "components/Projects/Ka";
+import { Navbar } from "components/global/Navbar/Navbar";
 
 export const getStaticPaths = async () => {
   const res = await serverResponse();
@@ -52,6 +53,7 @@ const Product: any = ({ data }: any) => {
       <Head>
         <title>Nazarii Kubik | {data[0].name}</title>
       </Head>
+
       <motion.main
         variants={variants}
         initial="hidden"
