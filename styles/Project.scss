@@ -1,6 +1,17 @@
 @import "./colors";
 @import "./mixins";
 
+.gradient-motion {
+  background-color: #ffffff;
+  position: relative;
+  top: 33px;
+}
+
+#Works {
+  z-index: 9999;
+  position: relative;
+}
+
 .waveBottom {
   position: absolute;
   width: 100%;
@@ -94,8 +105,33 @@
   opacity: 0.08;
 }
 
+.section-title {
+  font-size: 180px;
+  font-weight: 300;
+  margin: 0;
+  opacity: 0;
+  color: #ffffff;
+  mix-blend-mode: difference;
+  position: relative;
+
+  transition: all 0.5ms ease-in-out;
+
+  @media (max-width: 555px) {
+    font-size: 120px;
+  }
+
+  @media (max-width: 391px) {
+    font-size: 100px;
+  }
+}
+
+.section-title-wrapper {
+  padding: 0px 25px;
+  position: relative;
+}
+
 .project-wrapper {
-  padding: 20px 25px 50px;
+  padding: 80px 25px 50px;
   position: relative;
   height: 100%;
   display: grid;
@@ -286,16 +322,22 @@
 
 .project-title {
   font-size: 25px;
+  color: #ffffff;
+  mix-blend-mode: difference;
 }
 
 .project-desc {
   font-size: 16px;
   color: #616161;
+  color: #ffffff;
+  mix-blend-mode: difference;
 }
 
 .project-descdescription-text {
   font-size: 23px;
   font-weight: 300;
+  color: #ffffff;
+  mix-blend-mode: difference;
 
   @media (max-width: 836px) {
     display: none;
@@ -406,6 +448,33 @@
 
     @media (max-width: 408px) {
       font-size: 20px;
+    }
+  }
+
+  &__link2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+
+    gap: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 45px;
+    padding: 13px 20px;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: all 300ms ease-in-out;
+    color: #ffffff;
+
+    &:hover {
+      background-color: #ffffff;
+      color: #000000;
+      transition: all 300ms ease-in-out;
+
+      .arrowsvg path {
+        fill: #000000;
+      }
     }
   }
 

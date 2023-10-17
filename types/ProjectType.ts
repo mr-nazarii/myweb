@@ -9,6 +9,7 @@ export interface ProjectType {
   type: {
     ux: boolean;
     it: boolean;
+    branding: boolean;
   };
   color: string;
   name: string;

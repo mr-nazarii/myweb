@@ -1,6 +1,89 @@
 @import "./colors";
 @import "./mixins";
 
+#Contacts {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.waveTop {
+  position: absolute;
+  width: 100%;
+  top: -39px;
+  left: 0px;
+
+  @media (max-width: 1659px) {
+    top: -33px;
+  }
+
+  @media (max-width: 1581px) {
+    top: -32px;
+  }
+
+  @media (max-width: 1557px) {
+    top: -31px;
+  }
+
+  @media (max-width: 1557px) {
+    top: -31px;
+  }
+
+  @media (max-width: 1557px) {
+    top: -30px;
+  }
+
+  @media (max-width: 1445px) {
+    top: -29px;
+  }
+
+  @media (max-width: 1405px) {
+    top: -27px;
+  }
+  @media (max-width: 1305px) {
+    top: -25px;
+  }
+  @media (max-width: 1205px) {
+    top: -23px;
+  }
+
+  @media (max-width: 1105px) {
+    top: -21px;
+  }
+
+  @media (max-width: 1005px) {
+    top: -19px;
+  }
+
+  @media (max-width: 905px) {
+    top: -17px;
+  }
+
+  @media (max-width: 805px) {
+    top: -15px;
+  }
+
+  @media (max-width: 705px) {
+    top: -12px;
+  }
+
+  @media (max-width: 605px) {
+    top: -10px;
+  }
+
+  @media (max-width: 505px) {
+    top: -8px;
+  }
+
+  @media (max-width: 405px) {
+    top: -6px;
+  }
+
+  @media (max-width: 405px) {
+    top: -6px;
+  }
+}
+
 .button {
   display: flex;
   justify-content: center;
@@ -18,13 +101,20 @@
   flex-wrap: wrap;
   position: relative;
   height: 25vh;
+
+  @media (max-width: 477px) {
+    height: 35vh;
+  }
+
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  background-color: #ffffff;
   position: relative;
   z-index: 2;
+  background-color: #ffffff;
+  top: 33px;
+  padding-bottom: 33px;
 
   &__title {
     @include titleBlack;

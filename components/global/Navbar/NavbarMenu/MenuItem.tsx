@@ -1,5 +1,6 @@
 import * as React from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const variants = {
   open: {
@@ -30,7 +31,9 @@ export const MenuItem = ({ i, toggle }) => {
       key={i}
       onClick={toggle}
     >
-      <a href={`#${i}`}>{i}</a>
+      <Link href={`${i.path}`} key={i.name}>
+        {i.name}
+      </Link>
     </motion.li>
   );
 };

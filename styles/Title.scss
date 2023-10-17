@@ -10,8 +10,8 @@
   @include sectionColumn;
   height: 100vh;
   width: 100%;
-  position: relative;
-  z-index: 2;
+  position: fixed;
+  z-index: 0px;
   padding: 0px;
   overflow: hidden;
   background-color: #ffffff;

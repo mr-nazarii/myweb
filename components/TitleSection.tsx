@@ -9,6 +9,9 @@ import { Canvas } from "@react-three/fiber";
 import Blob from "./Blob";
 import { useInView } from "react-intersection-observer";
 
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+
 const data1 = [
   "JavaScript",
   "TypeScript",
@@ -44,6 +47,27 @@ const data1 = [
 ];
 
 export const TitleSection = () => {
+  useEffect(() => {
+    let ctx = gsap.context(() => {
+      gsap.registerPlugin(ScrollTrigger);
+      let tl = gsap.timeline({
+        defaults: { duration: 0.2 },
+        scrollTrigger: {
+          trigger: ".section",
+          start: "center top",
+          end: "center bottom",
+          scrub: true,
+          pin: true,
+        },
+      });
+
+      tl.to(".section", {
+        y: 0,
+      });
+    });
+
+    return () => ctx.revert();
+  }, []);
   return (
     <AnimatePresence exitBeforeEnter>
       <div className={"section"}>
