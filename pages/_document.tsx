@@ -19,6 +19,18 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Archivo:wght@600&family=Open+Sans&display=swap"
             rel="stylesheet"
           />
+          <meta
+            property="og:image"
+            content="https://www.nazariikubik.com/main.webp"
+          />
+
+          <meta
+            property="og:description"
+            content="Nazarii Kubik UX/UI Designer | Developer"
+          />
+
+          <meta property="og:url" content="https://nazariikubik.com/mypage" />
+
           <link rel="icon" href="/favicon.png" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
