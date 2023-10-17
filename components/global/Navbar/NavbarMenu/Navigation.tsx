@@ -22,7 +22,7 @@ const nav = [
 export const Navigation = ({ toggle }) => (
   <motion.ul variants={variants} className="navMenu__ul">
     {nav.map((i) => (
-      <MenuItem i={i} toggle={toggle} />
+      <MenuItem i={i} key={"1" + i.name} toggle={toggle} />
     ))}
   </motion.ul>
 );

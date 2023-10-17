@@ -53,10 +53,13 @@ export default function Services({ planets }) {
           <p className="service-single-title">Branding</p>
           <div className="service-single-projects">
             <Swiper
+              // @ts-ignore
               modules={[Navigation, Pagination, Scrollbar, A11y]}
               pagination={{ clickable: true }}
               navigation
-              pagination={true}
+              // @ts-ignore
+              // eslint-disable-next-line react/jsx-no-duplicate-props
+              pagination={{ clickable: true }}
               spaceBetween={50}
               breakpoints={{
                 640: {
@@ -94,7 +97,7 @@ export default function Services({ planets }) {
         <div className="service-single">
           <p className="service-single-title">UX/UI Design</p>
           <div className="service-single-projects">
-            <Swiper
+            <Swiper // @ts-ignore
               modules={[Navigation, Pagination, Scrollbar, A11y]}
               pagination={{ clickable: true }}
               navigation
