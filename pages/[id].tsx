@@ -9,6 +9,7 @@ import TitleSection from "components/Projects/TitleSection";
 import ListComponent from "components/Projects/ListComponent";
 import { Kaleidoscope } from "components/Projects/Ka";
 import { Navbar } from "components/global/Navbar/Navbar";
+import { Footer } from "components/Footer";
 
 export const getStaticPaths = async () => {
   const res = await serverResponse();
@@ -53,6 +54,7 @@ const Product: any = ({ data }: any) => {
       <Head>
         <title>Nazarii Kubik | {data[0].name}</title>
       </Head>
+      <Navbar />
 
       <motion.main
         variants={variants}
@@ -62,18 +64,6 @@ const Product: any = ({ data }: any) => {
         transition={{ type: "linear" }}
       >
         <div className={styles.section}>
-          <Link href={"/"}>
-            <div className={styles.backLinkWrapper}>
-              <Image
-                src={"/icons/back.svg"}
-                alt={"back"}
-                width={23}
-                height={23}
-              />
-
-              <p className={styles.backLinkWrapper__backLink}>HOME</p>
-            </div>
-          </Link>
           <div className={styles.projectPage}>
             <div className={styles.container}>
               <h1 className={styles.projectPage__title}>
@@ -157,6 +147,7 @@ const Product: any = ({ data }: any) => {
           </div>
         </div>
       </motion.main>
+      <Footer />
     </>
   );
 };

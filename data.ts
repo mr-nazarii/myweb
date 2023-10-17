@@ -3,11 +3,105 @@ import { ProjectType } from "types/ProjectType";
 export const serverResponse = async (): Promise<ProjectType[]> => {
   return [
     {
+      monthYear: "2023-10",
+      id: 9,
+      type: {
+        ux: false,
+        it: false,
+        branding: true,
+      },
+      color: "#A67C52",
+      name: "PetLit",
+      desc: "The Ultimate Cat Litter Sand Experience: Where Cleanliness Meets Comfort.",
+      quote:
+        "PetLit is more than just cat litter; it's a commitment to ensuring your feline friend's utmost comfort. Every granule is designed to provide a clean and odor-free environment.",
+      features: [
+        "Superior odor control for a fresh-smelling home.",
+        "Quick-clumping formula for easy cleanup.",
+        "Dust-free and hypoallergenic to ensure your cat's health and comfort.",
+      ],
+      techList: ["Adobe Photoshop", "Adobe Illustrator", "Figma"],
+      sources: [
+        {
+          category: "website",
+          address: false,
+        },
+        {
+          category: "Pet Product Review",
+          address:
+            "https://www.behance.net/gallery/182435297/Pet-Lit-Cat-Litter-Branding",
+        },
+      ],
+    },
+    {
+      monthYear: "2023-10",
+      id: 8,
+      type: {
+        ux: false,
+        it: false,
+        branding: true,
+      },
+      color: "#A67C52",
+      name: "BeanThere",
+      desc: "A Journey Through Brewsville: Where Every Coffee Bean Has a Tale to Tell.",
+      quote:
+        "Bean There is more than a coffee shop; it's a narrative steeped in the whimsical tales of Brewsville. Every cup, every sip, is an invitation to embark on a flavorful adventure.",
+      features: [
+        "Unique Brewsville themed ambiance and storytelling sessions.",
+        "Ethically sourced beans ensuring a rich and authentic coffee experience.",
+        "Exclusive Brewsville Specials inspired by Benny the Bean's adventures.",
+      ],
+      techList: ["Adobe Photoshop", "Adobe Illustrator", "Figma"],
+      sources: [
+        {
+          category: "website",
+          address: false,
+        },
+        {
+          category: "Coffee Shop Review",
+          address:
+            "https://www.behance.net/gallery/182423063/Bean-There-Branding",
+        },
+      ],
+    },
+    {
+      monthYear: "2023-08",
+      id: 7,
+      type: {
+        ux: false,
+        it: false,
+        branding: true,
+      },
+      color: "#4CAF50",
+      name: "Kozak",
+      desc: "A Traditional Ukrainian Cuisine Experience: Bringing Authentic Flavors and Culture to Every Plate.",
+      quote:
+        "Kozak is a celebration of Ukrainian culinary heritage. Each dish tells a story, transporting diners to the heart of Ukraine. Our commitment is to authenticity, flavor, and a memorable dining experience.",
+      features: [
+        "Authentic Ukrainian recipes passed down through generations.",
+        "Locally sourced ingredients ensuring fresh and flavorful dishes.",
+        "A curated selection of Ukrainian beverages and spirits.",
+      ],
+      techList: ["Adobe Illuminator", "Adobe Lightroom", "Figma"],
+      sources: [
+        {
+          category: "website",
+          address: false,
+        },
+        {
+          category: "Restaurant Review",
+          address:
+            "https://www.behance.net/gallery/182366483/Kozak-Ukrainian-Cuisine",
+        },
+      ],
+    },
+    {
       monthYear: "2023-08",
       id: 6,
       type: {
         ux: true,
         it: false,
+        branding: false,
       },
       color: "#4CAF50",
       name: "WellSync",
@@ -56,6 +150,7 @@ export const serverResponse = async (): Promise<ProjectType[]> => {
       type: {
         ux: true,
         it: false,
+        branding: false,
       },
       color: "#addff3",
       name: "Fusion",
@@ -98,6 +193,7 @@ export const serverResponse = async (): Promise<ProjectType[]> => {
       type: {
         ux: true,
         it: false,
+        branding: false,
       },
       name: "TuneToken",
       color: "#b184e3",
@@ -254,6 +350,7 @@ export const serverResponse = async (): Promise<ProjectType[]> => {
       type: {
         ux: true,
         it: false,
+        branding: false,
       },
       name: "GrandFoods",
       color: "#fff7b2",

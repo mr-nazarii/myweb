@@ -20,9 +20,8 @@
     position: fixed;
     display: flex;
     padding: 25px;
-    z-index: 3000;
+    z-index: 30000;
 
-    color: #ffffff;
     justify-content: space-between;
 
     margin: 0px;
@@ -32,12 +31,12 @@
     // }
 
     list-style-type: none;
-    z-index: 1999;
 
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 500;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    mix-blend-mode: difference;
     border-radius: 40px;
 
     gap: 30px;
@@ -125,7 +124,7 @@
     // }
 
     list-style-type: none;
-    z-index: 999;
+    z-index: 999999;
 
     font-size: 16px;
     text-transform: uppercase;

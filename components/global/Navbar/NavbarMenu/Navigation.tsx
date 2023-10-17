@@ -11,12 +11,18 @@ const variants = {
   },
 };
 
+const nav = [
+  { name: "Home", path: "/" },
+  { name: "Works", path: "/#Works" },
+  { name: "Services", path: "/Services" },
+  { name: "About", path: "/#About" },
+  { name: "Contacts", path: "/#Contacts" },
+];
+
 export const Navigation = ({ toggle }) => (
   <motion.ul variants={variants} className="navMenu__ul">
     {nav.map((i) => (
-      <MenuItem i={i} key={i} toggle={toggle} />
+      <MenuItem i={i} toggle={toggle} />
     ))}
   </motion.ul>
 );
-
-const nav = ["Home", "Works", "Services", "About", "Contacts"];

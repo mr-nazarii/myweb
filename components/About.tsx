@@ -100,6 +100,17 @@ export const About = () => {
 
   return (
     <>
+      <svg
+        className={"waveTop"}
+        viewBox="0 0 1440 30"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill="#FFFFFF"
+          d="M0,30C0,30,438.4,0,720,0c281.6,0,720,30,720,30H0z"
+        ></path>
+      </svg>
       <div className="section-about" id="About">
         <p className="about-text">
           I&apos;m a UX/UI Designer and Front-End Developer dedicated to

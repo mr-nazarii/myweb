@@ -1,9 +1,94 @@
+.waveTop {
+  position: absolute;
+  width: 100%;
+  top: -39px;
+  left: 0px;
+  rotate: 0deg;
+
+  @media (max-width: 1659px) {
+    top: -33px;
+  }
+
+  @media (max-width: 1581px) {
+    top: -32px;
+  }
+
+  @media (max-width: 1557px) {
+    top: -31px;
+  }
+
+  @media (max-width: 1557px) {
+    top: -31px;
+  }
+
+  @media (max-width: 1557px) {
+    top: -30px;
+  }
+
+  @media (max-width: 1445px) {
+    top: -29px;
+  }
+
+  @media (max-width: 1405px) {
+    top: -27px;
+  }
+  @media (max-width: 1305px) {
+    top: -25px;
+  }
+  @media (max-width: 1205px) {
+    top: -23px;
+  }
+
+  @media (max-width: 1105px) {
+    top: -21px;
+  }
+
+  @media (max-width: 1005px) {
+    top: -19px;
+  }
+
+  @media (max-width: 905px) {
+    top: -17px;
+  }
+
+  @media (max-width: 805px) {
+    top: -15px;
+  }
+
+  @media (max-width: 705px) {
+    top: -12px;
+  }
+
+  @media (max-width: 605px) {
+    top: -10px;
+  }
+
+  @media (max-width: 505px) {
+    top: -8px;
+  }
+
+  @media (max-width: 405px) {
+    top: -6px;
+  }
+
+  @media (max-width: 405px) {
+    top: -6px;
+  }
+}
+
 .section-about {
+  background-color: inherit;
   position: relative;
   display: grid;
   overflow: hidden;
   grid-template-columns: repeat(12, 1fr);
-  background-color: #fff;
+  padding: 125px 25px;
+
+  @media (max-width: 1366px) {
+    grid-template-columns: repeat(5, 1fr);
+    padding: 0px 25px;
+    padding-top: 125px;
+  }
 
   @media (max-width: 1050px) {
     height: 1000px;
@@ -17,9 +102,6 @@
     height: 1000px;
   }
 
-  @media (max-width: 1366px) {
-    grid-template-columns: repeat(5, 1fr);
-  }
   grid-template-rows: repeat(3, 400px);
   grid-column-gap: 10px;
   grid-row-gap: 120px;
@@ -28,10 +110,8 @@
 
   z-index: 3;
   overflow: hidden;
-  padding: 125px 25px;
 
   font-weight: 500;
-  background-color: #fff;
 
   .about-text {
     letter-spacing: -1px;

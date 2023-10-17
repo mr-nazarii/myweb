@@ -1,0 +1,111 @@
+.section-services-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  .section-services-title {
+    margin: 0px;
+    margin-top: 125px;
+    font-size: 130px;
+    font-weight: 400;
+
+    @media (max-width: 1497px) {
+      font-size: 100px;
+    }
+    @media (max-width: 1199px) {
+      font-size: 88px;
+    }
+    @media (max-width: 1027px) {
+      font-size: 68px;
+    }
+    @media (max-width: 764px) {
+      font-size: 48px;
+    }
+
+    @media (max-width: 500px) {
+      font-size: 45px;
+    }
+  }
+
+  .section-services-second {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .section-services-img {
+    margin-top: 60px;
+    position: relative;
+    width: 100%;
+    margin-left: 30%;
+    height: 700px;
+    border-radius: 75px;
+    overflow: hidden;
+  }
+
+  .section-services-text {
+    font-size: 22px;
+    width: 800px;
+    margin-left: 25px;
+  }
+
+  .service-single {
+    margin-top: 45px;
+    padding: 25px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .service-single-title {
+    font-size: 55px;
+    font-weight: 300;
+  }
+
+  .service-single-projects {
+    display: flex;
+    justify-content: flex-start;
+    gap: 25px;
+    overflow-x: scroll;
+  }
+
+  .service-project {
+    width: 500px;
+    height: 500px;
+    img {
+      border-radius: 55px;
+      border: 1px solid #e9e9e9;
+      overflow: hidden;
+    }
+  }
+}
+
+.swiper-button-next {
+  background-color: #ffffff;
+  border-radius: 400px;
+  width: 40px !important;
+  height: 40px !important;
+  filter: drop-shadow(0px 0px 34px rgba(0, 0, 0, 0.341));
+}
+
+.swiper-button-prev {
+  background-color: #ffffff;
+  border-radius: 400px;
+  width: 40px !important;
+  height: 40px !important;
+  filter: drop-shadow(0px 0px 34px rgba(0, 0, 0, 0.341));
+}
+
+.swiper-button-prev:after {
+  font-size: 18px !important;
+  font-weight: 800 !important;
+  color: rgb(0, 0, 0);
+}
+
+.swiper-button-next:after {
+  font-size: 18px !important;
+  font-weight: 800 !important;
+  color: rgb(0, 0, 0);
+}

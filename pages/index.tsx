@@ -14,9 +14,12 @@ import { Loader } from "components/global/Loader/Loader";
 
 // Data imports
 import { serverResponse } from "data";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import { useEffect } from "react";
 
 // Define the type for Source and Project
-interface HomeProps {
+export interface HomeProps {
   planets: ProjectType[];
 }
 
@@ -39,6 +42,43 @@ export const getStaticProps: GetStaticProps<HomeProps> = async () => {
 };
 
 const Home: NextPage<HomeProps> = ({ planets }) => {
+  useEffect(() => {
+    let ctx = gsap.context(() => {
+      gsap.registerPlugin(ScrollTrigger);
+
+      if (window.innerWidth <= 1005) {
+        let background = gsap.timeline({
+          defaults: { duration: 0.2 },
+          scrollTrigger: {
+            trigger: ".gradient-motion",
+            start: "670 center",
+            end: "1550 bottom",
+            scrub: true,
+          },
+        });
+
+        background.to(".gradient-motion", {
+          background: "black",
+        });
+      } else {
+        let background = gsap.timeline({
+          defaults: { duration: 0.2 },
+          scrollTrigger: {
+            trigger: ".gradient-motion",
+            start: "1770 center",
+            end: "3050 bottom",
+            scrub: true,
+          },
+        });
+
+        background.to(".gradient-motion", {
+          background: "black",
+        });
+      }
+    });
+
+    return () => ctx.revert();
+  }, []);
   return (
     <div style={{ overflow: "hidden" }}>
       <motion.main
@@ -50,11 +90,13 @@ const Home: NextPage<HomeProps> = ({ planets }) => {
       >
         <Navbar />
         <TitleSection />
-        <About />
-        <Projects planets={planets} />
+        <div className="gradient-motion">
+          <About />
+          <Projects planets={planets} />
+        </div>
         <Footer />
-        <Analytics />
       </motion.main>
+      <Analytics />
     </div>
   );
 };
