@@ -115,12 +115,13 @@
 
   .about-text {
     letter-spacing: -1px;
-    grid-area: 1/1/9/12;
+    grid-area: 1/1/9/13;
     text-align: center;
     color: #ffffff;
     opacity: 0;
-
+    width: 100%;
     mix-blend-mode: difference;
+    justify-content: center;
 
     line-height: 140%;
     font-size: 140px;

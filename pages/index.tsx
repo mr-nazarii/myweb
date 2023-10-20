@@ -46,7 +46,7 @@ const Home: NextPage<HomeProps> = ({ planets }) => {
     let ctx = gsap.context(() => {
       gsap.registerPlugin(ScrollTrigger);
 
-      if (window.innerWidth <= 1005) {
+      if (window.innerWidth <= 1035) {
         let background = gsap.timeline({
           defaults: { duration: 0.2 },
           scrollTrigger: {
