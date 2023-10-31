@@ -4,6 +4,36 @@ export const serverResponse = async (): Promise<ProjectType[]> => {
   return [
     {
       monthYear: "2023-10",
+      id: 10,
+      type: {
+        ux: true,
+        it: false,
+        branding: false,
+      },
+      color: "#4780A0",
+      name: "Tourvista",
+      desc: "Explore the World with Ease: Intuitive Design for Unforgettable Travel Experiences.",
+      quote:
+        "With Tourvista, embark on a journey like never before. Our platform ensures a seamless travel planning experience, tailored to your unique preferences.",
+      features: [
+        "User-friendly interface for effortless navigation.",
+        "Interactive maps and guides to enhance your travel experience.",
+        "Personalized recommendations to suit your travel preferences.",
+      ],
+      techList: ["Adobe XD", "Sketch", "Figma"],
+      sources: [
+        {
+          category: "website",
+          address: false,
+        },
+        {
+          category: "UI/UX Design Inspiration",
+          address: false,
+        },
+      ],
+    },
+    {
+      monthYear: "2023-10",
       id: 9,
       type: {
         ux: false,
