@@ -29,7 +29,7 @@ export const serverResponse = async (): Promise<ProjectType[]> => {
         },
         {
           category: "Tech Stack Overview",
-          address: null,
+          address: false,
         },
       ],
     },
