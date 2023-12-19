@@ -3,6 +3,37 @@ import { ProjectType } from "types/ProjectType";
 export const serverResponse = async (): Promise<ProjectType[]> => {
   return [
     {
+      monthYear: "2023-12",
+      id: 11,
+      type: {
+        ux: true,
+        it: true,
+        branding: true,
+      },
+      color: "#FFD700",
+      name: "ShopifyBanana",
+      desc: "Revolutionizing Digital Art Commerce: A Seamless NFT Shopping Experience.",
+      quote:
+        "Discover the synergy of art and technology with our Shopify-powered Banana NFT Marketplace. Tailored for the modern digital collector.",
+      features: [
+        "Intuitive Shopify integration for a seamless shopping experience.",
+        "Next.js for robust and scalable front-end architecture.",
+        "React and TypeScript for dynamic, responsive user interfaces.",
+        "Enhanced 3D visualizations with Three.js for an immersive shopping experience.",
+      ],
+      techList: ["Shopify", "Next.js", "React", "TypeScript", "Three.js"],
+      sources: [
+        {
+          category: "website",
+          address: "https://shopify-nine-fawn.vercel.app/",
+        },
+        {
+          category: "Tech Stack Overview",
+          address: null,
+        },
+      ],
+    },
+    {
       monthYear: "2023-10",
       id: 10,
       type: {
